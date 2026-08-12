@@ -2,17 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --bg-hover: #1a1a1a;
+  --border: #222222;
+  --text: #e5e5e5;
+  --text-dim: #888888;
+  --accent: #f97316;
+  --accent-dim: rgba(249, 115, 22, 0.12);
+}
+
 body {
+  background: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   line-height: 1.6;
-}
-
-@media (max-width: 640px) {
-  html {
-    font-size: 15px;
-  }
 }
 
 .scrollbar-none {
@@ -21,4 +28,17 @@ body {
 }
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
 }

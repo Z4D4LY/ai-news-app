@@ -32,8 +32,8 @@ export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: 
   if (feedData.articles.length === 0) {
     return (
       <div className="py-20 text-center">
-        <p className="text-base text-gray-400 dark:text-gray-500">No articles yet.</p>
-        <p className="mt-2 text-sm text-gray-400 dark:text-gray-500">
+        <p className="text-text-dim">No articles yet.</p>
+        <p className="mt-2 text-sm text-text-dim">
           The daily fetch will populate this feed. Run it manually from the GitHub Actions tab.
         </p>
       </div>
@@ -43,8 +43,8 @@ export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: 
   if (articles.length === 0) {
     return (
       <div className="py-20 text-center">
-        <p className="text-base text-gray-400 dark:text-gray-500">
-          No {tab === 'dev' ? 'developer' : 'world'} articles match your filters.
+        <p className="text-text-dim">
+          No {tab === 'dev' ? 'tech' : 'world'} articles match your filters.
         </p>
       </div>
     );
@@ -59,30 +59,30 @@ export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: 
   ].filter((s) => s.items.length > 0);
 
   return (
-    <>
-      <div className="flex items-center justify-between mb-5">
-        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-          {articles.length} article{articles.length !== 1 ? 's' : ''}
-        </span>
-      </div>
-
+    <div>
       {sections.map((section) => (
         <div key={section.label} className="mb-6">
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-            {section.label}
-          </h3>
-          <div className="space-y-4">
-            {section.items.map((article) => (
+          <div className="flex items-center gap-3 mb-2">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-text-dim">
+              {section.label}
+            </h3>
+            <span className="text-xs text-text-dim">
+              {section.items.length}
+            </span>
+          </div>
+          <hr className="divider mb-1" />
+          {section.items.map((article, i) => (
+            <div key={article.id}>
               <ArticleCard
-                key={article.id}
                 article={article}
+                index={i}
                 isBookmarked={isBookmarked(article.id)}
                 onToggleBookmark={onToggleBookmark}
               />
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       ))}
-    </>
+    </div>
   );
 }
