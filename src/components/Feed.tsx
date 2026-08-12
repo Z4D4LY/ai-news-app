@@ -31,21 +31,17 @@ function groupByTime(articles: Article[]) {
 export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: Props) {
   if (feedData.articles.length === 0) {
     return (
-      <div className="py-20 text-center">
-        <p className="text-text-dim">No articles yet.</p>
-        <p className="mt-2 text-sm text-text-dim">
-          The daily fetch will populate this feed. Run it manually from the GitHub Actions tab.
-        </p>
+      <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
+        <p>No articles yet.</p>
+        <p className="mt-2 text-sm">The daily fetch will populate this feed. Run it manually from the GitHub Actions tab.</p>
       </div>
     );
   }
 
   if (articles.length === 0) {
     return (
-      <div className="py-20 text-center">
-        <p className="text-text-dim">
-          No {tab === 'dev' ? 'tech' : 'world'} articles match your filters.
-        </p>
+      <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
+        <p>No {tab === 'dev' ? 'tech' : 'world'} articles match your filters.</p>
       </div>
     );
   }
@@ -63,10 +59,10 @@ export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: 
       {sections.map((section) => (
         <div key={section.label} className="mb-6">
           <div className="flex items-center gap-3 mb-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-text-dim">
+            <h3 className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-dim)' }}>
               {section.label}
             </h3>
-            <span className="text-xs text-text-dim">
+            <span className="text-xs" style={{ color: 'var(--text-dim)' }}>
               {section.items.length}
             </span>
           </div>

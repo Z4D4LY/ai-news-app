@@ -10,11 +10,11 @@ const SOURCE_LABEL: Record<string, string> = {
 };
 
 const SOURCE_DOT: Record<string, string> = {
-  hackernews: 'text-orange-400',
-  devto: 'text-sky-400',
-  googlenews: 'text-slate-400',
-  bbc: 'text-red-400',
-  npr: 'text-blue-400',
+  hackernews: 'text-orange-500',
+  devto: 'text-sky-500',
+  googlenews: 'text-slate-500',
+  bbc: 'text-red-500',
+  npr: 'text-blue-500',
 };
 
 interface Props {
@@ -41,8 +41,16 @@ function formatScore(score: number): string {
 
 export default function ArticleCard({ article, index, isBookmarked, onToggleBookmark }: Props) {
   return (
-    <div className="group flex gap-3 py-3 px-1 -mx-1 rounded hover:bg-bg-hover transition-colors">
-      <span className="shrink-0 w-6 text-right text-sm text-text-dim font-mono pt-0.5 select-none">
+    <div
+      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded transition-colors"
+      style={{ background: 'transparent' }}
+      onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-hover)'; }}
+      onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+    >
+      <span
+        className="shrink-0 w-6 text-right text-sm font-mono pt-0.5 select-none"
+        style={{ color: 'var(--text-dim)' }}
+      >
         {index + 1}
       </span>
 
@@ -50,19 +58,22 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
         <div className="flex items-center gap-2 flex-wrap mb-0.5">
           <div className="flex items-center gap-1.5">
             <span className={`w-1.5 h-1.5 rounded-full ${SOURCE_DOT[article.source] ?? 'text-gray-400'}`} />
-            <span className="text-xs font-medium text-text-dim">
+            <span className="text-xs font-medium" style={{ color: 'var(--text-dim)' }}>
               {SOURCE_LABEL[article.source] ?? article.source}
             </span>
           </div>
           {article.score > 0 && (
-            <span className="text-xs text-text-dim">
+            <span className="text-xs" style={{ color: 'var(--text-dim)' }}>
               ▲{formatScore(article.score)}
             </span>
           )}
-          <span className="text-xs px-1.5 py-0.5 rounded bg-accent/10 text-accent font-medium">
+          <span
+            className="text-xs px-1.5 py-0.5 rounded font-medium"
+            style={{ background: 'var(--accent-bg)', color: 'var(--accent)' }}
+          >
             {article.tag}
           </span>
-          <span className="text-xs text-text-dim ml-auto">
+          <span className="text-xs ml-auto" style={{ color: 'var(--text-dim)' }}>
             {timeAgo(article.date)}
           </span>
         </div>
@@ -72,7 +83,10 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
             href={article.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/link text-[15px] font-medium text-text-primary hover:text-accent transition-colors leading-snug"
+            className="group/link text-base font-medium leading-snug transition-colors"
+            style={{ color: 'var(--text)' }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)'; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--text)'; }}
           >
             <span className="line-clamp-2">{article.title}</span>
             <ExternalLink className="inline ml-1 h-3 w-3 opacity-0 group-hover/link:opacity-100 transition-opacity align-baseline" />
@@ -80,11 +94,10 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
 
           <button
             onClick={() => onToggleBookmark(article.id)}
-            className={`shrink-0 mt-0.5 p-0.5 rounded transition-colors ${
-              isBookmarked
-                ? 'text-accent'
-                : 'text-text-dim opacity-0 group-hover:opacity-100 hover:text-accent'
-            }`}
+            className="shrink-0 mt-0.5 p-0.5 rounded transition-opacity opacity-0 group-hover:opacity-100"
+            style={{ color: isBookmarked ? 'var(--accent)' : 'var(--text-dim)' }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)'; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = isBookmarked ? 'var(--accent)' : 'var(--text-dim)'; }}
             aria-label={isBookmarked ? 'Remove bookmark' : 'Bookmark'}
           >
             <svg className="h-3.5 w-3.5" fill={isBookmarked ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -93,7 +106,7 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
           </button>
         </div>
 
-        <p className="mt-0.5 text-[13px] leading-relaxed text-text-dim line-clamp-2">
+        <p className="mt-0.5 text-sm leading-relaxed line-clamp-2" style={{ color: 'var(--text-dim)' }}>
           {article.summary === 'No summary available.'
             ? 'Click to read the full article.'
             : article.summary}

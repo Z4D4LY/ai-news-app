@@ -13,11 +13,24 @@ export default function TopicFilter({ tags, selected, onChange }: Props) {
         <button
           key={tag}
           onClick={() => onChange(tag)}
-          className={`rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-colors ${
-            selected === tag
-              ? 'bg-accent text-white'
-              : 'bg-bg-card text-text-dim hover:bg-bg-hover hover:text-text-primary border border-border'
-          }`}
+          className="rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-colors border"
+          style={{
+            background: selected === tag ? 'var(--accent)' : 'var(--bg-card)',
+            color: selected === tag ? '#fff' : 'var(--text-dim)',
+            borderColor: selected === tag ? 'var(--accent)' : 'var(--border)',
+          }}
+          onMouseEnter={(e) => {
+            if (selected !== tag) {
+              (e.currentTarget as HTMLElement).style.background = 'var(--bg-hover)';
+              (e.currentTarget as HTMLElement).style.color = 'var(--text)';
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (selected !== tag) {
+              (e.currentTarget as HTMLElement).style.background = 'var(--bg-card)';
+              (e.currentTarget as HTMLElement).style.color = 'var(--text-dim)';
+            }
+          }}
         >
           {tag}
         </button>
