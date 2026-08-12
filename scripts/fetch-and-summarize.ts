@@ -211,10 +211,10 @@ Return ONLY valid JSON: {"summary": "...", "tag": "..."}`;
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'perplexity/llama-3.1-sonar-small-128k-online',
+        model: 'perplexity/sonar',
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.3,
-        max_tokens: 300,
+        max_tokens: 250,
       }),
     });
 
