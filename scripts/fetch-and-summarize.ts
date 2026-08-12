@@ -217,7 +217,7 @@ async function main() {
   const newEntries = allRaw.filter((e) => !existingUrls.has(e.url));
 
   const needsResummarize = feed.articles.filter(
-    (a) => a.summary === 'No summary available.'
+    (a) => a.summary === 'No summary available.' || a.summary.length < 120
   );
   if (needsResummarize.length > 0) {
     console.log(`Re-summarizing ${needsResummarize.length} orphaned articles...`);
