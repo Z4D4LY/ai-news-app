@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-12T18:24:27.553Z",
+  "updated": "2026-08-12T18:28:30.832Z",
   "articles": [
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Agentic Engineering Is Just Everything We Haven't Been Doing",
+      "url": "https://blog.matthewbrunelle.com/agentic-engineering-is-just-everything-we-havent-been-doing/",
+      "source": "hackernews",
+      "score": 5,
+      "summary": "The article discusses the concept of Agentic Engineering, emphasizing the importance of integrating agency into software development processes. It highlights how this approach can lead to more effective problem-solving and innovation by empowering developers to take ownership of their projects. This matters to developers as it encourages a shift from traditional methods to more dynamic and responsive engineering practices.",
+      "tag": "General",
+      "date": "2026-08-12T18:13:45.000Z",
+      "type": "dev"
+    },
     {
       "id": "bb-aHR0cHM6",
       "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
@@ -10,6 +21,50 @@
       "summary": "Recent attacks on major Russian grain export terminals in the Black Sea have led to a decline in grain exports from both Russia and Ukraine, as the two countries continue to target each other's shipping facilities. This conflict has significant implications for global food supply chains, affecting food prices and availability worldwide. It matters globally as it exacerbates food security concerns in various regions.",
       "tag": "Business",
       "date": "2026-08-12T17:47:01.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
+      "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T17:47:01.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Live Updates: Europe’s First Total Solar Eclipse in Decades Is Turning Day to Dark - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB3LVZYc2JrTkJOUEc5SFkzMHZ6UHNpajItYThYSF9PVkV5eXg3Tmo4NWJ6VTltOGFfMmp4NmRHVmpkeFNESmpwdWJXczh2MU5lRUhWRFJCODJaRWFfVlpTUW1qUWpQRWo5b1pTa09xN1dySkE0VVc1SlJvMmk?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Count Binface, a satirical candidate, is seeking a Parliament seat in Britain's upcoming election, reflecting the quirky side of political campaigning. This candidacy affects the political landscape by challenging traditional candidates and engaging younger voters. It highlights the evolving nature of political discourse and the role of humor in elections.",
+      "tag": "Politics",
+      "date": "2026-08-12T17:41:39.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Live Updates: Trump says U.S. has \"total control\" over Strait of Hormuz and might \"keep it\" - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLTNOYzlIQUFzd2ZmNXU5eEJzS0g1ZHNwcVo0Nm1HeUExa2RJQzNQSGJpSWFfZWdoSmxYLVZBMlkzMG10T0R0WWN1dWM1VG5fbjFkcGlBQUZtSWxzVTd4dEJtVUwzdVBRTTNMZWhURWF1Ry1SLW93aGxVX25kcFZtNldkV1REcW91ZGZ3YzZkak9wZTJWOG9HVEx3UUg0RURheVZyZWpFZkpFV1dqUmdWZQ?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Trump has stated that the U.S. has 'total control' over the Strait of Hormuz and suggested that it might maintain this control, which is crucial for global oil shipments. This assertion affects international shipping and oil markets, as the Strait is a vital passage for a significant portion of the world's oil supply. The statement underscores the geopolitical tensions in the region and their potential impact on global energy security.",
+      "tag": "Politics",
+      "date": "2026-08-12T17:35:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Crowley pushes unity after surprise win against democratic socialist Francesca Hong - Politico",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNellTemRETll2cFBRR2t4RE45b2lENVRJSDIyeXpPNjZmM1d4alNQYmtnY25nQkdSaHlYc2M0bi1QQnVubEF4Z25PQWpoSWREcXlUU0Y5YmxhbzltZjdySVFEUjFXWk9pTVdBYlctb25vNDZWNDVVeXlRdmZ1UV91ZjNIZ3dWdHowTjIxTWN6MTlJSVE?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "In a surprising political upset, Crowley has won against democratic socialist Francesca Hong, prompting calls for unity within the party. This victory affects the Democratic Party's direction and strategy moving forward, highlighting the ongoing ideological battles within U.S. politics. The outcome matters globally as it reflects broader trends in political polarization and the rise of various political ideologies.",
+      "tag": "Politics",
+      "date": "2026-08-12T17:23:00.000Z",
       "type": "world"
     },
     {
@@ -24,6 +79,28 @@
       "type": "world"
     },
     {
+      "id": "bb-aHR0cHM6",
+      "title": "US inflation eases as food and fuel costs cool",
+      "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T17:03:05.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Baby with heart defect carried by surrogate must receive treatment, Texas court rules, after intended parents request abortion - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN0RiY2VBenhfcHVLOFc1a2xydG9FRFoxN1g1M1BpNzdDazU5WFNEVG5fUFZKeHdTSG9MdU8yMnVnSHJ2RGFMbkhwZWYtMzJybGNXd3RPZ0h1cHFiNkQxQlhPVXQ4WkJvdGxmN0V3cTFZRVBGS1BhcDJyNkRLd0k2X2p0U3M?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "A Texas court has ruled that a baby with a heart defect carried by a surrogate must receive treatment, following a request for abortion by the intended parents. This ruling affects the rights of parents, surrogates, and the legal landscape surrounding reproductive health. The case highlights ongoing debates about reproductive rights and medical ethics, resonating beyond Texas.",
+      "tag": "Health",
+      "date": "2026-08-12T17:03:00.000Z",
+      "type": "world"
+    },
+    {
       "id": "ha-aHR0cHM6",
       "title": "Reflex (YC W23) Is hiring Growth and GTM Roles",
       "url": "https://www.ycombinator.com/companies/reflex/jobs/71x5GFb-growth-engineer",
@@ -32,6 +109,17 @@
       "summary": "Reflex, a startup from Y Combinator's Winter 2023 batch, is seeking candidates for growth and go-to-market roles, indicating a focus on scaling their product offerings. This is significant for developers interested in the intersection of product development and market strategy. ",
       "tag": "General",
       "date": "2026-08-12T17:00:21.000Z"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "MyPillow Founder Mike Lindell Won’t Concede Losing Minnesota Republican Gubernatorial Primary - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTzdYVXhIQXVoTmRtdlFSNV9aSGNtdjU3N19najBhX192NW94YllaZURHd09GOUEwMlVua1dyQkdHSU9iMm5PU21nM2hUUEZIX2h5TUpRUUJBNVB6bkZ1RkhhYUtYbm80RVVFd3BaREQyOG9qZE10Z25KejFBeEZGS01kYmtxQ0lfelFiSkJ2NURLYmJINF9IakVPTG5aNWxWMXRrTGZicDd3amVyNGVRVV9lMXBnUUplTGhsSkluX09zcDY4V0tVWHQ1ME1oM3BTd25qaldSZU9tUQ?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "MyPillow founder Mike Lindell has refused to concede after losing the Minnesota Republican gubernatorial primary, indicating ongoing divisions within the Republican Party. This situation affects party dynamics and could influence future elections and candidate selections. It highlights the challenges faced by political parties in managing internal dissent and maintaining unity.",
+      "tag": "Politics",
+      "date": "2026-08-12T17:00:00.000Z",
+      "type": "world"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -52,6 +140,28 @@
       "summary": "The article discusses implementing HTML over WebSockets to create real-time single-page applications (SPAs) with minimal JavaScript, which can enhance performance and reduce complexity. This approach is crucial for frontend developers looking to optimize user experience in web applications.",
       "tag": "Frontend",
       "date": "2026-08-12T16:51:25.000Z"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "US consumer inflation mild in July, economy still not out of the woods - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONVo4RlREbjZCeDFybnNPaTFlMDl0SnhGblQ3ZjE4NzA2WlVKU0diWDJqN1lPWXFvVk13eDY5TVhKYXROYXVJb2tLRzM0YVFaNXEzRWxLNWI0blFUSHZqbVN6aVRrMWFPR3Foa0hJd1FLZTluRVAtWlp0d3k1U1doeUhRVlRoRFltSzRneHcyYw?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Nvidia's $70 billion investment in AI companies like OpenAI and Anthropic could yield substantial returns for shareholders, highlighting the tech giant's strategic positioning in the AI market. This move affects investors and the tech industry as a whole, signaling confidence in the future of AI technologies. The implications of such investments are significant for global technological advancement and competition.",
+      "tag": "Tech & Science",
+      "date": "2026-08-12T16:47:37.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Video shows baby being pulled from Colombia earthquake rubble - WESH",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUV9jWk1lN2dXZVdtXzFiaFpsX0RKUklfYW9sZDR0LVRRSUdlNkIxUGw5UE95azhkZ3BkVzNOZDllcTdmbkpSTWNKdzgyYlpDQlBYTFZLQUZUTVBqVWZLcFcyUG1ocERQVTI0WERuejhFZzJ4amFvTlo1QnpSNTNPSw?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Europe is experiencing its first total solar eclipse in decades, turning day into night and attracting significant public interest. This astronomical event affects millions of viewers and emphasizes the importance of scientific phenomena in cultural contexts. The eclipse serves as a reminder of humanity's connection to celestial events and their global significance.",
+      "tag": "Tech & Science",
+      "date": "2026-08-12T16:46:00.000Z",
+      "type": "world"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -86,12 +196,45 @@
     },
     {
       "id": "bb-aHR0cHM6",
+      "title": "Thousands of Canadians call for US ambassador's expulsion ",
+      "url": "https://www.bbc.co.uk/news/articles/c9d83j4ql2xo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:35:52.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
       "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
       "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&at_campaign=rss",
       "source": "bbc",
       "score": 0,
       "summary": "During a NATO summit in Turkey, President Trump secretly boarded a different plane for security reasons related to Iran, leaving members of his cabinet on a decoy plane. This incident highlights the ongoing security concerns surrounding high-profile political figures and their travel. It matters globally as it reflects the complexities of international diplomacy and security protocols.",
       "tag": "Politics",
+      "date": "2026-08-12T16:34:01.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13ZmZ4bDlLLUVlX0xWOV9DYmExMUljdnNhbDRDQWhrUThxTmlhaWVER2V6ZHByaERLeXhZU3RLNFZrdl94SWdNNm5UOGc0Umo4NGI0cFBiQmg4QQ?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Members of Trump's cabinet were left on a decoy plane during a NATO summit in Turkey after Trump made a quiet exit for security reasons related to Iran. This incident raises questions about the security protocols surrounding high-level officials and the implications of such measures on international relations. It highlights the ongoing tensions in U.S.-Iran relations and their global impact.",
+      "tag": "Politics",
+      "date": "2026-08-12T16:34:01.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
+      "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
       "date": "2026-08-12T16:34:01.000Z",
       "type": "world"
     },
@@ -105,6 +248,17 @@
       "tag": "AI/ML",
       "date": "2026-08-12T16:26:16.000Z",
       "type": "dev"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Trump administration set to spend at least $900 million on White House construction - The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNX0wwTWNpcFIzVDg0eEVsOEE2aHo2M2lRdkoyd0ZnUFFqVVJzNi13UkgxZTJGMEFTRFNNTmNydmRkQU1TUHlaUTRYLUVmWjJTU1FFR3Q0RnBNZkNGYzdyRERKLUxPR19KVmh4MXBxek5wcHhCQ0dPdlkwdWZHblRqajVlZVAtR0VqSXBnYTdMYm9CVzBGUi1kOGpiVmExMGtLMTdJdW5QbmtUVDJVX3lCblI0WHdpWlpTTE1uNjAzcHBiZjNpQTMwRkNmZw?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The Trump administration plans to allocate at least $900 million for White House construction projects, raising concerns about government spending priorities. This decision affects taxpayers and reflects broader trends in government infrastructure investment. The implications of such spending can resonate globally, influencing perceptions of U.S. governance and fiscal responsibility.",
+      "tag": "Politics",
+      "date": "2026-08-12T16:25:37.000Z",
+      "type": "world"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -161,12 +315,34 @@
     },
     {
       "id": "bb-aHR0cHM6",
+      "title": "Israeli settlers besieging Palestinian families in West Bank village",
+      "url": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:14:08.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
       "title": "LA Lakers to be sold in record $12.5bn deal",
       "url": "https://www.bbc.co.uk/sport/basketball/articles/c04k2dn422xo?at_medium=RSS&at_campaign=rss",
       "source": "bbc",
       "score": 0,
       "summary": "The Los Angeles Lakers are set to be sold for a record $12.5 billion, marking a significant financial milestone in the sports industry. This sale reflects the growing valuation of sports franchises and the increasing interest from investors in the global sports market. It matters globally as it signifies the economic power of sports and its influence on entertainment and culture.",
       "tag": "Business",
+      "date": "2026-08-12T16:11:04.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "LA Lakers to be sold in record $12.5bn deal",
+      "url": "https://www.bbc.co.uk/sport/basketball/articles/c04k2dn422xo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
       "date": "2026-08-12T16:11:04.000Z",
       "type": "world"
     },
@@ -179,6 +355,17 @@
       "summary": "DeepSeek V4 Pro 0813 has been released, likely offering enhancements for developers using this tool. Keeping abreast of such updates is vital for developers to ensure they are utilizing the most effective tools available.",
       "tag": "General",
       "date": "2026-08-12T16:04:50.000Z"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "NRSC pushes Republicans to endorse Darline Graham - Politico",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZV94NjJoM0haY0d0Nm1STFFtdFNRX2IwNldlRDh5WTlpVGRTS21vU09JUXRCNkdxX29nbkhsblA3R3ZVTmlwRVRCT190bWY0Z0lJSUZXeEt0NzA4NE1MRE9CVVNHeWFwT2dfVmV1Rlg2NWtQakRWMThVczNmaDQwdVBQZkpFOWJQcmpvaDVSNUh3aEhkQnEwaFVsemZRQ2JOSHhha2VhQ2dKdWY0OWc?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The National Republican Senatorial Committee is urging Republicans to endorse Darline Graham, signaling a strategic push for party unity ahead of upcoming elections. This move affects candidates and party members as they navigate the political landscape. The endorsement dynamics can have significant implications for electoral outcomes and party cohesion.",
+      "tag": "Politics",
+      "date": "2026-08-12T16:01:54.000Z",
+      "type": "world"
     },
     {
       "id": "de-aHR0cHM6",
@@ -209,6 +396,28 @@
       "summary": "The release of Qwen/Qwen3.8-2.4T-A95B suggests ongoing advancements in AI models, which are important for developers in the AI/ML space. Understanding these developments can help developers leverage new capabilities in their applications.",
       "tag": "AI/ML",
       "date": "2026-08-12T15:01:17.000Z"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Nvidia's $70 billion bet on OpenAI, Anthropic, and others could pay off big for shareholders - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZGFBZjRFYm11MUdiT2RFTjB6aEFjR1RtbUM2VVNpekhYM1Y2ZlBsaXF2VXhYM1p0bExGUnpBR0VkdlpBVGZUUzZDam83eTk0M0ZtSDYzMFNXQkF4TEUzZENMQ0lYaFNJVGJNdU5yb2NmRmd2UkVSRWdSbFVuZ1JnRVduNjY0YWNoMWhnaW1keEJHclJZanlkQ3F0TDc0cEVjWVdWdGp0ak9FVEswUFlpLWxaWkFtXzlHdVFhcWF4Mnl6TXNZREtGV0Y1R1hxR2ZpaV9NT0VoV0JZVWFKWDdQdlR3am9wM0E?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Investor Nelson Peltz is preparing a bid for the U.S. burger chain Wendy's, indicating potential changes in the fast-food industry landscape. This bid affects shareholders and could lead to strategic shifts within the company. The outcome of this bid may have broader implications for the fast-food sector and consumer trends.",
+      "tag": "Business",
+      "date": "2026-08-12T15:00:39.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Investor Nelson Peltz prepares bid for US burger chain Wendy’s - Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaFc0ajhDNXB0SWE2MzVOTm9ybHNHYXlDM3hjZ3RQQ2F6R0lQN05ZZTIzblA1c29kT052SHpEdTQxS3VxaFdIblZVZWtRdllNYkhBZk5BSjlXMXhvc1ZpSjhSMTlsOE90WEd5VnZpR19TMzZyRS1CMHJOdWpKRUc5Sm9TNHI?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The Social Security Administration has added 14 rare health conditions to its fast-track disability list, expanding eligibility for those affected. This change impacts individuals with these conditions and highlights the ongoing evolution of disability policy. The decision is significant as it reflects societal attitudes towards health and disability rights.",
+      "tag": "Health",
+      "date": "2026-08-12T14:49:01.000Z",
+      "type": "world"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -251,6 +460,17 @@
       "date": "2026-08-12T14:22:30.000Z"
     },
     {
+      "id": "go-aHR0cHM6",
+      "title": "Everything announced at Made by Google '26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features - TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdWUwdVVpd2NiR01HNzBrOTFSSnlsSlZCdTg2SWNrM1gtT2VFWEl4XzVWQlNSVUFrWFZLdzVCRkJ0dHpmekpyakxQZ1J6ZXFZRUQ1a09FUWd6cEJkOS1NZlR6ak9NWTVtQTJGTkxoZzZRM010ZDNDVWwwZjlpLTllT3RBeWt2aVM0OHVfZ08xbVZGcWc4ZG83ZFFMR0lkTXNMRjE4SU5rb2wxTnBST0gtQnlTUEhFSE9TVHgwMXMtUVNhZmM?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Honor has unveiled a radically redesigned phone aimed at the 'robot age', showcasing innovative features that could redefine user interaction with technology. This launch affects consumers and the tech industry, emphasizing the shift towards more integrated and intelligent devices. The introduction of such technology has global implications for how we engage with our devices in everyday life.",
+      "tag": "Tech & Science",
+      "date": "2026-08-12T14:20:33.000Z",
+      "type": "world"
+    },
+    {
       "id": "ha-aHR0cHM6",
       "title": "Tim King, AmigaDOS developer, has died",
       "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
@@ -281,6 +501,61 @@
       "date": "2026-08-12T14:00:54.000Z"
     },
     {
+      "id": "bb-aHR0cHM6",
+      "title": "Inflation eases in July as gasoline and grocery prices fall",
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5929122/inflation-cpi-economy-gas-grocery",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T14:00:29.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Social Security adds 14 rare health conditions to fast-track disability list — here’s who’s eligible - New York Post",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOckJ6SjRCd05TOFc3ZHVjdU5kakx5N211TUFGbksycG9wS05qUzJQYXc1bWp5TVZQQWxjenZxU21PaGZTdWwzYlNrYmVfR3A3cWlKTm1IQXV2UGgzTDVWSTFNZ0xLRWk5U1lTNDZ6RV9BVml1ZjlDWUFMYkF6V0VSZlZCVXFna0xHazFIWkdoR0ZXeVg3eDZ5SW1FMVlMTk5KdGZiSnRfbG8?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Google's recent product announcements, including the Pixel 11 and Pixel Watch 5, showcase advancements in technology and consumer electronics. These developments affect tech enthusiasts and consumers, influencing market competition and innovation. The announcements highlight the importance of technological progress in shaping global consumer habits.",
+      "tag": "Tech & Science",
+      "date": "2026-08-12T13:43:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Is AOC Single? - The Cut",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40bjZOVTJzX2ViZy1lTnVIZVZ6SDljNG5FaGVNb1BOYS1wNXVFYkZOZ3NxTjNKd3p4YkhOSVh6V0thS0pOeVFYakNhOWNYWm5GMGpvZ0ktUlZybi1pZTBUMUhVbk1qTkt5LVNnd3dVR0QyY0ZYeWxYZU5B?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "A video has emerged showing a baby being rescued from the rubble following a devastating earthquake in Colombia, capturing the resilience of emergency responders. This incident affects the local community and highlights the urgent need for disaster relief efforts. It serves as a reminder of the global impact of natural disasters and the importance of humanitarian assistance.",
+      "tag": "General",
+      "date": "2026-08-12T13:40:18.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Iran says no progress on reviving interim peace deal with US - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOel9GN09UcjUyQ2FnMF90ZWhiaFFEazlXcDM1aDZLbExtREZQLXFmOFgtTU92YWZxM19udFlOTkNHRjM1aFl1Qk0xcDhTSTB1ZnR0YnBxSW9xLXhRTHRoeXFtbW9nSy1IeGIzQkVOelJrNlRHQUg2dUJPZVM3T085QTFpbmtCT3JzQ29FNlV5bjhrUGdaSG1kRy1VUWR3dmxiU2RsZC0tMDdWNW56ZHFpTWVB?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "U.S. consumer inflation has eased to 3.4% in July, driven by falling food and fuel costs, which may influence Federal Reserve policy on interest rates. This development affects consumers and the broader economy, indicating a potential shift in economic conditions. The inflation trends are significant for global markets as they reflect economic health and stability.",
+      "tag": "Business",
+      "date": "2026-08-12T13:39:10.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Greetings from a surreal expanse of sand dunes dotted with freshwater lagoons in Brazil",
+      "url": "https://www.npr.org/2026/08/12/g-s1-138022/brazil-sand-dunes-lagoons-lencois-maranhenses-national-park",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T13:38:58.000Z",
+      "type": "world"
+    },
+    {
       "id": "ha-aHR0cHM6",
       "title": "AI is removing the middle class of software engineering",
       "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
@@ -302,12 +577,67 @@
     },
     {
       "id": "bb-aHR0cHM6",
+      "title": "His wedding guests gave $6k to fund a health startup. Now it&apos;s won a $3 million prize",
+      "url": "https://www.npr.org/2026/08/12/g-s1-138180/hilton-humanitarian-prize-last-mile-health-liberia-raj-panjabi",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T13:00:19.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "3 dead, almost 1 million without power as severe storms strike Midwest - NBC News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSWtLWVcxUzRoUVpadUlfR19yeGMtRm8xdWJUS1lsSmtBaUhxM3MzZVNvV2g1ZnRGNW9fNEhuWmVERXd5MWNkdVBXUVdXcEdnUVMya0wwS01vNHU0a3RiSnc1eXlncHhKWll2UFJKdlQwa3JKclhRandQWElrX2hpdWdlWjlvQTZ5RFV4bFNBRVp2OFNRN2lJamFIYlJWZw?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Severe storms in the Midwest have resulted in three fatalities and left nearly one million people without power, highlighting the vulnerability of infrastructure to extreme weather events. This situation affects local communities and emergency services as they respond to the crisis. The events underscore the increasing frequency of severe weather due to climate change, raising concerns globally about disaster preparedness.",
+      "tag": "Climate",
+      "date": "2026-08-12T12:53:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Honor Has Radically Reinvented the Phone for the Robot Age. I Played With It, and It’s Wild - CNET",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWt3YUtHX3hzSlczRTRMREFmVXFYMnR0NmVMREFCd2Z6bVZYZWZlM1MwemxmSEJaQjlDdkZtRnlacUo0MHRDTGhPWVp1R2ZEZWVwT0NlemdsYUxKZ242bmE5ZEZpcGs2OWFTdUl2MDZ2aWpsY2lsWFozYW5NQ1RReE8tRC0?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T12:42:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Zhu Rongji, who drove China&apos;s 1990s economic reforms, has died at 97",
+      "url": "https://www.npr.org/2026/08/12/1196705508/zhu-rongji-china-former-premier-dead",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T12:36:30.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
       "title": "Zhu Rongji, who helped turn China into a trading giant, dies at 97",
       "url": "https://www.bbc.co.uk/news/articles/c75g9777wwxo?at_medium=RSS&at_campaign=rss",
       "source": "bbc",
       "score": 0,
       "summary": "Zhu Rongji, the former Chinese premier who played a crucial role in transforming China into a global trading powerhouse, has passed away at the age of 97. His leadership and reforms significantly influenced China's economic trajectory and its integration into the global economy. It matters globally as his legacy continues to shape international trade relations and economic policies.",
       "tag": "Politics",
+      "date": "2026-08-12T12:10:45.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Zhu Rongji, who helped turn China into a trading giant, dies at 97",
+      "url": "https://www.bbc.co.uk/news/articles/c75g9777wwxo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
       "date": "2026-08-12T12:10:45.000Z",
       "type": "world"
     },
@@ -332,12 +662,34 @@
       "date": "2026-08-12T11:53:01.000Z"
     },
     {
+      "id": "go-aHR0cHM6",
+      "title": "No grades for first-semester U-M freshmen next year in new program - WOODTV.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQenRTRUt0SmdxbnVEeFFjYVZOMG90NndQUS1PeXFwQ2oxYzYwMHFab185TUViMlNjWFdCdXRGMjZScmxndGE1Q1MzVkRuUEQ5SDRZeEZOcjN5a3pkYy1rc0o5cUxlX3ItZnpUVDlaLWFpYnFLbHJ3ZDdBeWVvcDZNeG9qRUZ6UDJqc0tpZ3IxdUxOMDU4dXZQOF92OFk0TlNRS3R6NzBrRVV5V09f?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The University of Michigan will not assign grades to first-semester freshmen next year as part of a new program aimed at easing the transition to college. This decision affects incoming students and their academic experience, potentially influencing their long-term educational outcomes. The approach may set a precedent for other institutions considering similar strategies.",
+      "tag": "General",
+      "date": "2026-08-12T11:45:47.000Z",
+      "type": "world"
+    },
+    {
       "id": "bb-aHR0cHM6",
       "title": "Danube river's low water levels reveal remains of WWII soldiers and motorcycle",
       "url": "https://www.bbc.co.uk/news/articles/cm2gp3zmkpmo?at_medium=RSS&at_campaign=rss",
       "source": "bbc",
       "score": 0,
       "summary": "Low water levels in the Danube river have revealed the remains of WWII soldiers and a well-preserved motorcycle, shedding light on historical events from the past. This discovery serves as a poignant reminder of the war's impact and the ongoing efforts to understand and commemorate history. It matters globally as it connects contemporary society with historical narratives and the importance of remembrance.",
+      "tag": "General",
+      "date": "2026-08-12T11:28:05.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Danube river's low water levels reveal remains of WWII soldiers and motorcycle",
+      "url": "https://www.bbc.co.uk/news/articles/cm2gp3zmkpmo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
       "tag": "General",
       "date": "2026-08-12T11:28:05.000Z",
       "type": "world"
@@ -351,6 +703,28 @@
       "summary": "Emergency workers in Colombia successfully rescued a 32-year-old woman from the rubble 36 hours after a devastating earthquake struck the region. This incident underscores the resilience of communities in the face of natural disasters and the importance of effective emergency response. It matters globally as it highlights the vulnerability of populations to seismic events and the need for disaster preparedness.",
       "tag": "Health",
       "date": "2026-08-12T11:28:02.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Woman pulled alive from rubble 36 hours after Colombia quake",
+      "url": "https://www.bbc.co.uk/news/articles/cz7d2e5wlgno?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T11:28:02.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Takeaways from Tuesday primaries. And, Iran threat prompted Trump&apos;s secret plane swap",
+      "url": "https://www.npr.org/2026/08/12/g-s1-138337/up-first-newsletter-primaries-wisconsin-minnesota-south-carolina-trump-air-force-one-iraq-iran-militias",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T11:25:11.000Z",
       "type": "world"
     },
     {
@@ -374,6 +748,17 @@
       "date": "2026-08-12T11:11:24Z"
     },
     {
+      "id": "bb-aHR0cHM6",
+      "title": "Andrew Tate&apos;s extradition fight tests his influence with Trump&apos;s America",
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5902974/andrew-tate-tristan-extradition-maga-trump-political-ties",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T10:47:30.000Z",
+      "type": "world"
+    },
+    {
       "id": "ha-aHR0cHM6",
       "title": "Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation",
       "url": "https://woxi.ad-si.com",
@@ -395,12 +780,78 @@
     },
     {
       "id": "bb-aHR0cHM6",
+      "title": "Feel so busy you don&apos;t even realize you&apos;re busy? Try doing a time audit",
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5896356/find-time-for-things-that-matter-time-audit",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T09:02:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "go-aHR0cHM6",
+      "title": "Count Binface, the man in a can with a plan, seeks Parliament seat in Britain’s wackiest election - NBC News",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeXNLVXNJbElhMkRHT3BvRmMxV2VkNHRoX21vVFlJMmI4cE9HQzN0VzRUcXdrdW1SQm4yN0c5dW8tRG9uTnZKRHZTcUdGZTZKREd2V2c3MUhSM3NvNk9GT3BHaGZ0c05zUjBmWVJsNDd0V3dtaGJJVURFZFdZZmFTSXdFYldNdXlHYTVWSENNVGpDUmp6bjFORTV1TllreHJGU0E3ME83bWlGZ3RhOGhma2UtS0hHZm5fSVhiRzRn?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Iran has reported no progress in reviving an interim peace deal with the U.S., indicating ongoing tensions between the two nations. This situation affects diplomatic relations and has implications for regional stability and international negotiations. The lack of progress underscores the complexities of U.S.-Iran relations and their global ramifications.",
+      "tag": "Politics",
+      "date": "2026-08-12T09:00:41.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Are hacks of U.S. water facilities a new front in the Iran war?",
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5927437/cyberattack-water-iran-war",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T09:00:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Nuclear power push ramps up uranium mill — and tribal health concerns",
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5927298/nuclear-power-uranium-health-concerns",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T09:00:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Here&apos;s how gyms, salons and ice cream are changing America&apos;s Main Streets",
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5928083/retail-services-gyms-salons-restaurants-downtown-main-street",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T09:00:00.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
       "title": "Singapore and S Korea pull Trader Joe's seasoning over poppy seeds",
       "url": "https://www.bbc.co.uk/news/articles/cdewpklnzwxo?at_medium=RSS&at_campaign=rss",
       "source": "bbc",
       "score": 0,
       "summary": "Singapore and South Korea have pulled Trader Joe's Everything But the Bagel seasoning from shelves due to its inclusion of poppy seeds, which are banned in both countries. This action highlights the complexities of food regulations and international trade. It matters globally as it raises awareness about food safety standards and the challenges of global commerce.",
       "tag": "Business",
+      "date": "2026-08-12T07:44:44.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Singapore and S Korea pull Trader Joe's seasoning over poppy seeds",
+      "url": "https://www.bbc.co.uk/news/articles/cdewpklnzwxo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "No summary available.",
+      "tag": "General",
       "date": "2026-08-12T07:44:44.000Z",
       "type": "world"
     },
