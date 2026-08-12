@@ -1,6 +1,28 @@
 {
-  "updated": "2026-08-12T17:45:04.317Z",
+  "updated": "2026-08-12T18:24:27.553Z",
   "articles": [
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
+      "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Recent attacks on major Russian grain export terminals in the Black Sea have led to a decline in grain exports from both Russia and Ukraine, as the two countries continue to target each other's shipping facilities. This conflict has significant implications for global food supply chains, affecting food prices and availability worldwide. It matters globally as it exacerbates food security concerns in various regions.",
+      "tag": "Business",
+      "date": "2026-08-12T17:47:01.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "US inflation eases as food and fuel costs cool",
+      "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "US inflation has eased to 3.4% in July, driven by a slowdown in food costs, although housing prices continue to keep inflation slightly elevated. This development impacts consumers and the economy, indicating potential relief for households facing rising costs. It matters globally as inflation trends in the US can influence economic policies and markets worldwide.",
+      "tag": "Business",
+      "date": "2026-08-12T17:03:05.000Z",
+      "type": "world"
+    },
     {
       "id": "ha-aHR0cHM6",
       "title": "Reflex (YC W23) Is hiring Growth and GTM Roles",
@@ -52,6 +74,39 @@
       "date": "2026-08-12T16:37:13.000Z"
     },
     {
+      "id": "bb-aHR0cHM6",
+      "title": "Thousands of Canadians call for US ambassador's expulsion ",
+      "url": "https://www.bbc.co.uk/news/articles/c9d83j4ql2xo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "An online petition in Canada calling for the expulsion of US Ambassador Pete Hoekstra has gained over 60,000 signatures, accusing him of interfering in Canadian domestic affairs. This situation reflects the sensitivities in Canada-US relations and the impact of diplomatic actions on public opinion. It matters globally as it highlights the complexities of international diplomacy and national sovereignty.",
+      "tag": "Politics",
+      "date": "2026-08-12T16:35:52.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
+      "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "During a NATO summit in Turkey, President Trump secretly boarded a different plane for security reasons related to Iran, leaving members of his cabinet on a decoy plane. This incident highlights the ongoing security concerns surrounding high-profile political figures and their travel. It matters globally as it reflects the complexities of international diplomacy and security protocols.",
+      "tag": "Politics",
+      "date": "2026-08-12T16:34:01.000Z",
+      "type": "world"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Qwen3.8-2.4T",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B-FP8",
+      "source": "hackernews",
+      "score": 41,
+      "summary": "The Qwen3.8-2.4T model showcases advancements in AI language processing, emphasizing its capabilities in understanding and generating human-like text. This model is built on cutting-edge machine learning frameworks, making it a significant tool for developers looking to integrate natural language processing into their applications. Its importance lies in enhancing user interaction and automating tasks through AI.",
+      "tag": "AI/ML",
+      "date": "2026-08-12T16:26:16.000Z",
+      "type": "dev"
+    },
+    {
       "id": "ha-aHR0cHM6",
       "title": "Wednesday, August 12: GitHub, Incident with Pull Requests and Issues",
       "url": "https://www.githubstatus.com/incidents/76t89hbfb09h",
@@ -63,6 +118,17 @@
     },
     {
       "id": "ha-aHR0cHM6",
+      "title": "We just raised $400M in Series C",
+      "url": "https://lovable.dev/blog/series-c",
+      "source": "hackernews",
+      "score": 33,
+      "summary": "The recent $400M Series C funding round highlights the growing interest and investment in innovative tech solutions, which can lead to new tools and platforms for developers. This influx of capital often accelerates product development and can result in more robust APIs and services that developers can leverage in their projects. Staying informed about such funding rounds is crucial for developers looking to align with emerging technologies.",
+      "tag": "General",
+      "date": "2026-08-12T16:20:34.000Z",
+      "type": "dev"
+    },
+    {
+      "id": "ha-aHR0cHM6",
       "title": "Bike Bureau: Report Bike Lane Obstructions",
       "url": "https://loudbicycle.com/bb",
       "source": "hackernews",
@@ -70,6 +136,39 @@
       "summary": "Bike Bureau has launched a reporting tool for bike lane obstructions, which could be beneficial for urban developers and civic tech enthusiasts. This initiative emphasizes the role of technology in improving urban mobility and infrastructure.",
       "tag": "Open Source",
       "date": "2026-08-12T16:20:22.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Pixel Watch 5",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-watch-5/",
+      "source": "hackernews",
+      "score": 30,
+      "summary": "The Pixel Watch 5 introduces new health tracking features and improved integration with the Google ecosystem, utilizing a combination of Android and Wear OS technologies. For developers, this means new opportunities to create apps that leverage these features, enhancing user engagement and functionality on wearable devices. Understanding this platform can help developers tap into the growing market of health and fitness applications.",
+      "tag": "Frontend",
+      "date": "2026-08-12T16:14:37.000Z",
+      "type": "dev"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Israeli settlers besieging Palestinian families in West Bank village",
+      "url": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Israeli settlers have besieged two Palestinian families in a West Bank village, reportedly with the withdrawal of Israeli security forces from the area. This situation escalates tensions in the region and affects the lives of the Palestinian families involved, drawing international attention to the ongoing Israeli-Palestinian conflict. It matters globally as it raises concerns about human rights and the stability of the Middle East.",
+      "tag": "Politics",
+      "date": "2026-08-12T16:14:08.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "LA Lakers to be sold in record $12.5bn deal",
+      "url": "https://www.bbc.co.uk/sport/basketball/articles/c04k2dn422xo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "The Los Angeles Lakers are set to be sold for a record $12.5 billion, marking a significant financial milestone in the sports industry. This sale reflects the growing valuation of sports franchises and the increasing interest from investors in the global sports market. It matters globally as it signifies the economic power of sports and its influence on entertainment and culture.",
+      "tag": "Business",
+      "date": "2026-08-12T16:11:04.000Z",
+      "type": "world"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -202,6 +301,17 @@
       "date": "2026-08-12T13:01:21.000Z"
     },
     {
+      "id": "bb-aHR0cHM6",
+      "title": "Zhu Rongji, who helped turn China into a trading giant, dies at 97",
+      "url": "https://www.bbc.co.uk/news/articles/c75g9777wwxo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Zhu Rongji, the former Chinese premier who played a crucial role in transforming China into a global trading powerhouse, has passed away at the age of 97. His leadership and reforms significantly influenced China's economic trajectory and its integration into the global economy. It matters globally as his legacy continues to shape international trade relations and economic policies.",
+      "tag": "Politics",
+      "date": "2026-08-12T12:10:45.000Z",
+      "type": "world"
+    },
+    {
       "id": "de-aHR0cHM6",
       "title": "React 19's useFormStatus Fixed My Prop Drilling. Then It Sat There Returning False",
       "url": "https://dev.to/shubhradev/react-19s-useformstatus-fixed-my-prop-drilling-then-it-sat-there-returning-false-30dl",
@@ -220,6 +330,28 @@
       "summary": "The article discusses upcoming 2026 eclipse webcams, which could be of interest to developers in the field of astronomy or event streaming. This highlights the intersection of technology and scientific observation.",
       "tag": "General",
       "date": "2026-08-12T11:53:01.000Z"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Danube river's low water levels reveal remains of WWII soldiers and motorcycle",
+      "url": "https://www.bbc.co.uk/news/articles/cm2gp3zmkpmo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Low water levels in the Danube river have revealed the remains of WWII soldiers and a well-preserved motorcycle, shedding light on historical events from the past. This discovery serves as a poignant reminder of the war's impact and the ongoing efforts to understand and commemorate history. It matters globally as it connects contemporary society with historical narratives and the importance of remembrance.",
+      "tag": "General",
+      "date": "2026-08-12T11:28:05.000Z",
+      "type": "world"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Woman pulled alive from rubble 36 hours after Colombia quake",
+      "url": "https://www.bbc.co.uk/news/articles/cz7d2e5wlgno?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Emergency workers in Colombia successfully rescued a 32-year-old woman from the rubble 36 hours after a devastating earthquake struck the region. This incident underscores the resilience of communities in the face of natural disasters and the importance of effective emergency response. It matters globally as it highlights the vulnerability of populations to seismic events and the need for disaster preparedness.",
+      "tag": "Health",
+      "date": "2026-08-12T11:28:02.000Z",
+      "type": "world"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -260,6 +392,17 @@
       "summary": "The article investigates the mathematical capabilities of large language models (LLMs), providing insights into their strengths and weaknesses. This is crucial for developers working with LLMs to understand their limitations in specific tasks.",
       "tag": "AI/ML",
       "date": "2026-08-12T10:04:25.000Z"
+    },
+    {
+      "id": "bb-aHR0cHM6",
+      "title": "Singapore and S Korea pull Trader Joe's seasoning over poppy seeds",
+      "url": "https://www.bbc.co.uk/news/articles/cdewpklnzwxo?at_medium=RSS&at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Singapore and South Korea have pulled Trader Joe's Everything But the Bagel seasoning from shelves due to its inclusion of poppy seeds, which are banned in both countries. This action highlights the complexities of food regulations and international trade. It matters globally as it raises awareness about food safety standards and the challenges of global commerce.",
+      "tag": "Business",
+      "date": "2026-08-12T07:44:44.000Z",
+      "type": "world"
     },
     {
       "id": "de-aHR0cHM6",
