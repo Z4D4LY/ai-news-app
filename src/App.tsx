@@ -56,7 +56,7 @@ export default function App() {
       />
 
       <main className="mx-auto max-w-4xl px-4 sm:px-6 pb-16">
-        <div className="sticky top-0 z-10 space-y-4 pt-4 pb-4 backdrop-blur" style={{ background: 'color-mix(in srgb, var(--bg) 95%, transparent)' }}>
+        <div className="sticky top-0 z-10 space-y-4 pt-4 pb-4 backdrop-blur border-b" style={{ background: 'color-mix(in srgb, var(--bg) 98%, transparent)', borderColor: 'var(--border)' }}>
           <div className="flex rounded-lg p-1" style={{ background: 'var(--bg-card)' }}>
             <button
               onClick={() => switchTab('dev')}
