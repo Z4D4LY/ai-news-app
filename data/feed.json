@@ -1,4 +1,205 @@
 {
-  "updated": "",
-  "articles": []
+  "updated": "2026-08-12T17:16:14.635Z",
+  "articles": [
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Reflex (YC W23) Is hiring Growth and GTM Roles",
+      "url": "https://www.ycombinator.com/companies/reflex/jobs/71x5GFb-growth-engineer",
+      "source": "hackernews",
+      "score": 1,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T17:00:21.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "SpaceXAI's Grok 4.6 Scores 61 on the Artificial Analysis Intelligence Index",
+      "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+      "source": "hackernews",
+      "score": 41,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:54:25.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Glaciers on the Climate Dashboard",
+      "url": "https://climate.metoffice.cloud/glaciers.html",
+      "source": "hackernews",
+      "score": 12,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:38:25.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "DeepSeek V4 Pro 0813 quietly released",
+      "url": "https://api-docs.deepseek.com/guides/responses_api/",
+      "source": "hackernews",
+      "score": 41,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:37:13.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Wednesday, August 12: GitHub, Incident with Pull Requests and Issues",
+      "url": "https://www.githubstatus.com/incidents/76t89hbfb09h",
+      "source": "hackernews",
+      "score": 26,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:22:27.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Bike Bureau: Report Bike Lane Obstructions",
+      "url": "https://loudbicycle.com/bb",
+      "source": "hackernews",
+      "score": 15,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:20:22.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "source": "hackernews",
+      "score": 144,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T16:04:50.000Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "I Built a Notebook for Sharing Notes That Doesn't Ask You to Sign Up First",
+      "url": "https://dev.to/varshithvhegde/i-built-a-notebook-for-sharing-notes-that-doesnt-ask-you-to-sign-up-first-2ldd",
+      "source": "devto",
+      "score": 7,
+      "summary": "Someone asked me to share meeting notes in Slack yesterday.  I pasted the markdown. Slack ate the...",
+      "tag": "General",
+      "date": "2026-08-12T15:53:06Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Qwen/Qwen3.8-2.4T-A95B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "source": "hackernews",
+      "score": 162,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T15:01:17.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "License plate reader searches should require a warrant",
+      "url": "https://andrewpwheeler.com/2026/08/12/license-plate-reader-searches-should-require-a-warrant/",
+      "source": "hackernews",
+      "score": 304,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T14:43:39.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "source": "hackernews",
+      "score": 359,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T14:22:30.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Tim King, AmigaDOS developer, has died",
+      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
+      "source": "hackernews",
+      "score": 106,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T14:09:11.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+      "url": "https://knownagents.com/insights",
+      "source": "hackernews",
+      "score": 111,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T14:02:46.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Why Tiny JPEGs Look Different in Chrome",
+      "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome/",
+      "source": "hackernews",
+      "score": 137,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T14:00:54.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "AI is removing the middle class of software engineering",
+      "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+      "source": "hackernews",
+      "score": 372,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T13:20:05.000Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "React 19's useFormStatus Fixed My Prop Drilling. Then It Sat There Returning False",
+      "url": "https://dev.to/shubhradev/react-19s-useformstatus-fixed-my-prop-drilling-then-it-sat-there-returning-false-30dl",
+      "source": "devto",
+      "score": 7,
+      "summary": "Part 1 was about waiting well. Part 2 was about not waiting at all. This one is about a value I...",
+      "tag": "General",
+      "date": "2026-08-12T12:04:31Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "2026 Eclipse Webcams",
+      "url": "https://jonty.github.io/2026_eclipse_webcams/",
+      "source": "hackernews",
+      "score": 366,
+      "summary": "No summary available.",
+      "tag": "General",
+      "date": "2026-08-12T11:53:01.000Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "Bug Smash: restoring dropped Gemini chat config in Sentry's JavaScript SDK",
+      "url": "https://dev.to/zkasuran/bug-smash-restoring-dropped-gemini-chat-config-in-sentrys-javascript-sdk-2n9a",
+      "source": "devto",
+      "score": 14,
+      "summary": "This is a submission for DEV's Summer Bug Smash: Clear the Lineup powered by Sentry.          ...",
+      "tag": "General",
+      "date": "2026-08-12T05:30:27Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "Latency vs. Tokens: What I Learned Optimizing an Agent with Gemma (and What Didn't Work)",
+      "url": "https://dev.to/gde/latency-vs-tokens-what-i-learned-optimizing-an-agent-with-gemma-and-what-didnt-work-445g",
+      "source": "devto",
+      "score": 8,
+      "summary": "I'd been waiting for more than 30 minutes. The terminal just sat there, blinking, without returning a...",
+      "tag": "General",
+      "date": "2026-08-12T03:32:11Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "Nuxt 4.5 SSR Streaming Is Kind Of A Big Deal",
+      "url": "https://dev.to/erikch/nuxt-45-ssr-streaming-is-kind-of-a-big-deal-2i37",
+      "source": "devto",
+      "score": 25,
+      "summary": "Nuxt 4.5 launched last month and it's really neat. One of my most favorite features is the...",
+      "tag": "General",
+      "date": "2026-08-11T17:41:30Z"
+    }
+  ]
 }
