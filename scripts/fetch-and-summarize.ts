@@ -104,6 +104,8 @@ async function fetchDevTo(): Promise<RawEntry[]> {
 const xmlParser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: '',
+  processEntities: false,
+  htmlEntities: false,
 });
 
 async function fetchGoogleNews(): Promise<RawEntry[]> {
@@ -127,6 +129,23 @@ async function fetchBBC(): Promise<RawEntry[]> {
   console.log('Fetching BBC News...');
   const res = await fetch('https://feeds.bbci.co.uk/news/world/rss.xml');
   if (!res.ok) throw new Error(`HTTP ${res.status} from BBC`);
+  const xml = await res.text();
+  const parsed = xmlParser.parse(xml);
+  const items = parsed?.rss?.channel?.item ?? [];
+  return items.slice(0, 10).map((item: any) => ({
+    title: item.title ?? '',
+    url: item.link ?? '',
+    source: 'bbc' as const,
+    score: 0,
+    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
+    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
+  }));
+}
+
+async function fetchNPR(): Promise<RawEntry[]> {
+  console.log('Fetching NPR News...');
+  const res = await fetch('https://feeds.npr.org/1001/rss.xml');
+  if (!res.ok) throw new Error(`HTTP ${res.status} from NPR`);
   const xml = await res.text();
   const parsed = xmlParser.parse(xml);
   const items = parsed?.rss?.channel?.item ?? [];
@@ -284,17 +303,20 @@ async function main() {
   console.log(`DEV — Total: ${devRaw.length} | New: ${devNew.length}`);
 
   // ---- WORLD sources ----
-  const [googleNews, bbc] = await Promise.allSettled([
+  const [googleNews, bbc, npr] = await Promise.allSettled([
     fetchGoogleNews(),
     fetchBBC(),
+    fetchNPR(),
   ]);
 
   if (googleNews.status === 'rejected') console.error('Google News fetch failed:', googleNews.reason);
   if (bbc.status === 'rejected') console.error('BBC fetch failed:', bbc.reason);
+  if (npr.status === 'rejected') console.error('NPR fetch failed:', npr.reason);
 
   const worldRaw: RawEntry[] = [
     ...(googleNews.status === 'fulfilled' ? googleNews.value : []),
     ...(bbc.status === 'fulfilled' ? bbc.value : []),
+    ...(npr.status === 'fulfilled' ? npr.value : []),
   ];
   const worldNew = worldRaw.filter((e) => !existingUrls.has(e.url));
   console.log(`WORLD — Total: ${worldRaw.length} | New: ${worldNew.length}`);
