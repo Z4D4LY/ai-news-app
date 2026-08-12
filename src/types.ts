@@ -2,11 +2,12 @@ export interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'reddit' | 'devto';
+  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc';
   score: number;
   summary: string;
   tag: string;
   date: string;
+  type: 'dev' | 'world';
 }
 
 export interface Feed {
@@ -14,7 +15,7 @@ export interface Feed {
   articles: Article[];
 }
 
-export const TAG_OPTIONS = [
+export const DEV_TAGS = [
   'All',
   'AI/ML',
   'Frontend',
@@ -25,4 +26,16 @@ export const TAG_OPTIONS = [
   'General',
 ] as const;
 
-export type TagFilter = (typeof TAG_OPTIONS)[number];
+export const WORLD_TAGS = [
+  'All',
+  'Politics',
+  'Tech & Science',
+  'Business',
+  'Health',
+  'Climate',
+  'General',
+] as const;
+
+export type DevTag = (typeof DEV_TAGS)[number];
+export type WorldTag = (typeof WORLD_TAGS)[number];
+export type TagFilter = DevTag | WorldTag;

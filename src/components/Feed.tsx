@@ -6,9 +6,10 @@ interface Props {
   articles: Article[];
   onToggleBookmark: (id: string) => void;
   isBookmarked: (id: string) => boolean;
+  tab: 'dev' | 'world';
 }
 
-export default function Feed({ articles, onToggleBookmark, isBookmarked }: Props) {
+export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: Props) {
   if (feedData.articles.length === 0) {
     return (
       <div className="py-20 text-center">
@@ -23,7 +24,9 @@ export default function Feed({ articles, onToggleBookmark, isBookmarked }: Props
   if (articles.length === 0) {
     return (
       <div className="py-20 text-center">
-        <p className="text-base text-gray-400 dark:text-gray-500">No articles match your filters.</p>
+        <p className="text-base text-gray-400 dark:text-gray-500">
+          No {tab === 'dev' ? 'developer' : 'world'} articles match your filters.
+        </p>
       </div>
     );
   }

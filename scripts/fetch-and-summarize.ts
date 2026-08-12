@@ -1,22 +1,25 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { XMLParser } from 'fast-xml-parser';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FEED_PATH = resolve(__dirname, '..', 'data', 'feed.json');
 const MAX_ARTICLES = 200;
 
-const TAG_OPTIONS = ['AI/ML', 'Frontend', 'Backend', 'DevOps', 'Security', 'Open Source', 'General'] as const;
+const DEV_TAG_OPTIONS = ['AI/ML', 'Frontend', 'Backend', 'DevOps', 'Security', 'Open Source', 'General'] as const;
+const WORLD_TAG_OPTIONS = ['Politics', 'Tech & Science', 'Business', 'Health', 'Climate', 'General'] as const;
 
 interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'reddit' | 'devto';
+  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc';
   score: number;
   summary: string;
   tag: string;
   date: string;
+  type: 'dev' | 'world';
 }
 
 interface Feed {
@@ -98,14 +101,62 @@ async function fetchDevTo(): Promise<RawEntry[]> {
   }));
 }
 
+const xmlParser = new XMLParser({
+  ignoreAttributes: false,
+  attributeNamePrefix: '',
+});
+
+async function fetchGoogleNews(): Promise<RawEntry[]> {
+  console.log('Fetching Google News...');
+  const res = await fetch('https://news.google.com/rss?hl=en&gl=US&ceid=US:en');
+  if (!res.ok) throw new Error(`HTTP ${res.status} from Google News`);
+  const xml = await res.text();
+  const parsed = xmlParser.parse(xml);
+  const items = parsed?.rss?.channel?.item ?? [];
+  return items.slice(0, 20).map((item: any) => ({
+    title: item.title ?? '',
+    url: item.link ?? '',
+    source: 'googlenews' as const,
+    score: 0,
+    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
+    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
+  }));
+}
+
+async function fetchBBC(): Promise<RawEntry[]> {
+  console.log('Fetching BBC News...');
+  const res = await fetch('https://feeds.bbci.co.uk/news/world/rss.xml');
+  if (!res.ok) throw new Error(`HTTP ${res.status} from BBC`);
+  const xml = await res.text();
+  const parsed = xmlParser.parse(xml);
+  const items = parsed?.rss?.channel?.item ?? [];
+  return items.slice(0, 10).map((item: any) => ({
+    title: item.title ?? '',
+    url: item.link ?? '',
+    source: 'bbc' as const,
+    score: 0,
+    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
+    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
+  }));
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status} from ${url}`);
   return res.json() as Promise<T>;
 }
 
-async function summarizeBatch(entries: RawEntry[]): Promise<Omit<Article, 'id' | 'date'>[]> {
+async function summarizeBatch(
+  entries: RawEntry[],
+  type: 'dev' | 'world',
+): Promise<(Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[]> {
   const apiKey = process.env.OPENROUTER_API_KEY;
+  const tags =
+    type === 'dev'
+      ? DEV_TAG_OPTIONS.join(', ')
+      : WORLD_TAG_OPTIONS.join(', ');
+  const fallbackTag = 'General';
+
   if (!apiKey) {
     console.warn('No OPENROUTER_API_KEY set — storing without summaries.');
     return entries.map((e) => ({
@@ -114,7 +165,8 @@ async function summarizeBatch(entries: RawEntry[]): Promise<Omit<Article, 'id' |
       source: e.source,
       score: e.score,
       summary: e.description || 'No summary available.',
-      tag: 'General',
+      tag: fallbackTag,
+      type,
     }));
   }
 
@@ -122,14 +174,23 @@ async function summarizeBatch(entries: RawEntry[]): Promise<Omit<Article, 'id' |
     .map((e, i) => `${i + 1}. [${e.source}] ${e.title}\n   ${e.description}`)
     .join('\n\n');
 
-  const prompt = `You are a technical editor writing for developers. For each article below, write a 2-3 sentence summary that captures the key technical insight, what stack/tools are involved, and why it matters to a developer. Pick ONE tag from: AI/ML, Frontend, Backend, DevOps, Security, Open Source, General.
+  const devPrompt = `You are a technical editor writing for developers. For each article below, write a 2-3 sentence summary that captures the key technical insight, what stack/tools are involved, and why it matters to a developer. Pick ONE tag from: ${tags}.
 
 Articles:
 ${entryList}
 
 Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summary": "...", "tag": "..."}`;
 
-  console.log(`Calling OpenRouter for ${entries.length} articles...`);
+  const worldPrompt = `You are a news editor. For each article below, write a 2-3 sentence summary covering the key facts, who is affected, and why it matters globally. Pick ONE tag from: ${tags}.
+
+Articles:
+${entryList}
+
+Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summary": "...", "tag": "..."}`;
+
+  const prompt = type === 'dev' ? devPrompt : worldPrompt;
+
+  console.log(`Calling OpenRouter for ${type} (${entries.length} articles)...`);
 
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
@@ -155,7 +216,8 @@ Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summ
       source: e.source,
       score: e.score,
       summary: e.description || 'No summary available.',
-      tag: 'General',
+      tag: fallbackTag,
+      type,
     }));
   }
 
@@ -175,7 +237,10 @@ Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summ
         source: e.source,
         score: e.score,
         summary: match?.summary ?? 'No summary available.',
-        tag: TAG_OPTIONS.includes(match?.tag as any) ? match!.tag : 'General',
+        tag: match?.tag && (type === 'dev' ? DEV_TAG_OPTIONS : WORLD_TAG_OPTIONS).includes(match.tag as any)
+          ? match.tag
+          : fallbackTag,
+        type,
       };
     });
   } catch {
@@ -186,7 +251,8 @@ Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summ
       source: e.source,
       score: e.score,
       summary: e.description || 'No summary available.',
-      tag: 'General',
+      tag: fallbackTag,
+      type,
     }));
   }
 }
@@ -201,21 +267,39 @@ async function main() {
   const existingUrls = new Set(feed.articles.map((a) => a.url));
   const now = new Date().toISOString();
 
+  // ---- DEV sources ----
   const [hn, devto] = await Promise.allSettled([
     fetchHackerNews(),
     fetchDevTo(),
   ]);
 
-  const allRaw: RawEntry[] = [
-    ...(hn.status === 'fulfilled' ? hn.value : []),
-    ...(devto.status === 'fulfilled' ? devto.value : []),
-  ];
-
   if (hn.status === 'rejected') console.error('HN fetch failed:', hn.reason);
   if (devto.status === 'rejected') console.error('Dev.to fetch failed:', devto.reason);
 
-  const newEntries = allRaw.filter((e) => !existingUrls.has(e.url));
+  const devRaw: RawEntry[] = [
+    ...(hn.status === 'fulfilled' ? hn.value : []),
+    ...(devto.status === 'fulfilled' ? devto.value : []),
+  ];
+  const devNew = devRaw.filter((e) => !existingUrls.has(e.url));
+  console.log(`DEV — Total: ${devRaw.length} | New: ${devNew.length}`);
 
+  // ---- WORLD sources ----
+  const [googleNews, bbc] = await Promise.allSettled([
+    fetchGoogleNews(),
+    fetchBBC(),
+  ]);
+
+  if (googleNews.status === 'rejected') console.error('Google News fetch failed:', googleNews.reason);
+  if (bbc.status === 'rejected') console.error('BBC fetch failed:', bbc.reason);
+
+  const worldRaw: RawEntry[] = [
+    ...(googleNews.status === 'fulfilled' ? googleNews.value : []),
+    ...(bbc.status === 'fulfilled' ? bbc.value : []),
+  ];
+  const worldNew = worldRaw.filter((e) => !existingUrls.has(e.url));
+  console.log(`WORLD — Total: ${worldRaw.length} | New: ${worldNew.length}`);
+
+  // ---- Re-summarize orphaned short summaries ----
   const needsResummarize = feed.articles.filter(
     (a) => a.summary === 'No summary available.' || a.summary.length < 120
   );
@@ -229,23 +313,26 @@ async function main() {
       description: '',
       date: a.date,
     }));
-    const retried = await summarizeBatch(rawForRetry);
+    const retried = await summarizeBatch(rawForRetry, needsResummarize[0]?.type ?? 'dev');
     for (let i = 0; i < needsResummarize.length; i++) {
       needsResummarize[i].summary = retried[i].summary;
       needsResummarize[i].tag = retried[i].tag;
     }
   }
 
-  console.log(`Total: ${allRaw.length} | New: ${newEntries.length}`);
-
-  if (newEntries.length === 0) {
-    console.log('No new articles. Skipping summarization.');
-    return;
+  // ---- Summarize new dev articles ----
+  let devSummarized: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
+  if (devNew.length > 0) {
+    devSummarized = await summarizeBatch(devNew, 'dev');
   }
 
-  const summarized = await summarizeBatch(newEntries);
+  // ---- Summarize new world articles ----
+  let worldSummarized: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
+  if (worldNew.length > 0) {
+    worldSummarized = await summarizeBatch(worldNew, 'world');
+  }
 
-  const newArticles: Article[] = summarized.map((s, i) => ({
+  const devArticles: Article[] = devSummarized.map((s, i) => ({
     id: generateId(s.source, s.url),
     title: s.title,
     url: s.url,
@@ -253,21 +340,37 @@ async function main() {
     score: s.score,
     summary: s.summary,
     tag: s.tag,
-    date: newEntries[i].date,
+    date: devNew[i].date,
+    type: s.type,
+  }));
+
+  const worldArticles: Article[] = worldSummarized.map((s, i) => ({
+    id: generateId(s.source, s.url),
+    title: s.title,
+    url: s.url,
+    source: s.source,
+    score: s.score,
+    summary: s.summary,
+    tag: s.tag,
+    date: worldNew[i].date,
+    type: s.type,
   }));
 
   const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
-  const pruned = feed.articles
-    .concat(newArticles)
+  const allArticles = feed.articles
+    .concat(devArticles)
+    .concat(worldArticles)
     .filter((a) => new Date(a.date).getTime() > oneWeekAgo)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, MAX_ARTICLES);
 
   feed.updated = now;
-  feed.articles = pruned;
+  feed.articles = allArticles;
 
   saveFeed(feed);
-  console.log(`Saved ${feed.articles.length} articles.`);
+  const devCount = allArticles.filter((a) => a.type === 'dev').length;
+  const worldCount = allArticles.filter((a) => a.type === 'world').length;
+  console.log(`Saved ${allArticles.length} articles (${devCount} dev, ${worldCount} world).`);
 }
 
 main().catch((err) => {
