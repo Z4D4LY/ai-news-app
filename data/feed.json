@@ -36,7 +36,7 @@
     },
     {
       "id": "go-aHR0cHM6",
-      "title": "Live Updates: Europe’s First Total Solar Eclipse in Decades Is Turning Day to Dark - The New York Times",
+      "title": "Live Updates: Europe\u2019s First Total Solar Eclipse in Decades Is Turning Day to Dark - The New York Times",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB3LVZYc2JrTkJOUEc5SFkzMHZ6UHNpajItYThYSF9PVkV5eXg3Tmo4NWJ6VTltOGFfMmp4NmRHVmpkeFNESmpwdWJXczh2MU5lRUhWRFJCODJaRWFfVlpTUW1qUWpQRWo5b1pTa09xN1dySkE0VVc1SlJvMmk?oc=5",
       "source": "googlenews",
       "score": 0,
@@ -108,11 +108,12 @@
       "score": 1,
       "summary": "Reflex, a startup from Y Combinator's Winter 2023 batch, is seeking candidates for growth and go-to-market roles, indicating a focus on scaling their product offerings. This is significant for developers interested in the intersection of product development and market strategy. ",
       "tag": "General",
-      "date": "2026-08-12T17:00:21.000Z"
+      "date": "2026-08-12T17:00:21.000Z",
+      "type": "dev"
     },
     {
       "id": "go-aHR0cHM6",
-      "title": "MyPillow Founder Mike Lindell Won’t Concede Losing Minnesota Republican Gubernatorial Primary - Forbes",
+      "title": "MyPillow Founder Mike Lindell Won\u2019t Concede Losing Minnesota Republican Gubernatorial Primary - Forbes",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTzdYVXhIQXVoTmRtdlFSNV9aSGNtdjU3N19najBhX192NW94YllaZURHd09GOUEwMlVua1dyQkdHSU9iMm5PU21nM2hUUEZIX2h5TUpRUUJBNVB6bkZ1RkhhYUtYbm80RVVFd3BaREQyOG9qZE10Z25KejFBeEZGS01kYmtxQ0lfelFiSkJ2NURLYmJINF9IakVPTG5aNWxWMXRrTGZicDd3amVyNGVRVV9lMXBnUUplTGhsSkluX09zcDY4V0tVWHQ1ME1oM3BTd25qaldSZU9tUQ?oc=5",
       "source": "googlenews",
       "score": 0,
@@ -129,7 +130,8 @@
       "score": 41,
       "summary": "SpaceXAI's Grok 4.6 has achieved a score of 61 on the Artificial Analysis Intelligence Index, showcasing advancements in AI capabilities. This is relevant for developers working in AI/ML as it highlights the ongoing evolution and benchmarks in artificial intelligence performance.",
       "tag": "AI/ML",
-      "date": "2026-08-12T16:54:25.000Z"
+      "date": "2026-08-12T16:54:25.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -139,7 +141,8 @@
       "score": 10,
       "summary": "The article discusses implementing HTML over WebSockets to create real-time single-page applications (SPAs) with minimal JavaScript, which can enhance performance and reduce complexity. This approach is crucial for frontend developers looking to optimize user experience in web applications.",
       "tag": "Frontend",
-      "date": "2026-08-12T16:51:25.000Z"
+      "date": "2026-08-12T16:51:25.000Z",
+      "type": "dev"
     },
     {
       "id": "go-aHR0cHM6",
@@ -171,7 +174,8 @@
       "score": 12,
       "summary": "The Climate Dashboard now features visualizations of glacier data, emphasizing the importance of environmental data representation. This is relevant for developers in data visualization and climate tech, as it showcases how data can inform public awareness and policy.",
       "tag": "General",
-      "date": "2026-08-12T16:38:25.000Z"
+      "date": "2026-08-12T16:38:25.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -181,7 +185,8 @@
       "score": 41,
       "summary": "DeepSeek V4 Pro 0813 has been quietly released, likely introducing new features or improvements for developers using this tool. Staying updated with such releases is essential for developers to leverage the latest capabilities in their projects.",
       "tag": "General",
-      "date": "2026-08-12T16:37:13.000Z"
+      "date": "2026-08-12T16:37:13.000Z",
+      "type": "dev"
     },
     {
       "id": "bb-aHR0cHM6",
@@ -268,7 +273,8 @@
       "score": 26,
       "summary": "GitHub experienced an incident affecting pull requests and issues, highlighting the importance of reliability in version control systems. This serves as a reminder for developers to be aware of platform stability and to have contingency plans in place.",
       "tag": "DevOps",
-      "date": "2026-08-12T16:22:27.000Z"
+      "date": "2026-08-12T16:22:27.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -289,7 +295,8 @@
       "score": 15,
       "summary": "Bike Bureau has launched a reporting tool for bike lane obstructions, which could be beneficial for urban developers and civic tech enthusiasts. This initiative emphasizes the role of technology in improving urban mobility and infrastructure.",
       "tag": "Open Source",
-      "date": "2026-08-12T16:20:22.000Z"
+      "date": "2026-08-12T16:20:22.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -354,7 +361,8 @@
       "score": 144,
       "summary": "DeepSeek V4 Pro 0813 has been released, likely offering enhancements for developers using this tool. Keeping abreast of such updates is vital for developers to ensure they are utilizing the most effective tools available.",
       "tag": "General",
-      "date": "2026-08-12T16:04:50.000Z"
+      "date": "2026-08-12T16:04:50.000Z",
+      "type": "dev"
     },
     {
       "id": "go-aHR0cHM6",
@@ -375,7 +383,8 @@
       "score": 7,
       "summary": "A developer created a note-sharing notebook that requires no sign-up, focusing on user convenience and privacy. This project is significant for developers interested in user experience and minimal friction in web applications.",
       "tag": "Frontend",
-      "date": "2026-08-12T15:53:06Z"
+      "date": "2026-08-12T15:53:06Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -385,7 +394,8 @@
       "score": 6,
       "summary": "The article discusses managed inference on Google Cloud, combining the Gemini Enterprise Agent Platform with Cloud Run for scalable AI applications. This is crucial for developers working with cloud-based AI solutions, as it simplifies deployment and management.",
       "tag": "AI/ML",
-      "date": "2026-08-12T15:45:27Z"
+      "date": "2026-08-12T15:45:27Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -395,7 +405,8 @@
       "score": 162,
       "summary": "The release of Qwen/Qwen3.8-2.4T-A95B suggests ongoing advancements in AI models, which are important for developers in the AI/ML space. Understanding these developments can help developers leverage new capabilities in their applications.",
       "tag": "AI/ML",
-      "date": "2026-08-12T15:01:17.000Z"
+      "date": "2026-08-12T15:01:17.000Z",
+      "type": "dev"
     },
     {
       "id": "go-aHR0cHM6",
@@ -410,7 +421,7 @@
     },
     {
       "id": "go-aHR0cHM6",
-      "title": "Investor Nelson Peltz prepares bid for US burger chain Wendy’s - Financial Times",
+      "title": "Investor Nelson Peltz prepares bid for US burger chain Wendy\u2019s - Financial Times",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaFc0ajhDNXB0SWE2MzVOTm9ybHNHYXlDM3hjZ3RQQ2F6R0lQN05ZZTIzblA1c29kT052SHpEdTQxS3VxaFdIblZVZWtRdllNYkhBZk5BSjlXMXhvc1ZpSjhSMTlsOE90WEd5VnZpR19TMzZyRS1CMHJOdWpKRUc5Sm9TNHI?oc=5",
       "source": "googlenews",
       "score": 0,
@@ -421,13 +432,14 @@
     },
     {
       "id": "ha-aHR0cHM6",
-      "title": "Hax – a minimalist, terminal-native coding agent written in C",
+      "title": "Hax \u2013 a minimalist, terminal-native coding agent written in C",
       "url": "https://usehax.dev/",
       "source": "hackernews",
       "score": 31,
       "summary": "Hax is a minimalist, terminal-native coding agent written in C, appealing to developers who prefer lightweight tools for coding. This project highlights the trend towards simplicity and efficiency in development environments.",
       "tag": "Open Source",
-      "date": "2026-08-12T14:43:45.000Z"
+      "date": "2026-08-12T14:43:45.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -437,7 +449,8 @@
       "score": 304,
       "summary": "The article argues that license plate reader searches should require a warrant, raising important security and privacy concerns. This is relevant for developers working in security and privacy-focused applications, emphasizing the need for ethical considerations in tech.",
       "tag": "Security",
-      "date": "2026-08-12T14:43:39.000Z"
+      "date": "2026-08-12T14:43:39.000Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -447,7 +460,8 @@
       "score": 4,
       "summary": "The article discusses the evolving role of software developers in the industry, reflecting on changes in technology and job expectations. This insight is valuable for developers to understand the future landscape of their profession.",
       "tag": "General",
-      "date": "2026-08-12T14:36:41Z"
+      "date": "2026-08-12T14:36:41Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -457,7 +471,8 @@
       "score": 359,
       "summary": "Tailscale traced a database corruption issue back to a 16-year-old SQLite WAL-reset bug, highlighting the importance of maintaining and debugging legacy systems. This is crucial for developers who work with databases and need to ensure data integrity.",
       "tag": "Backend",
-      "date": "2026-08-12T14:22:30.000Z"
+      "date": "2026-08-12T14:22:30.000Z",
+      "type": "dev"
     },
     {
       "id": "go-aHR0cHM6",
@@ -478,7 +493,8 @@
       "score": 106,
       "summary": "The passing of Tim King, a developer known for AmigaDOS, marks a significant loss in the history of computing. This serves as a reminder of the contributions of past developers and the evolution of technology.",
       "tag": "General",
-      "date": "2026-08-12T14:09:11.000Z"
+      "date": "2026-08-12T14:09:11.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -488,7 +504,8 @@
       "score": 111,
       "summary": "Reports of mass vulnerability scans spoofing AI bots like ClaudeBot raise concerns about security practices in AI development. This is important for developers to be aware of potential threats and to implement robust security measures.",
       "tag": "Security",
-      "date": "2026-08-12T14:02:46.000Z"
+      "date": "2026-08-12T14:02:46.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -498,7 +515,8 @@
       "score": 137,
       "summary": "The article explores why tiny JPEGs appear differently in Chrome, delving into browser rendering nuances. This is relevant for frontend developers who need to ensure consistent image display across different platforms.",
       "tag": "Frontend",
-      "date": "2026-08-12T14:00:54.000Z"
+      "date": "2026-08-12T14:00:54.000Z",
+      "type": "dev"
     },
     {
       "id": "bb-aHR0cHM6",
@@ -513,7 +531,7 @@
     },
     {
       "id": "go-aHR0cHM6",
-      "title": "Social Security adds 14 rare health conditions to fast-track disability list — here’s who’s eligible - New York Post",
+      "title": "Social Security adds 14 rare health conditions to fast-track disability list \u2014 here\u2019s who\u2019s eligible - New York Post",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOckJ6SjRCd05TOFc3ZHVjdU5kakx5N211TUFGbksycG9wS05qUzJQYXc1bWp5TVZQQWxjenZxU21PaGZTdWwzYlNrYmVfR3A3cWlKTm1IQXV2UGgzTDVWSTFNZ0xLRWk5U1lTNDZ6RV9BVml1ZjlDWUFMYkF6V0VSZlZCVXFna0xHazFIWkdoR0ZXeVg3eDZ5SW1FMVlMTk5KdGZiSnRfbG8?oc=5",
       "source": "googlenews",
       "score": 0,
@@ -563,7 +581,8 @@
       "score": 372,
       "summary": "The discussion on AI's impact on the software engineering job market suggests that automation is reshaping the profession. Developers should be aware of these trends to adapt their skills and career paths accordingly.",
       "tag": "AI/ML",
-      "date": "2026-08-12T13:20:05.000Z"
+      "date": "2026-08-12T13:20:05.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -573,7 +592,8 @@
       "score": 59,
       "summary": "The Shade Map project provides visual insights into environmental data, which can be useful for developers in climate tech. This emphasizes the role of data visualization in understanding complex issues like climate change.",
       "tag": "Open Source",
-      "date": "2026-08-12T13:01:21.000Z"
+      "date": "2026-08-12T13:01:21.000Z",
+      "type": "dev"
     },
     {
       "id": "bb-aHR0cHM6",
@@ -599,7 +619,7 @@
     },
     {
       "id": "go-aHR0cHM6",
-      "title": "Honor Has Radically Reinvented the Phone for the Robot Age. I Played With It, and It’s Wild - CNET",
+      "title": "Honor Has Radically Reinvented the Phone for the Robot Age. I Played With It, and It\u2019s Wild - CNET",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWt3YUtHX3hzSlczRTRMREFmVXFYMnR0NmVMREFCd2Z6bVZYZWZlM1MwemxmSEJaQjlDdkZtRnlacUo0MHRDTGhPWVp1R2ZEZWVwT0NlemdsYUxKZ242bmE5ZEZpcGs2OWFTdUl2MDZ2aWpsY2lsWFozYW5NQ1RReE8tRC0?oc=5",
       "source": "googlenews",
       "score": 0,
@@ -649,7 +669,8 @@
       "score": 7,
       "summary": "React 19's useFormStatus feature addresses prop drilling issues, enhancing state management in forms. This is significant for frontend developers looking to streamline their component architecture and improve code maintainability.",
       "tag": "Frontend",
-      "date": "2026-08-12T12:04:31Z"
+      "date": "2026-08-12T12:04:31Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -659,7 +680,8 @@
       "score": 366,
       "summary": "The article discusses upcoming 2026 eclipse webcams, which could be of interest to developers in the field of astronomy or event streaming. This highlights the intersection of technology and scientific observation.",
       "tag": "General",
-      "date": "2026-08-12T11:53:01.000Z"
+      "date": "2026-08-12T11:53:01.000Z",
+      "type": "dev"
     },
     {
       "id": "go-aHR0cHM6",
@@ -735,7 +757,8 @@
       "score": 121,
       "summary": "Delphi 13 Community Edition introduces enhanced features for building cross-platform applications, including improved support for modern development practices and tools. It utilizes the Delphi programming language and RAD Studio environment, making it easier for developers to create high-performance applications for various platforms. This release is significant for developers looking to leverage a powerful IDE for rapid application development without the cost of a commercial license.",
       "tag": "Open Source",
-      "date": "2026-08-12T11:13:36.000Z"
+      "date": "2026-08-12T11:13:36.000Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -745,7 +768,8 @@
       "score": 6,
       "summary": "A developer shares their experience of chasing a data bug that was not related to the data itself, emphasizing the importance of debugging processes. This insight is valuable for developers to refine their troubleshooting skills.",
       "tag": "General",
-      "date": "2026-08-12T11:11:24Z"
+      "date": "2026-08-12T11:11:24Z",
+      "type": "dev"
     },
     {
       "id": "bb-aHR0cHM6",
@@ -766,7 +790,8 @@
       "score": 203,
       "summary": "Woxi is an open-source reimplementation of Mathematica/Wolfram Language, providing an alternative for developers interested in computational tools. This is significant for those looking for open-source solutions in scientific computing.",
       "tag": "Open Source",
-      "date": "2026-08-12T10:06:29.000Z"
+      "date": "2026-08-12T10:06:29.000Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -776,7 +801,8 @@
       "score": 192,
       "summary": "The article investigates the mathematical capabilities of large language models (LLMs), providing insights into their strengths and weaknesses. This is crucial for developers working with LLMs to understand their limitations in specific tasks.",
       "tag": "AI/ML",
-      "date": "2026-08-12T10:04:25.000Z"
+      "date": "2026-08-12T10:04:25.000Z",
+      "type": "dev"
     },
     {
       "id": "bb-aHR0cHM6",
@@ -791,7 +817,7 @@
     },
     {
       "id": "go-aHR0cHM6",
-      "title": "Count Binface, the man in a can with a plan, seeks Parliament seat in Britain’s wackiest election - NBC News",
+      "title": "Count Binface, the man in a can with a plan, seeks Parliament seat in Britain\u2019s wackiest election - NBC News",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeXNLVXNJbElhMkRHT3BvRmMxV2VkNHRoX21vVFlJMmI4cE9HQzN0VzRUcXdrdW1SQm4yN0c5dW8tRG9uTnZKRHZTcUdGZTZKREd2V2c3MUhSM3NvNk9GT3BHaGZ0c05zUjBmWVJsNDd0V3dtaGJJVURFZFdZZmFTSXdFYldNdXlHYTVWSENNVGpDUmp6bjFORTV1TllreHJGU0E3ME83bWlGZ3RhOGhma2UtS0hHZm5fSVhiRzRn?oc=5",
       "source": "googlenews",
       "score": 0,
@@ -813,7 +839,7 @@
     },
     {
       "id": "bb-aHR0cHM6",
-      "title": "Nuclear power push ramps up uranium mill — and tribal health concerns",
+      "title": "Nuclear power push ramps up uranium mill \u2014 and tribal health concerns",
       "url": "https://www.npr.org/2026/08/12/nx-s1-5927298/nuclear-power-uranium-health-concerns",
       "source": "bbc",
       "score": 0,
@@ -863,7 +889,8 @@
       "score": 3,
       "summary": "A fix in the Sentry Python SDK addresses event loop stalls caused by slow local-variable capture, improving performance for developers using Sentry for error tracking. This highlights the importance of optimizing SDKs for better application performance.",
       "tag": "DevOps",
-      "date": "2026-08-12T06:11:42Z"
+      "date": "2026-08-12T06:11:42Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -873,7 +900,8 @@
       "score": 14,
       "summary": "The article discusses restoring dropped Gemini chat configurations in Sentry's JavaScript SDK, showcasing the importance of maintaining configuration integrity. This is relevant for developers focused on improving user experience in chat applications.",
       "tag": "DevOps",
-      "date": "2026-08-12T05:30:27Z"
+      "date": "2026-08-12T05:30:27Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -883,7 +911,8 @@
       "score": 8,
       "summary": "The author shares insights on optimizing an agent with Gemma, focusing on latency and token management, which is critical for developers working on AI agents. Understanding these factors can significantly impact the performance of AI applications.",
       "tag": "AI/ML",
-      "date": "2026-08-12T03:32:11Z"
+      "date": "2026-08-12T03:32:11Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -893,17 +922,19 @@
       "score": 3,
       "summary": "The article discusses a scenario where two AI agents checked the same script for a safety guard, with differing results, highlighting the variability in AI assessments. This is important for developers to consider when implementing AI safety measures.",
       "tag": "AI/ML",
-      "date": "2026-08-12T02:47:45Z"
+      "date": "2026-08-12T02:47:45Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
-      "title": "Apple quietly shipped everything you need to build a real-time translator — so I built one",
+      "title": "Apple quietly shipped everything you need to build a real-time translator \u2014 so I built one",
       "url": "https://dev.to/toffy/apple-quietly-shipped-everything-you-need-to-build-a-real-time-translator-so-i-built-one-9ce",
       "source": "devto",
       "score": 6,
       "summary": "A developer built a real-time translator using Apple's newly released tools, showcasing the potential of Apple's ecosystem for innovative applications. This is significant for developers interested in leveraging new technologies for language processing.",
       "tag": "AI/ML",
-      "date": "2026-08-11T20:25:27Z"
+      "date": "2026-08-11T20:25:27Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -913,17 +944,19 @@
       "score": 7,
       "summary": "The article examines the implications of AI memory errors, contrasting mechanical and semantic understanding. This is important for developers working with AI to ensure robustness and reliability in AI-driven applications.",
       "tag": "AI/ML",
-      "date": "2026-08-11T19:22:59Z"
+      "date": "2026-08-11T19:22:59Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
-      "title": "MAI-Code-1-Flash Highlights Microsoft’s Lower-Cost Approach to Coding AI",
+      "title": "MAI-Code-1-Flash Highlights Microsoft\u2019s Lower-Cost Approach to Coding AI",
       "url": "https://dev.to/alifar/mai-code-1-flash-highlights-microsofts-lower-cost-approach-to-coding-ai-oh",
       "source": "devto",
       "score": 0,
       "summary": "MAI-Code-1-Flash highlights Microsoft's approach to creating lower-cost coding AI solutions, which could democratize access to AI tools for developers. This is significant for those looking to integrate AI into their development workflows.",
       "tag": "AI/ML",
-      "date": "2026-08-11T18:15:31Z"
+      "date": "2026-08-11T18:15:31Z",
+      "type": "dev"
     },
     {
       "id": "de-aHR0cHM6",
@@ -933,7 +966,8 @@
       "score": 25,
       "summary": "Nuxt 4.5 introduces SSR streaming, enhancing server-side rendering capabilities for Vue.js applications. This is crucial for frontend developers aiming to improve performance and user experience in their applications.",
       "tag": "Frontend",
-      "date": "2026-08-11T17:41:30Z"
+      "date": "2026-08-11T17:41:30Z",
+      "type": "dev"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -943,7 +977,8 @@
       "score": 41,
       "summary": "The article titled 'Felix and I' may provide personal insights or experiences related to software development, though specific technical details are not provided. This could resonate with developers seeking relatable narratives in their field.",
       "tag": "General",
-      "date": "2026-08-10T14:40:24.000Z"
+      "date": "2026-08-10T14:40:24.000Z",
+      "type": "dev"
     }
   ]
 }
