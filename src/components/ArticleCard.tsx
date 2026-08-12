@@ -1,4 +1,3 @@
-import { ExternalLink } from 'lucide-react';
 import type { Article } from '../types';
 
 const SOURCE_LABEL: Record<string, string> = {
@@ -20,8 +19,7 @@ const SOURCE_DOT: Record<string, string> = {
 interface Props {
   article: Article;
   index: number;
-  isBookmarked: boolean;
-  onToggleBookmark: (id: string) => void;
+  onClick: () => void;
 }
 
 function timeAgo(dateStr: string): string {
@@ -39,14 +37,12 @@ function formatScore(score: number): string {
   return String(score);
 }
 
-export default function ArticleCard({ article, index, isBookmarked, onToggleBookmark }: Props) {
+export default function ArticleCard({ article, index, onClick }: Props) {
   return (
-    <a
-      href={article.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded no-underline transition-colors"
-      style={{ background: 'transparent', color: 'var(--text)' }}
+    <div
+      onClick={onClick}
+      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded cursor-pointer transition-colors"
+      style={{ background: 'transparent' }}
       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-hover)'; }}
       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
     >
@@ -81,29 +77,9 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
           </span>
         </div>
 
-        <div className="flex items-start gap-2">
-          <span className="text-base font-medium leading-snug">
-            <span className="line-clamp-2 group-hover:text-accent transition-colors">{article.title}</span>
-            <ExternalLink className="inline ml-1 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity align-baseline" />
-          </span>
-
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              onToggleBookmark(article.id);
-            }}
-            className="shrink-0 mt-0.5 p-0.5 rounded transition-opacity opacity-0 group-hover:opacity-100"
-            style={{ color: isBookmarked ? 'var(--accent)' : 'var(--text-dim)' }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)'; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = isBookmarked ? 'var(--accent)' : 'var(--text-dim)'; }}
-            aria-label={isBookmarked ? 'Remove bookmark' : 'Bookmark'}
-          >
-            <svg className="h-3.5 w-3.5" fill={isBookmarked ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-            </svg>
-          </button>
-        </div>
+        <span className="text-base font-medium leading-snug group-hover:text-accent transition-colors line-clamp-2">
+          {article.title}
+        </span>
 
         <p className="mt-0.5 text-sm leading-relaxed line-clamp-2" style={{ color: 'var(--text-dim)' }}>
           {article.summary === 'No summary available.'
@@ -111,6 +87,6 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
             : article.summary}
         </p>
       </div>
-    </a>
+    </div>
   );
 }

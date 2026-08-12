@@ -4,8 +4,7 @@ import feedData from '../../data/feed.json';
 
 interface Props {
   articles: Article[];
-  onToggleBookmark: (id: string) => void;
-  isBookmarked: (id: string) => boolean;
+  onSelectArticle: (article: Article) => void;
   tab: 'dev' | 'world';
 }
 
@@ -28,7 +27,7 @@ function groupByTime(articles: Article[]) {
   return { today, yesterday, earlier };
 }
 
-export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: Props) {
+export default function Feed({ articles, onSelectArticle, tab }: Props) {
   if (feedData.articles.length === 0) {
     return (
       <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
@@ -72,8 +71,7 @@ export default function Feed({ articles, onToggleBookmark, isBookmarked, tab }: 
               <ArticleCard
                 article={article}
                 index={i}
-                isBookmarked={isBookmarked(article.id)}
-                onToggleBookmark={onToggleBookmark}
+                onClick={() => onSelectArticle(article)}
               />
             </div>
           ))}

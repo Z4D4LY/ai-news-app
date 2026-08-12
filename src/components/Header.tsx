@@ -1,15 +1,13 @@
-import { Moon, Sun, Bookmark } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 
 interface Props {
-  onToggleSaved: () => void;
-  showSaved: boolean;
   tab: 'dev' | 'world';
   articleCount: number;
   onToggleTheme: () => void;
   isDark: boolean;
 }
 
-export default function Header({ onToggleSaved, showSaved, tab, articleCount, onToggleTheme, isDark }: Props) {
+export default function Header({ tab, articleCount, onToggleTheme, isDark }: Props) {
   return (
     <header style={{ background: 'var(--accent)', color: '#fff' }}>
       <div className="mx-auto flex max-w-4xl items-center justify-between px-4 sm:px-6 py-3">
@@ -23,26 +21,13 @@ export default function Header({ onToggleSaved, showSaved, tab, articleCount, on
           </span>
         </div>
 
-        <div className="flex items-center gap-1 shrink-0">
-          <button
-            onClick={onToggleSaved}
-            className={`rounded-lg p-2 transition-colors ${
-              showSaved
-                ? 'bg-white/20 text-white'
-                : 'text-orange-100 hover:bg-white/10'
-            }`}
-            aria-label="Saved articles"
-          >
-            <Bookmark className="h-5 w-5" fill={showSaved ? 'currentColor' : 'none'} />
-          </button>
-          <button
-            onClick={onToggleTheme}
-            className="rounded-lg p-2 text-orange-100 hover:bg-white/10 transition-colors"
-            aria-label="Toggle theme"
-          >
-            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </button>
-        </div>
+        <button
+          onClick={onToggleTheme}
+          className="rounded-lg p-2 text-orange-100 hover:bg-white/10 transition-colors shrink-0"
+          aria-label="Toggle theme"
+        >
+          {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        </button>
       </div>
     </header>
   );
