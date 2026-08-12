@@ -11,7 +11,7 @@ interface Props {
 
 export default function Header({ onToggleSaved, showSaved, tab, articleCount, onToggleTheme, isDark }: Props) {
   return (
-    <header className="bg-accent text-white">
+    <header style={{ background: 'var(--accent)', color: '#fff' }}>
       <div className="mx-auto flex max-w-4xl items-center justify-between px-4 sm:px-6 py-3">
         <div className="flex items-center gap-3 min-w-0">
           <h1 className="text-lg font-bold tracking-tight shrink-0">DevNews AI</h1>

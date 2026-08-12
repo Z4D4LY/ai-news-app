@@ -41,9 +41,12 @@ function formatScore(score: number): string {
 
 export default function ArticleCard({ article, index, isBookmarked, onToggleBookmark }: Props) {
   return (
-    <div
-      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded transition-colors"
-      style={{ background: 'transparent' }}
+    <a
+      href={article.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded no-underline transition-colors"
+      style={{ background: 'transparent', color: 'var(--text)' }}
       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-hover)'; }}
       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
     >
@@ -79,21 +82,17 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
         </div>
 
         <div className="flex items-start gap-2">
-          <a
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/link text-base font-medium leading-snug transition-colors"
-            style={{ color: 'var(--text)' }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)'; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--text)'; }}
-          >
-            <span className="line-clamp-2">{article.title}</span>
-            <ExternalLink className="inline ml-1 h-3 w-3 opacity-0 group-hover/link:opacity-100 transition-opacity align-baseline" />
-          </a>
+          <span className="text-base font-medium leading-snug">
+            <span className="line-clamp-2 group-hover:text-accent transition-colors">{article.title}</span>
+            <ExternalLink className="inline ml-1 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity align-baseline" />
+          </span>
 
           <button
-            onClick={() => onToggleBookmark(article.id)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onToggleBookmark(article.id);
+            }}
             className="shrink-0 mt-0.5 p-0.5 rounded transition-opacity opacity-0 group-hover:opacity-100"
             style={{ color: isBookmarked ? 'var(--accent)' : 'var(--text-dim)' }}
             onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)'; }}
@@ -112,6 +111,6 @@ export default function ArticleCard({ article, index, isBookmarked, onToggleBook
             : article.summary}
         </p>
       </div>
-    </div>
+    </a>
   );
 }
