@@ -25,7 +25,8 @@ export default function App() {
       <Header
         onToggleSaved={() => setShowSaved((v) => !v)}
         showSaved={showSaved}
-        devCount={articles.length}
+        tab={tab}
+        articleCount={articles.length}
       />
 
       <main className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pb-16">

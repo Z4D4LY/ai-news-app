@@ -3,10 +3,11 @@ import { Moon, Sun, Bookmark } from 'lucide-react';
 interface Props {
   onToggleSaved: () => void;
   showSaved: boolean;
-  devCount: number;
+  tab: 'dev' | 'world';
+  articleCount: number;
 }
 
-export default function Header({ onToggleSaved, showSaved, devCount }: Props) {
+export default function Header({ onToggleSaved, showSaved, tab, articleCount }: Props) {
   const toggleDark = () => {
     const html = document.documentElement;
     const isDark = html.classList.contains('dark');
@@ -25,7 +26,7 @@ export default function Header({ onToggleSaved, showSaved, devCount }: Props) {
             </span>
           </div>
           <span className="hidden sm:block text-xs text-gray-400 dark:text-gray-500">
-            {devCount > 0 ? `${devCount} dev articles today` : 'Loading...'}
+            {articleCount > 0 ? `${articleCount} ${tab === 'dev' ? 'dev' : 'world'} articles today` : 'Loading...'}
           </span>
         </div>
 

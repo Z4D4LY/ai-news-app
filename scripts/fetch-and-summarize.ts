@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { XMLParser } from 'fast-xml-parser';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -275,14 +276,32 @@ Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summ
   }
 }
 
+function normalizeTitle(title: string): string {
+  return title.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim().slice(0, 60);
+}
+
+function isDuplicate(feed: Feed): (e: RawEntry) => boolean {
+  const existingUrls = new Set(feed.articles.map((a) => a.url));
+  const existingTitles = new Set(feed.articles.map((a) => normalizeTitle(a.title)));
+  const seenTitles = new Set<string>();
+
+  return (e: RawEntry) => {
+    if (existingUrls.has(e.url)) return true;
+    const nt = normalizeTitle(e.title);
+    if (existingTitles.has(nt)) return true;
+    if (seenTitles.has(nt)) return true;
+    seenTitles.add(nt);
+    return false;
+  };
+}
+
 function generateId(source: Article['source'], url: string): string {
-  const hash = Buffer.from(url).toString('base64').slice(0, 8);
+  const hash = createHash('sha256').update(url).digest('base64url').slice(0, 12);
   return `${source.substring(0, 2)}-${hash}`;
 }
 
 async function main() {
   const feed = loadFeed();
-  const existingUrls = new Set(feed.articles.map((a) => a.url));
   const now = new Date().toISOString();
 
   // ---- DEV sources ----
@@ -298,7 +317,8 @@ async function main() {
     ...(hn.status === 'fulfilled' ? hn.value : []),
     ...(devto.status === 'fulfilled' ? devto.value : []),
   ];
-  const devNew = devRaw.filter((e) => !existingUrls.has(e.url));
+  const isDupDev = isDuplicate(feed);
+  const devNew = devRaw.filter((e) => !isDupDev(e));
   console.log(`DEV — Total: ${devRaw.length} | New: ${devNew.length}`);
 
   // ---- WORLD sources ----
@@ -317,7 +337,8 @@ async function main() {
     ...(bbc.status === 'fulfilled' ? bbc.value : []),
     ...(npr.status === 'fulfilled' ? npr.value : []),
   ];
-  const worldNew = worldRaw.filter((e) => !existingUrls.has(e.url));
+  const isDupWorld = isDuplicate(feed);
+  const worldNew = worldRaw.filter((e) => !isDupWorld(e));
   console.log(`WORLD — Total: ${worldRaw.length} | New: ${worldNew.length}`);
 
   // ---- Re-summarize orphaned short summaries ----
