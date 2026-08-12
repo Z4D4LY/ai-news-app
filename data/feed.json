@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T17:16:14.635Z",
+  "updated": "2026-08-12T17:22:43.865Z",
   "articles": [
     {
       "id": "ha-aHR0cHM6",
@@ -93,6 +93,16 @@
     },
     {
       "id": "ha-aHR0cHM6",
+      "title": "Hax – a minimalist, terminal-native coding agent written in C",
+      "url": "https://usehax.dev/",
+      "source": "hackernews",
+      "score": 31,
+      "summary": "Hax is a minimalist coding agent designed for terminal use, built in C.",
+      "tag": "Backend",
+      "date": "2026-08-12T14:43:45.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
       "title": "License plate reader searches should require a warrant",
       "url": "https://andrewpwheeler.com/2026/08/12/license-plate-reader-searches-should-require-a-warrant/",
       "source": "hackernews",
@@ -100,6 +110,16 @@
       "summary": "No summary available.",
       "tag": "General",
       "date": "2026-08-12T14:43:39.000Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "The Next Evolution of Software Developers",
+      "url": "https://dev.to/robertobutti/the-next-evolution-of-software-developers-2idh",
+      "source": "devto",
+      "score": 4,
+      "summary": "Discusses the evolving role of software developers in modern tech.",
+      "tag": "General",
+      "date": "2026-08-12T14:36:41Z"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -152,6 +172,16 @@
       "date": "2026-08-12T13:20:05.000Z"
     },
     {
+      "id": "ha-aHR0cHM6",
+      "title": "Shade Map",
+      "url": "https://shademap.app",
+      "source": "hackernews",
+      "score": 59,
+      "summary": "Shade Map visualizes data in a unique and informative way.",
+      "tag": "Frontend",
+      "date": "2026-08-12T13:01:21.000Z"
+    },
+    {
       "id": "de-aHR0cHM6",
       "title": "React 19's useFormStatus Fixed My Prop Drilling. Then It Sat There Returning False",
       "url": "https://dev.to/shubhradev/react-19s-useformstatus-fixed-my-prop-drilling-then-it-sat-there-returning-false-30dl",
@@ -170,6 +200,46 @@
       "summary": "No summary available.",
       "tag": "General",
       "date": "2026-08-12T11:53:01.000Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "I Chased a Data Bug for an Afternoon. It Was Never About the Data.",
+      "url": "https://dev.to/tejas164321/i-chased-a-data-bug-for-an-afternoon-it-was-never-about-the-data-3j6",
+      "source": "devto",
+      "score": 6,
+      "summary": "A data bug investigation reveals deeper issues beyond just data.",
+      "tag": "General",
+      "date": "2026-08-12T11:11:24Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation",
+      "url": "https://woxi.ad-si.com",
+      "source": "hackernews",
+      "score": 203,
+      "summary": "Woxi is an open-source reimplementation of Mathematica/Wolfram Language.",
+      "tag": "Open Source",
+      "date": "2026-08-12T10:06:29.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "What sort of maths are LLMs good at?",
+      "url": "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/",
+      "source": "hackernews",
+      "score": 192,
+      "summary": "LLMs excel at specific mathematical tasks but struggle with others.",
+      "tag": "AI/ML",
+      "date": "2026-08-12T10:04:25.000Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "Stop the event loop stall: a Sentry Python SDK fix for slow local-variable capture",
+      "url": "https://dev.to/zkasuran/stop-the-event-loop-stall-a-sentry-python-sdk-fix-for-slow-local-variable-capture-4lm6",
+      "source": "devto",
+      "score": 3,
+      "summary": "Fixes event loop stalls in Sentry's Python SDK for better performance.",
+      "tag": "DevOps",
+      "date": "2026-08-12T06:11:42Z"
     },
     {
       "id": "de-aHR0cHM6",
@@ -193,6 +263,36 @@
     },
     {
       "id": "de-aHR0cHM6",
+      "title": "Apple quietly shipped everything you need to build a real-time translator — so I built one",
+      "url": "https://dev.to/toffy/apple-quietly-shipped-everything-you-need-to-build-a-real-time-translator-so-i-built-one-9ce",
+      "source": "devto",
+      "score": 6,
+      "summary": "Built a real-time translator app using macOS's new APIs for audio translation.",
+      "tag": "Frontend",
+      "date": "2026-08-11T20:25:27Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "The Mechanical vs. The Semantic: What Happens When AI Memory is Wrong?",
+      "url": "https://dev.to/mansio/the-mechanical-vs-the-semantic-what-happens-when-ai-memory-is-wrong-38ko",
+      "source": "devto",
+      "score": 7,
+      "summary": "Explores AI memory errors and the effectiveness of retraction mechanisms.",
+      "tag": "AI/ML",
+      "date": "2026-08-11T19:22:59Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "MAI-Code-1-Flash Highlights Microsoft’s Lower-Cost Approach to Coding AI",
+      "url": "https://dev.to/alifar/mai-code-1-flash-highlights-microsofts-lower-cost-approach-to-coding-ai-oh",
+      "source": "devto",
+      "score": 0,
+      "summary": "Microsoft's MAI-Code-1-Flash aims to reduce costs in AI coding.",
+      "tag": "AI/ML",
+      "date": "2026-08-11T18:15:31Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
       "title": "Nuxt 4.5 SSR Streaming Is Kind Of A Big Deal",
       "url": "https://dev.to/erikch/nuxt-45-ssr-streaming-is-kind-of-a-big-deal-2i37",
       "source": "devto",
@@ -200,6 +300,16 @@
       "summary": "Nuxt 4.5 launched last month and it's really neat. One of my most favorite features is the...",
       "tag": "General",
       "date": "2026-08-11T17:41:30Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "Felix and I",
+      "url": "https://jacobfilipp.com/felix/",
+      "source": "hackernews",
+      "score": 41,
+      "summary": "A personal reflection on collaboration and development with Felix.",
+      "tag": "General",
+      "date": "2026-08-10T14:40:24.000Z"
     }
   ]
 }
