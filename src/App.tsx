@@ -22,27 +22,31 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
-      <Header onToggleSaved={() => setShowSaved((v) => !v)} showSaved={showSaved} />
+      <Header
+        onToggleSaved={() => setShowSaved((v) => !v)}
+        showSaved={showSaved}
+        devCount={articles.length}
+      />
 
       <main className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pb-16">
         <div className="sticky top-0 z-10 space-y-4 pt-4 pb-4 bg-gray-50/95 dark:bg-gray-950/95 backdrop-blur">
-          <div className="flex gap-2">
+          <div className="flex rounded-xl bg-gray-100 dark:bg-gray-800 p-1">
             <button
               onClick={() => { setTab('dev'); setTag('All'); }}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+              className={`flex-1 rounded-lg px-4 py-2.5 text-sm font-medium transition-all ${
                 tab === 'dev'
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                  ? 'bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-sm'
+                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
               }`}
             >
-              Dev
+              Developer
             </button>
             <button
               onClick={() => { setTab('world'); setTag('All'); }}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+              className={`flex-1 rounded-lg px-4 py-2.5 text-sm font-medium transition-all ${
                 tab === 'world'
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                  ? 'bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-sm'
+                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
               }`}
             >
               World

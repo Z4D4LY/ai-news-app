@@ -7,6 +7,7 @@ const SOURCE_LABEL: Record<string, string> = {
   devto: 'Dev.to',
   googlenews: 'News',
   bbc: 'BBC',
+  npr: 'NPR',
 };
 
 const SOURCE_COLOR: Record<string, string> = {
@@ -15,6 +16,7 @@ const SOURCE_COLOR: Record<string, string> = {
   devto: 'bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300',
   googlenews: 'bg-slate-100 text-slate-700 dark:bg-slate-900/30 dark:text-slate-300',
   bbc: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  npr: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
 };
 
 const TAG_COLORS: Record<string, string> = {
@@ -30,6 +32,21 @@ const TAG_COLORS: Record<string, string> = {
   'Health': 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300',
   'Climate': 'bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300',
   'General': 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
+};
+
+const TAG_BORDER: Record<string, string> = {
+  'AI/ML': 'border-l-purple-500 dark:border-l-purple-400',
+  'Frontend': 'border-l-blue-500 dark:border-l-blue-400',
+  'Backend': 'border-l-green-500 dark:border-l-green-400',
+  'DevOps': 'border-l-orange-500 dark:border-l-orange-400',
+  'Security': 'border-l-red-500 dark:border-l-red-400',
+  'Open Source': 'border-l-teal-500 dark:border-l-teal-400',
+  'Politics': 'border-l-amber-500 dark:border-l-amber-400',
+  'Tech & Science': 'border-l-cyan-500 dark:border-l-cyan-400',
+  'Business': 'border-l-emerald-500 dark:border-l-emerald-400',
+  'Health': 'border-l-rose-500 dark:border-l-rose-400',
+  'Climate': 'border-l-lime-500 dark:border-l-lime-400',
+  'General': 'border-l-gray-300 dark:border-l-gray-600',
 };
 
 interface Props {
@@ -50,7 +67,7 @@ function timeAgo(dateStr: string): string {
 
 export default function ArticleCard({ article, isBookmarked, onToggleBookmark }: Props) {
   return (
-    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 sm:p-6 transition-shadow hover:shadow-md">
+    <article className={`rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 sm:p-6 border-l-2 ${TAG_BORDER[article.tag] ?? TAG_BORDER['General']} transition-shadow hover:shadow-md`}>
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2">

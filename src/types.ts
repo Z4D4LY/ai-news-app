@@ -2,7 +2,7 @@ export interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc';
+  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc' | 'npr';
   score: number;
   summary: string;
   tag: string;

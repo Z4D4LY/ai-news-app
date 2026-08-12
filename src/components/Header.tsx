@@ -1,11 +1,12 @@
-import { Moon, Sun, Newspaper, Bookmark } from 'lucide-react';
+import { Moon, Sun, Bookmark } from 'lucide-react';
 
 interface Props {
   onToggleSaved: () => void;
   showSaved: boolean;
+  devCount: number;
 }
 
-export default function Header({ onToggleSaved, showSaved }: Props) {
+export default function Header({ onToggleSaved, showSaved, devCount }: Props) {
   const toggleDark = () => {
     const html = document.documentElement;
     const isDark = html.classList.contains('dark');
@@ -16,11 +17,15 @@ export default function Header({ onToggleSaved, showSaved }: Props) {
   return (
     <header className="sticky top-0 z-20 border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex items-center gap-2">
-          <Newspaper className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
-          <h1 className="text-lg font-bold tracking-tight">DevNews AI</h1>
-          <span className="rounded-full bg-indigo-100 dark:bg-indigo-900/40 px-2 py-0.5 text-[10px] font-semibold text-indigo-700 dark:text-indigo-300">
-            Beta
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            <h1 className="text-lg font-bold tracking-tight">DevNews AI</h1>
+            <span className="rounded-full bg-indigo-100 dark:bg-indigo-900/40 px-2 py-0.5 text-[10px] font-semibold text-indigo-700 dark:text-indigo-300">
+              Beta
+            </span>
+          </div>
+          <span className="hidden sm:block text-xs text-gray-400 dark:text-gray-500">
+            {devCount > 0 ? `${devCount} dev articles today` : 'Loading...'}
           </span>
         </div>
 

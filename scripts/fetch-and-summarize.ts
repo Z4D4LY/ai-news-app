@@ -5,7 +5,6 @@ import { XMLParser } from 'fast-xml-parser';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FEED_PATH = resolve(__dirname, '..', 'data', 'feed.json');
-const MAX_ARTICLES = 200;
 
 const DEV_TAG_OPTIONS = ['AI/ML', 'Frontend', 'Backend', 'DevOps', 'Security', 'Open Source', 'General'] as const;
 const WORLD_TAG_OPTIONS = ['Politics', 'Tech & Science', 'Business', 'Health', 'Climate', 'General'] as const;
@@ -14,7 +13,7 @@ interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc';
+  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc' | 'npr';
   score: number;
   summary: string;
   tag: string;
@@ -56,7 +55,7 @@ async function fetchHackerNews(): Promise<RawEntry[]> {
   const topIds = await fetchJson<number[]>(
     'https://hacker-news.firebaseio.com/v0/topstories.json'
   );
-  const sliced = topIds.slice(0, 20);
+  const sliced = topIds.slice(0, 15);
 
   const items = await Promise.all(
     sliced.map(async (id) => {
@@ -89,7 +88,7 @@ async function fetchHackerNews(): Promise<RawEntry[]> {
 async function fetchDevTo(): Promise<RawEntry[]> {
   console.log('Fetching Dev.to...');
   const items = await fetchJson<any[]>(
-    'https://dev.to/api/articles?top=1&per_page=10'
+    'https://dev.to/api/articles?top=1&per_page=15'
   );
   return items.map((a) => ({
     title: a.title,
@@ -115,7 +114,7 @@ async function fetchGoogleNews(): Promise<RawEntry[]> {
   const xml = await res.text();
   const parsed = xmlParser.parse(xml);
   const items = parsed?.rss?.channel?.item ?? [];
-  return items.slice(0, 20).map((item: any) => ({
+  return items.slice(0, 10).map((item: any) => ({
     title: item.title ?? '',
     url: item.link ?? '',
     source: 'googlenews' as const,
@@ -152,7 +151,7 @@ async function fetchNPR(): Promise<RawEntry[]> {
   return items.slice(0, 10).map((item: any) => ({
     title: item.title ?? '',
     url: item.link ?? '',
-    source: 'bbc' as const,
+    source: 'npr' as const,
     score: 0,
     description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
     date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
@@ -379,12 +378,22 @@ async function main() {
   }));
 
   const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
-  const allArticles = feed.articles
+  const combined = feed.articles
     .concat(devArticles)
     .concat(worldArticles)
-    .filter((a) => new Date(a.date).getTime() > oneWeekAgo)
+    .filter((a) => new Date(a.date).getTime() > oneWeekAgo);
+
+  const devSorted = combined
+    .filter((a) => a.type === 'dev')
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, MAX_ARTICLES);
+    .slice(0, 30);
+  const worldSorted = combined
+    .filter((a) => a.type === 'world')
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 30);
+
+  const allArticles = [...devSorted, ...worldSorted]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   feed.updated = now;
   feed.articles = allArticles;
