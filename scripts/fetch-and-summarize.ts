@@ -165,115 +165,106 @@ async function fetchJson<T>(url: string): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-async function summarizeBatch(
-  entries: RawEntry[],
+async function summarizeArticle(
+  entry: RawEntry,
   type: 'dev' | 'world',
-): Promise<(Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[]> {
+): Promise<Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' }> {
   const apiKey = process.env.OPENROUTER_API_KEY;
-  const tags =
-    type === 'dev'
-      ? DEV_TAG_OPTIONS.join(', ')
-      : WORLD_TAG_OPTIONS.join(', ');
+  const tags = type === 'dev' ? DEV_TAG_OPTIONS.join(', ') : WORLD_TAG_OPTIONS.join(', ');
   const fallbackTag = 'General';
 
   if (!apiKey) {
-    console.warn('No OPENROUTER_API_KEY set — storing without summaries.');
-    return entries.map((e) => ({
-      title: e.title,
-      url: e.url,
-      source: e.source,
-      score: e.score,
-      summary: e.description || 'No summary available.',
-      tag: fallbackTag,
-      type,
-    }));
+    return {
+      title: entry.title, url: entry.url, source: entry.source,
+      score: entry.score, summary: entry.description || 'No summary available.',
+      tag: fallbackTag, type,
+    };
   }
 
-  const entryList = entries
-    .map((e, i) => `${i + 1}. [${e.source}] ${e.title}\n   ${e.description}`)
-    .join('\n\n');
+  const devPrompt = `Visit this article and write a 3-4 sentence technical summary:
+URL: ${entry.url}
+Title: ${entry.title}
 
-  const devPrompt = `You are a technical editor writing for developers. For each article below, write a 2-3 sentence summary that captures the key technical insight, what stack/tools are involved, and why it matters to a developer. Pick ONE tag from: ${tags}.
+Your summary must cover: the key technical insight, what stack/tools/technology is involved, and why it matters to a developer. Be specific — mention real details from the article, not generic fluff.
 
-Articles:
-${entryList}
+Pick ONE tag from: ${tags}.
 
-Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summary": "...", "tag": "..."}`;
+Return ONLY valid JSON: {"summary": "...", "tag": "..."}`;
 
-  const worldPrompt = `You are a news editor. For each article below, write a 2-3 sentence summary covering the key facts, who is affected, and why it matters globally. Pick ONE tag from: ${tags}.
+  const worldPrompt = `Visit this article and write a 3-4 sentence summary:
+URL: ${entry.url}
+Title: ${entry.title}
 
-Articles:
-${entryList}
+Your summary must cover: the key facts, who is affected, and why it matters globally. Be specific — mention real details from the article, not generic fluff.
 
-Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summary": "...", "tag": "..."}`;
+Pick ONE tag from: ${tags}.
+
+Return ONLY valid JSON: {"summary": "...", "tag": "..."}`;
 
   const prompt = type === 'dev' ? devPrompt : worldPrompt;
 
-  console.log(`Calling OpenRouter for ${type} (${entries.length} articles)...`);
-
-  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: 'openai/gpt-4o-mini',
-      messages: [
-        { role: 'user', content: prompt },
-      ],
-      temperature: 0.3,
-      max_tokens: 4000,
-    }),
-  });
-
-  if (!res.ok) {
-    console.warn(`OpenRouter error ${res.status} — storing without summaries.`);
-    return entries.map((e) => ({
-      title: e.title,
-      url: e.url,
-      source: e.source,
-      score: e.score,
-      summary: e.description || 'No summary available.',
-      tag: fallbackTag,
-      type,
-    }));
-  }
-
-  const body = await res.json() as any;
-  const raw = body?.choices?.[0]?.message?.content ?? '';
-
   try {
+    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'perplexity/llama-3.1-sonar-small-128k-online',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.3,
+        max_tokens: 300,
+      }),
+    });
+
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
+    }
+
+    const body = await res.json() as any;
+    const raw = body?.choices?.[0]?.message?.content ?? '';
     const parsed = JSON.parse(
       raw.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
-    ) as { idx: number; summary: string; tag: string }[];
+    );
 
-    return entries.map((e, i) => {
-      const match = parsed.find((p: any) => p.idx === i + 1);
-      return {
-        title: e.title,
-        url: e.url,
-        source: e.source,
-        score: e.score,
-        summary: match?.summary ?? 'No summary available.',
-        tag: match?.tag && (type === 'dev' ? DEV_TAG_OPTIONS : WORLD_TAG_OPTIONS).includes(match.tag as any)
-          ? match.tag
-          : fallbackTag,
-        type,
-      };
-    });
-  } catch {
-    console.warn('Failed to parse LLM response — storing without summaries.');
-    return entries.map((e) => ({
-      title: e.title,
-      url: e.url,
-      source: e.source,
-      score: e.score,
-      summary: e.description || 'No summary available.',
-      tag: fallbackTag,
+    return {
+      title: entry.title,
+      url: entry.url,
+      source: entry.source,
+      score: entry.score,
+      summary: parsed.summary ?? 'No summary available.',
+      tag: (type === 'dev' ? DEV_TAG_OPTIONS : WORLD_TAG_OPTIONS).includes(parsed.tag as any)
+        ? parsed.tag : fallbackTag,
       type,
-    }));
+    };
+  } catch (err) {
+    console.warn(`Summarize failed for "${entry.title.slice(0, 50)}" — ${err}`);
+    return {
+      title: entry.title, url: entry.url, source: entry.source,
+      score: entry.score, summary: entry.description || 'No summary available.',
+      tag: fallbackTag, type,
+    };
   }
+}
+
+async function summarizeAll(
+  entries: RawEntry[],
+  type: 'dev' | 'world',
+): Promise<(Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[]> {
+  const results: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
+  const concurrency = 5;
+
+  for (let i = 0; i < entries.length; i += concurrency) {
+    const batch = entries.slice(i, i + concurrency);
+    console.log(`  Summarizing ${type} articles ${i + 1}-${Math.min(i + concurrency, entries.length)}/${entries.length}...`);
+    const batchResults = await Promise.all(
+      batch.map((e) => summarizeArticle(e, type))
+    );
+    results.push(...batchResults);
+  }
+
+  return results;
 }
 
 function normalizeTitle(title: string): string {
@@ -341,37 +332,18 @@ async function main() {
   const worldNew = worldRaw.filter((e) => !isDupWorld(e));
   console.log(`WORLD — Total: ${worldRaw.length} | New: ${worldNew.length}`);
 
-  // ---- Re-summarize orphaned short summaries ----
-  const needsResummarize = feed.articles.filter(
-    (a) => a.summary === 'No summary available.' || a.summary.length < 120
-  );
-  if (needsResummarize.length > 0) {
-    console.log(`Re-summarizing ${needsResummarize.length} orphaned articles...`);
-    const rawForRetry: RawEntry[] = needsResummarize.map((a) => ({
-      title: a.title,
-      url: a.url,
-      source: a.source,
-      score: a.score,
-      description: '',
-      date: a.date,
-    }));
-    const retried = await summarizeBatch(rawForRetry, needsResummarize[0]?.type ?? 'dev');
-    for (let i = 0; i < needsResummarize.length; i++) {
-      needsResummarize[i].summary = retried[i].summary;
-      needsResummarize[i].tag = retried[i].tag;
-    }
-  }
-
   // ---- Summarize new dev articles ----
+  console.log(`Summarizing ${devNew.length} dev articles...`);
   let devSummarized: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
   if (devNew.length > 0) {
-    devSummarized = await summarizeBatch(devNew, 'dev');
+    devSummarized = await summarizeAll(devNew, 'dev');
   }
 
   // ---- Summarize new world articles ----
+  console.log(`Summarizing ${worldNew.length} world articles...`);
   let worldSummarized: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
   if (worldNew.length > 0) {
-    worldSummarized = await summarizeBatch(worldNew, 'world');
+    worldSummarized = await summarizeAll(worldNew, 'world');
   }
 
   const devArticles: Article[] = devSummarized.map((s, i) => ({

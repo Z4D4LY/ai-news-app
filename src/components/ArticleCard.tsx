@@ -81,7 +81,7 @@ export default function ArticleCard({ article, index, onClick }: Props) {
           {article.title}
         </span>
 
-        <p className="mt-0.5 text-sm leading-relaxed line-clamp-2" style={{ color: 'var(--text-dim)' }}>
+        <p className="mt-0.5 text-sm leading-relaxed" style={{ color: 'var(--text-dim)' }}>
           {article.summary === 'No summary available.'
             ? 'Click to read the full article.'
             : article.summary}
