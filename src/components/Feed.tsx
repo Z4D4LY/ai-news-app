@@ -4,7 +4,6 @@ import feedData from '../../data/feed.json';
 
 interface Props {
   articles: Article[];
-  tab: 'dev' | 'world';
 }
 
 function groupByTime(articles: Article[]) {
@@ -26,7 +25,7 @@ function groupByTime(articles: Article[]) {
   return { today, yesterday, earlier };
 }
 
-export default function Feed({ articles, tab }: Props) {
+export default function Feed({ articles }: Props) {
   if (feedData.articles.length === 0) {
     return (
       <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
@@ -39,7 +38,7 @@ export default function Feed({ articles, tab }: Props) {
   if (articles.length === 0) {
     return (
       <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
-        <p>No {tab === 'dev' ? 'tech' : 'world'} articles match your filters.</p>
+        <p>No articles match for this section.</p>
       </div>
     );
   }

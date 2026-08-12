@@ -6,6 +6,8 @@ const SOURCE_LABEL: Record<string, string> = {
   googlenews: 'News',
   bbc: 'BBC',
   npr: 'NPR',
+  france24: 'F24',
+  moroccoworldnews: 'MWN',
 };
 
 const SOURCE_DOT: Record<string, string> = {
@@ -14,6 +16,8 @@ const SOURCE_DOT: Record<string, string> = {
   googlenews: 'text-slate-500',
   bbc: 'text-red-500',
   npr: 'text-blue-500',
+  france24: 'text-indigo-500',
+  moroccoworldnews: 'text-green-500',
 };
 
 interface Props {
@@ -29,11 +33,6 @@ function timeAgo(dateStr: string): string {
   const days = Math.floor(hours / 24);
   if (days < 7) return `${days}d`;
   return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-}
-
-function formatScore(score: number): string {
-  if (score >= 1000) return `${(score / 1000).toFixed(1)}k`;
-  return String(score);
 }
 
 export default function ArticleCard({ article, index }: Props) {
@@ -55,24 +54,13 @@ export default function ArticleCard({ article, index }: Props) {
       </span>
 
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 flex-wrap mb-0.5">
+        <div className="flex items-center gap-2 mb-0.5">
           <div className="flex items-center gap-1.5">
             <span className={`w-1.5 h-1.5 rounded-full ${SOURCE_DOT[article.source] ?? 'text-gray-400'}`} />
             <span className="text-xs font-medium" style={{ color: 'var(--text-dim)' }}>
               {SOURCE_LABEL[article.source] ?? article.source}
             </span>
           </div>
-          {article.score > 0 && (
-            <span className="text-xs" style={{ color: 'var(--text-dim)' }}>
-              ▲{formatScore(article.score)}
-            </span>
-          )}
-          <span
-            className="text-xs px-1.5 py-0.5 rounded font-medium"
-            style={{ background: 'var(--accent-bg)', color: 'var(--accent)' }}
-          >
-            {article.tag}
-          </span>
           <span className="text-xs ml-auto" style={{ color: 'var(--text-dim)' }}>
             {timeAgo(article.date)}
           </span>

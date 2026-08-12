@@ -7,25 +7,23 @@ import { XMLParser } from 'fast-xml-parser';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FEED_PATH = resolve(__dirname, '..', 'data', 'feed.json');
 
-const DEV_TAG_OPTIONS = ['AI/ML', 'Frontend', 'Backend', 'DevOps', 'Security', 'Open Source', 'General'] as const;
-const WORLD_TAG_OPTIONS = ['Politics', 'Tech & Science', 'Business', 'Health', 'Climate', 'General'] as const;
-
 interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc' | 'npr';
+  source: 'hackernews' | 'devto' | 'googlenews' | 'bbc' | 'npr' | 'france24' | 'moroccoworldnews';
   score: number;
   summary: string;
-  tag: string;
   date: string;
-  type: 'dev' | 'world';
+  type: 'tech' | 'europe' | 'us' | 'morocco' | 'asia';
 }
 
 interface Feed {
   updated: string;
   articles: Article[];
 }
+
+
 
 interface RawEntry {
   title: string;
@@ -34,6 +32,7 @@ interface RawEntry {
   score: number;
   description: string;
   date: string;
+  type?: Article['type'];
 }
 
 function saveFeed(feed: Feed): void {
@@ -154,37 +153,39 @@ async function fetchJson<T>(url: string): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+async function fetchRSS(url: string, source: Article['source'], limit = 10): Promise<RawEntry[]> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status} from ${url}`);
+  const xml = await res.text();
+  const parsed = xmlParser.parse(xml);
+  const items = parsed?.rss?.channel?.item ?? [];
+  return items.slice(0, limit).map((item: any) => ({
+    title: item.title ?? '',
+    url: item.link ?? '',
+    source,
+    score: 0,
+    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
+    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
+  }));
+}
+
 async function summarizeArticle(
   entry: RawEntry,
-  type: 'dev' | 'world',
-): Promise<Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' }> {
+): Promise<Omit<Article, 'id' | 'date'> & { type: Article['type'] }> {
   const apiKey = process.env.OPENROUTER_API_KEY;
-  const tags = type === 'dev' ? DEV_TAG_OPTIONS.join(', ') : WORLD_TAG_OPTIONS.join(', ');
-  const fallbackTag = 'General';
 
   if (!apiKey) {
     return {
       title: entry.title, url: entry.url, source: entry.source,
       score: entry.score, summary: entry.description || 'No summary available.',
-      tag: fallbackTag, type,
+      type: entry.type ?? 'tech',
     };
   }
 
-  const devPrompt = `Visit this article URL and write a detailed 3-4 sentence technical summary. Cover the key technical insight, what stack/tools/technology is involved, and why it matters to a developer. Be specific — reference real details from the article, not generic fluff. Return ONLY this JSON: {"summary":"your summary here","tag":"one tag"}
+  const prompt = `Visit this article URL and write a detailed 3-4 sentence summary covering the key facts and why it matters. Be specific — use real details from the article, not generic fluff. Return ONLY this JSON: {"summary":"your summary here"}
 
 URL: ${entry.url}
-Title: ${entry.title}
-
-Pick ONE tag from: ${tags}.`;
-
-  const worldPrompt = `Visit this article URL and write a detailed 3-4 sentence news summary. Cover the key facts, who is affected, and why it matters globally. Be specific — reference real details from the article, not generic fluff. Return ONLY this JSON: {"summary":"your summary here","tag":"one tag"}
-
-URL: ${entry.url}
-Title: ${entry.title}
-
-Pick ONE tag from: ${tags}.`;
-
-  const prompt = type === 'dev' ? devPrompt : worldPrompt;
+Title: ${entry.title}`;
 
   try {
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -201,10 +202,7 @@ Pick ONE tag from: ${tags}.`;
       }),
     });
 
-    if (!res.ok) {
-      throw new Error(`HTTP ${res.status}`);
-    }
-
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const body = await res.json() as any;
     const raw = body?.choices?.[0]?.message?.content ?? '';
     const parsed = JSON.parse(
@@ -212,38 +210,30 @@ Pick ONE tag from: ${tags}.`;
     );
 
     return {
-      title: entry.title,
-      url: entry.url,
-      source: entry.source,
-      score: entry.score,
-      summary: parsed.summary ?? 'No summary available.',
-      tag: (type === 'dev' ? DEV_TAG_OPTIONS : WORLD_TAG_OPTIONS).includes(parsed.tag as any)
-        ? parsed.tag : fallbackTag,
-      type,
+      title: entry.title, url: entry.url, source: entry.source,
+      score: entry.score, summary: parsed.summary ?? 'No summary available.',
+      type: entry.type ?? 'tech',
     };
   } catch (err) {
     console.warn(`Summarize failed for "${entry.title.slice(0, 50)}" — ${err}`);
     return {
       title: entry.title, url: entry.url, source: entry.source,
       score: entry.score, summary: entry.description || 'No summary available.',
-      tag: fallbackTag, type,
+      type: entry.type ?? 'tech',
     };
   }
 }
 
 async function summarizeAll(
   entries: RawEntry[],
-  type: 'dev' | 'world',
-): Promise<(Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[]> {
-  const results: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
+): Promise<(Omit<Article, 'id' | 'date'> & { type: Article['type'] })[]> {
+  const results: (Omit<Article, 'id' | 'date'> & { type: Article['type'] })[] = [];
   const concurrency = 5;
 
   for (let i = 0; i < entries.length; i += concurrency) {
     const batch = entries.slice(i, i + concurrency);
-    console.log(`  Summarizing ${type} articles ${i + 1}-${Math.min(i + concurrency, entries.length)}/${entries.length}...`);
-    const batchResults = await Promise.all(
-      batch.map((e) => summarizeArticle(e, type))
-    );
+    console.log(`  Summarizing ${i + 1}-${Math.min(i + concurrency, entries.length)}/${entries.length}...`);
+    const batchResults = await Promise.all(batch.map((e) => summarizeArticle(e)));
     results.push(...batchResults);
   }
 
@@ -255,58 +245,76 @@ function generateId(source: Article['source'], url: string): string {
   return `${source.substring(0, 2)}-${hash}`;
 }
 
+async function processTab(
+  label: string,
+  entries: RawEntry[],
+  tabType: Article['type'],
+  limit: number,
+  seenUrls: Set<string>,
+): Promise<Article[]> {
+  console.log(`\n--- ${label} ---`);
+  const labeled: RawEntry[] = entries.map((e) => ({ ...e, type: tabType }));
+  const deduped = labeled.filter((e) => { if (seenUrls.has(e.url)) return false; seenUrls.add(e.url); return true; });
+  console.log(`Fetched ${labeled.length}, new ${deduped.length}`);
+
+  if (deduped.length === 0) return [];
+
+  console.log(`Summarizing ${deduped.length} ${label.toLowerCase()} articles...`);
+  const summarized = await summarizeAll(deduped);
+  const articles: Article[] = summarized.map((s, i) => ({
+    id: generateId(s.source, s.url), title: s.title, url: s.url, source: s.source,
+    score: s.score, summary: s.summary, date: deduped[i].date, type: s.type,
+  }));
+
+  return articles
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
+}
+
 async function main() {
   const now = new Date().toISOString();
 
-  // ---- FETCH ----
-  const [hn, devto] = await Promise.allSettled([fetchHackerNews(), fetchDevTo()]);
-  if (hn.status === 'rejected') console.error('HN fetch failed:', hn.reason);
-  if (devto.status === 'rejected') console.error('Dev.to fetch failed:', devto.reason);
+  // ---- FETCH ALL SOURCES ----
+  const [hn, devto, googleNews, bbc, npr, mwn, f24, gnEU, gnMA, gnAS] = await Promise.allSettled([
+    fetchHackerNews(),
+    fetchDevTo(),
+    fetchGoogleNews(),
+    fetchBBC(),
+    fetchNPR(),
+    fetchRSS('https://www.moroccoworldnews.com/feed/', 'moroccoworldnews', 8),
+    fetchRSS('https://www.france24.com/en/rss', 'france24', 5),
+    fetchRSS('https://news.google.com/rss?hl=en&gl=EU&ceid=EU:en', 'googlenews', 5),
+    fetchRSS('https://news.google.com/rss?hl=en&gl=MA&ceid=MA:en', 'googlenews', 7),
+    fetchRSS('https://news.google.com/rss?hl=en&gl=IN&ceid=IN:en', 'googlenews', 5),
+  ]);
 
-  const [googleNews, bbc, npr] = await Promise.allSettled([fetchGoogleNews(), fetchBBC(), fetchNPR()]);
-  if (googleNews.status === 'rejected') console.error('Google News fetch failed:', googleNews.reason);
-  if (bbc.status === 'rejected') console.error('BBC fetch failed:', bbc.reason);
-  if (npr.status === 'rejected') console.error('NPR fetch failed:', npr.reason);
+  const get = (r: PromiseSettledResult<RawEntry[]>): RawEntry[] =>
+    r.status === 'fulfilled' ? r.value : [];
 
-  const devRaw: RawEntry[] = [
-    ...(hn.status === 'fulfilled' ? hn.value : []),
-    ...(devto.status === 'fulfilled' ? devto.value : []),
-  ];
-  const worldRaw: RawEntry[] = [
-    ...(googleNews.status === 'fulfilled' ? googleNews.value : []),
-    ...(bbc.status === 'fulfilled' ? bbc.value : []),
-    ...(npr.status === 'fulfilled' ? npr.value : []),
-  ];
-
-  // Dedup within batch (URL only)
+  // ---- PROCESS EACH TAB ----
   const seenUrls = new Set<string>();
-  const dedupedDev = devRaw.filter((e) => { if (seenUrls.has(e.url)) return false; seenUrls.add(e.url); return true; });
-  const dedupedWorld = worldRaw.filter((e) => { if (seenUrls.has(e.url)) return false; seenUrls.add(e.url); return true; });
 
-  console.log(`DEV: ${dedupedDev.length} articles | WORLD: ${dedupedWorld.length} articles`);
+  const techArticles = await processTab('TECH', [
+    ...get(hn).slice(0, 12), ...get(devto).slice(0, 8),
+  ], 'tech', 20, seenUrls);
 
-  // ---- SUMMARIZE ----
-  if (dedupedDev.length > 0) {
-    console.log(`Summarizing ${dedupedDev.length} dev articles...`);
-    var devSummarized = await summarizeAll(dedupedDev, 'dev');
-  } else var devSummarized: typeof devSummarized = [];
-  if (dedupedWorld.length > 0) {
-    console.log(`Summarizing ${dedupedWorld.length} world articles...`);
-    var worldSummarized = await summarizeAll(dedupedWorld, 'world');
-  } else var worldSummarized: typeof worldSummarized = [];
+  const europeArticles = await processTab('EUROPE', [
+    ...get(gnEU), ...get(f24),
+  ], 'europe', 10, seenUrls);
 
-  const devArticles: Article[] = devSummarized.map((s, i) => ({
-    id: generateId(s.source, s.url), title: s.title, url: s.url, source: s.source,
-    score: s.score, summary: s.summary, tag: s.tag, date: dedupedDev[i].date, type: s.type,
-  }));
-  const worldArticles: Article[] = worldSummarized.map((s, i) => ({
-    id: generateId(s.source, s.url), title: s.title, url: s.url, source: s.source,
-    score: s.score, summary: s.summary, tag: s.tag, date: dedupedWorld[i].date, type: s.type,
-  }));
+  const usArticles = await processTab('US', [
+    ...get(googleNews).slice(0, 5), ...get(npr).slice(0, 5),
+  ], 'us', 10, seenUrls);
 
-  const devSorted = devArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 30);
-  const worldSorted = worldArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 30);
-  const allArticles = [...devSorted, ...worldSorted]
+  const moroccoArticles = await processTab('MOROCCO', [
+    ...get(mwn), ...get(gnMA),
+  ], 'morocco', 10, seenUrls);
+
+  const asiaArticles = await processTab('ASIA', [
+    ...get(gnAS), ...get(bbc).slice(0, 5),
+  ], 'asia', 10, seenUrls);
+
+  const allArticles = [...techArticles, ...europeArticles, ...usArticles, ...moroccoArticles, ...asiaArticles]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   // ---- SAVE ----
@@ -316,9 +324,9 @@ async function main() {
   }
 
   saveFeed({ updated: now, articles: allArticles });
-  const devCount = allArticles.filter((a) => a.type === 'dev').length;
-  const worldCount = allArticles.filter((a) => a.type === 'world').length;
-  console.log(`Saved ${allArticles.length} articles (${devCount} dev, ${worldCount} world).`);
+  const counts = { tech: 0, europe: 0, us: 0, morocco: 0, asia: 0 };
+  for (const a of allArticles) counts[a.type]++;
+  console.log(`Saved ${allArticles.length} articles (T:${counts.tech} EU:${counts.europe} US:${counts.us} MA:${counts.morocco} AS:${counts.asia}).`);
 }
 
 main().catch((err) => {

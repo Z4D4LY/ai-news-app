@@ -2,12 +2,11 @@ export interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'reddit' | 'devto' | 'googlenews' | 'bbc' | 'npr';
+  source: 'hackernews' | 'devto' | 'googlenews' | 'bbc' | 'npr' | 'france24' | 'moroccoworldnews';
   score: number;
   summary: string;
-  tag: string;
   date: string;
-  type: 'dev' | 'world';
+  type: 'tech' | 'europe' | 'us' | 'morocco' | 'asia';
 }
 
 export interface Feed {
@@ -15,27 +14,12 @@ export interface Feed {
   articles: Article[];
 }
 
-export const DEV_TAGS = [
-  'All',
-  'AI/ML',
-  'Frontend',
-  'Backend',
-  'DevOps',
-  'Security',
-  'Open Source',
-  'General',
-] as const;
+export type TabType = 'tech' | 'europe' | 'us' | 'morocco' | 'asia';
 
-export const WORLD_TAGS = [
-  'All',
-  'Politics',
-  'Tech & Science',
-  'Business',
-  'Health',
-  'Climate',
-  'General',
-] as const;
-
-export type DevTag = (typeof DEV_TAGS)[number];
-export type WorldTag = (typeof WORLD_TAGS)[number];
-export type TagFilter = DevTag | WorldTag;
+export const TABS: { id: TabType; label: string }[] = [
+  { id: 'tech', label: 'Tech' },
+  { id: 'europe', label: 'EU' },
+  { id: 'us', label: 'US' },
+  { id: 'morocco', label: 'MA' },
+  { id: 'asia', label: 'Asia' },
+];

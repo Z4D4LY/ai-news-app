@@ -1,13 +1,16 @@
 import { Moon, Sun } from 'lucide-react';
+import { TABS, type TabType } from '../types';
 
 interface Props {
-  tab: 'dev' | 'world';
+  tab: TabType;
   articleCount: number;
   onToggleTheme: () => void;
   isDark: boolean;
 }
 
 export default function Header({ tab, articleCount, onToggleTheme, isDark }: Props) {
+  const label = TABS.find((t) => t.id === tab)?.label ?? tab;
+
   return (
     <header style={{ background: 'var(--accent)', color: '#fff' }}>
       <div className="mx-auto flex max-w-4xl items-center justify-between px-4 sm:px-6 py-3">
@@ -17,7 +20,7 @@ export default function Header({ tab, articleCount, onToggleTheme, isDark }: Pro
             Beta
           </span>
           <span className="hidden sm:block text-xs text-orange-100 truncate">
-            {articleCount > 0 ? `${articleCount} ${tab === 'dev' ? 'tech' : 'world'} today` : 'Loading...'}
+            {articleCount > 0 ? `${articleCount} ${label.toLowerCase()} today` : 'Loading...'}
           </span>
         </div>
 
