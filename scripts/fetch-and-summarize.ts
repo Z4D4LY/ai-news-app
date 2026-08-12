@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -34,17 +34,6 @@ interface RawEntry {
   score: number;
   description: string;
   date: string;
-}
-
-function loadFeed(): Feed {
-  try {
-    const raw = readFileSync(FEED_PATH, 'utf-8');
-    const feed: Feed = JSON.parse(raw);
-    if (!Array.isArray(feed.articles)) feed.articles = [];
-    return feed;
-  } catch {
-    return { updated: '', articles: [] };
-  }
 }
 
 function saveFeed(feed: Feed): void {
@@ -181,25 +170,19 @@ async function summarizeArticle(
     };
   }
 
-  const devPrompt = `Visit this article and write a 3-4 sentence technical summary:
+  const devPrompt = `Visit this article URL and write a detailed 3-4 sentence technical summary. Cover the key technical insight, what stack/tools/technology is involved, and why it matters to a developer. Be specific — reference real details from the article, not generic fluff. Return ONLY this JSON: {"summary":"your summary here","tag":"one tag"}
+
 URL: ${entry.url}
 Title: ${entry.title}
 
-Your summary must cover: the key technical insight, what stack/tools/technology is involved, and why it matters to a developer. Be specific — mention real details from the article, not generic fluff.
+Pick ONE tag from: ${tags}.`;
 
-Pick ONE tag from: ${tags}.
+  const worldPrompt = `Visit this article URL and write a detailed 3-4 sentence news summary. Cover the key facts, who is affected, and why it matters globally. Be specific — reference real details from the article, not generic fluff. Return ONLY this JSON: {"summary":"your summary here","tag":"one tag"}
 
-Return ONLY valid JSON: {"summary": "...", "tag": "..."}`;
-
-  const worldPrompt = `Visit this article and write a 3-4 sentence summary:
 URL: ${entry.url}
 Title: ${entry.title}
 
-Your summary must cover: the key facts, who is affected, and why it matters globally. Be specific — mention real details from the article, not generic fluff.
-
-Pick ONE tag from: ${tags}.
-
-Return ONLY valid JSON: {"summary": "...", "tag": "..."}`;
+Pick ONE tag from: ${tags}.`;
 
   const prompt = type === 'dev' ? devPrompt : worldPrompt;
 
@@ -214,7 +197,7 @@ Return ONLY valid JSON: {"summary": "...", "tag": "..."}`;
         model: 'perplexity/sonar',
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.3,
-        max_tokens: 250,
+        max_tokens: 350,
       }),
     });
 
@@ -267,131 +250,72 @@ async function summarizeAll(
   return results;
 }
 
-function normalizeTitle(title: string): string {
-  return title.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim().slice(0, 60);
-}
-
-function isDuplicate(feed: Feed): (e: RawEntry) => boolean {
-  const existingUrls = new Set(feed.articles.map((a) => a.url));
-  const existingTitles = new Set(feed.articles.map((a) => normalizeTitle(a.title)));
-  const seenTitles = new Set<string>();
-
-  return (e: RawEntry) => {
-    if (existingUrls.has(e.url)) return true;
-    const nt = normalizeTitle(e.title);
-    if (existingTitles.has(nt)) return true;
-    if (seenTitles.has(nt)) return true;
-    seenTitles.add(nt);
-    return false;
-  };
-}
-
 function generateId(source: Article['source'], url: string): string {
   const hash = createHash('sha256').update(url).digest('base64url').slice(0, 12);
   return `${source.substring(0, 2)}-${hash}`;
 }
 
 async function main() {
-  const feed = loadFeed();
   const now = new Date().toISOString();
 
-  // ---- DEV sources ----
-  const [hn, devto] = await Promise.allSettled([
-    fetchHackerNews(),
-    fetchDevTo(),
-  ]);
-
+  // ---- FETCH ----
+  const [hn, devto] = await Promise.allSettled([fetchHackerNews(), fetchDevTo()]);
   if (hn.status === 'rejected') console.error('HN fetch failed:', hn.reason);
   if (devto.status === 'rejected') console.error('Dev.to fetch failed:', devto.reason);
+
+  const [googleNews, bbc, npr] = await Promise.allSettled([fetchGoogleNews(), fetchBBC(), fetchNPR()]);
+  if (googleNews.status === 'rejected') console.error('Google News fetch failed:', googleNews.reason);
+  if (bbc.status === 'rejected') console.error('BBC fetch failed:', bbc.reason);
+  if (npr.status === 'rejected') console.error('NPR fetch failed:', npr.reason);
 
   const devRaw: RawEntry[] = [
     ...(hn.status === 'fulfilled' ? hn.value : []),
     ...(devto.status === 'fulfilled' ? devto.value : []),
   ];
-  const isDupDev = isDuplicate(feed);
-  const devNew = devRaw.filter((e) => !isDupDev(e));
-  console.log(`DEV — Total: ${devRaw.length} | New: ${devNew.length}`);
-
-  // ---- WORLD sources ----
-  const [googleNews, bbc, npr] = await Promise.allSettled([
-    fetchGoogleNews(),
-    fetchBBC(),
-    fetchNPR(),
-  ]);
-
-  if (googleNews.status === 'rejected') console.error('Google News fetch failed:', googleNews.reason);
-  if (bbc.status === 'rejected') console.error('BBC fetch failed:', bbc.reason);
-  if (npr.status === 'rejected') console.error('NPR fetch failed:', npr.reason);
-
   const worldRaw: RawEntry[] = [
     ...(googleNews.status === 'fulfilled' ? googleNews.value : []),
     ...(bbc.status === 'fulfilled' ? bbc.value : []),
     ...(npr.status === 'fulfilled' ? npr.value : []),
   ];
-  const isDupWorld = isDuplicate(feed);
-  const worldNew = worldRaw.filter((e) => !isDupWorld(e));
-  console.log(`WORLD — Total: ${worldRaw.length} | New: ${worldNew.length}`);
 
-  // ---- Summarize new dev articles ----
-  console.log(`Summarizing ${devNew.length} dev articles...`);
-  let devSummarized: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
-  if (devNew.length > 0) {
-    devSummarized = await summarizeAll(devNew, 'dev');
-  }
+  // Dedup within batch (URL only)
+  const seenUrls = new Set<string>();
+  const dedupedDev = devRaw.filter((e) => { if (seenUrls.has(e.url)) return false; seenUrls.add(e.url); return true; });
+  const dedupedWorld = worldRaw.filter((e) => { if (seenUrls.has(e.url)) return false; seenUrls.add(e.url); return true; });
 
-  // ---- Summarize new world articles ----
-  console.log(`Summarizing ${worldNew.length} world articles...`);
-  let worldSummarized: (Omit<Article, 'id' | 'date'> & { type: 'dev' | 'world' })[] = [];
-  if (worldNew.length > 0) {
-    worldSummarized = await summarizeAll(worldNew, 'world');
-  }
+  console.log(`DEV: ${dedupedDev.length} articles | WORLD: ${dedupedWorld.length} articles`);
+
+  // ---- SUMMARIZE ----
+  if (dedupedDev.length > 0) {
+    console.log(`Summarizing ${dedupedDev.length} dev articles...`);
+    var devSummarized = await summarizeAll(dedupedDev, 'dev');
+  } else var devSummarized: typeof devSummarized = [];
+  if (dedupedWorld.length > 0) {
+    console.log(`Summarizing ${dedupedWorld.length} world articles...`);
+    var worldSummarized = await summarizeAll(dedupedWorld, 'world');
+  } else var worldSummarized: typeof worldSummarized = [];
 
   const devArticles: Article[] = devSummarized.map((s, i) => ({
-    id: generateId(s.source, s.url),
-    title: s.title,
-    url: s.url,
-    source: s.source,
-    score: s.score,
-    summary: s.summary,
-    tag: s.tag,
-    date: devNew[i].date,
-    type: s.type,
+    id: generateId(s.source, s.url), title: s.title, url: s.url, source: s.source,
+    score: s.score, summary: s.summary, tag: s.tag, date: dedupedDev[i].date, type: s.type,
   }));
-
   const worldArticles: Article[] = worldSummarized.map((s, i) => ({
-    id: generateId(s.source, s.url),
-    title: s.title,
-    url: s.url,
-    source: s.source,
-    score: s.score,
-    summary: s.summary,
-    tag: s.tag,
-    date: worldNew[i].date,
-    type: s.type,
+    id: generateId(s.source, s.url), title: s.title, url: s.url, source: s.source,
+    score: s.score, summary: s.summary, tag: s.tag, date: dedupedWorld[i].date, type: s.type,
   }));
 
-  const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
-  const combined = feed.articles
-    .concat(devArticles)
-    .concat(worldArticles)
-    .filter((a) => new Date(a.date).getTime() > oneWeekAgo);
-
-  const devSorted = combined
-    .filter((a) => a.type === 'dev')
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 30);
-  const worldSorted = combined
-    .filter((a) => a.type === 'world')
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 30);
-
+  const devSorted = devArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 30);
+  const worldSorted = worldArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 30);
   const allArticles = [...devSorted, ...worldSorted]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  feed.updated = now;
-  feed.articles = allArticles;
+  // ---- SAVE ----
+  if (allArticles.length === 0) {
+    console.log('No articles produced — keeping previous feed.');
+    return;
+  }
 
-  saveFeed(feed);
+  saveFeed({ updated: now, articles: allArticles });
   const devCount = allArticles.filter((a) => a.type === 'dev').length;
   const worldCount = allArticles.filter((a) => a.type === 'world').length;
   console.log(`Saved ${allArticles.length} articles (${devCount} dev, ${worldCount} world).`);
