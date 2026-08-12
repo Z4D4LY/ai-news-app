@@ -14,8 +14,8 @@ export default function Header({ onToggleSaved, showSaved }: Props) {
   };
 
   return (
-    <header className="border-b border-gray-200 dark:border-gray-800">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-4">
+    <header className="sticky top-0 z-20 border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center gap-2">
           <Newspaper className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
           <h1 className="text-lg font-bold tracking-tight">DevNews AI</h1>

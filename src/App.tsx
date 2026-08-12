@@ -21,8 +21,8 @@ export default function App() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <Header onToggleSaved={() => setShowSaved((v) => !v)} showSaved={showSaved} />
 
-      <main className="mx-auto max-w-3xl px-4 pb-16">
-        <div className="sticky top-0 z-10 space-y-4 bg-gray-50/90 dark:bg-gray-950/90 py-4 backdrop-blur">
+      <main className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="sticky top-0 z-10 space-y-4 pt-4 pb-4 bg-gray-50/95 dark:bg-gray-950/95 backdrop-blur">
           <SearchBar value={search} onChange={setSearch} />
           <TopicFilter selected={tag} onChange={setTag} />
         </div>

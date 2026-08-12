@@ -17,12 +17,12 @@ const TAG_COLORS: Record<string, string> = {
 
 export default function TopicFilter({ selected, onChange }: Props) {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
       {TAG_OPTIONS.map((tag) => (
         <button
           key={tag}
           onClick={() => onChange(tag)}
-          className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+          className={`rounded-full px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-colors ${
             selected === tag
               ? 'bg-indigo-600 text-white dark:bg-indigo-500'
               : tag === 'All'
