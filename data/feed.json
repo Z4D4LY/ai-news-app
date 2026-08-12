@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T17:22:43.865Z",
+  "updated": "2026-08-12T17:33:15.067Z",
   "articles": [
     {
       "id": "ha-aHR0cHM6",
@@ -7,7 +7,7 @@
       "url": "https://www.ycombinator.com/companies/reflex/jobs/71x5GFb-growth-engineer",
       "source": "hackernews",
       "score": 1,
-      "summary": "No summary available.",
+      "summary": "Reflex (YC W23) is seeking candidates for Growth and GTM roles.",
       "tag": "General",
       "date": "2026-08-12T17:00:21.000Z"
     },
@@ -17,9 +17,19 @@
       "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
       "source": "hackernews",
       "score": 41,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "SpaceXAI's Grok 4.6 achieves a score of 61 on the AI Analysis Index.",
+      "tag": "AI/ML",
       "date": "2026-08-12T16:54:25.000Z"
+    },
+    {
+      "id": "ha-aHR0cHM6",
+      "title": "HTML over WebSockets: real-time SPAs with barely any JavaScript",
+      "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
+      "source": "hackernews",
+      "score": 10,
+      "summary": "Explore using HTML over WebSockets for real-time SPAs with minimal JavaScript.",
+      "tag": "Frontend",
+      "date": "2026-08-12T16:51:25.000Z"
     },
     {
       "id": "ha-aHR0cHM6",
@@ -27,7 +37,7 @@
       "url": "https://climate.metoffice.cloud/glaciers.html",
       "source": "hackernews",
       "score": 12,
-      "summary": "No summary available.",
+      "summary": "The Climate Dashboard now includes data on glacier conditions.",
       "tag": "General",
       "date": "2026-08-12T16:38:25.000Z"
     },
@@ -37,7 +47,7 @@
       "url": "https://api-docs.deepseek.com/guides/responses_api/",
       "source": "hackernews",
       "score": 41,
-      "summary": "No summary available.",
+      "summary": "DeepSeek V4 Pro 0813 has been quietly released with new features.",
       "tag": "General",
       "date": "2026-08-12T16:37:13.000Z"
     },
@@ -47,8 +57,8 @@
       "url": "https://www.githubstatus.com/incidents/76t89hbfb09h",
       "source": "hackernews",
       "score": 26,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "GitHub experienced an incident affecting pull requests and issues on August 12.",
+      "tag": "DevOps",
       "date": "2026-08-12T16:22:27.000Z"
     },
     {
@@ -57,7 +67,7 @@
       "url": "https://loudbicycle.com/bb",
       "source": "hackernews",
       "score": 15,
-      "summary": "No summary available.",
+      "summary": "Bike Bureau launches a report tool for bike lane obstructions.",
       "tag": "General",
       "date": "2026-08-12T16:20:22.000Z"
     },
@@ -67,7 +77,7 @@
       "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
       "source": "hackernews",
       "score": 144,
-      "summary": "No summary available.",
+      "summary": "DeepSeek V4 Pro 0813 has been released with updates.",
       "tag": "General",
       "date": "2026-08-12T16:04:50.000Z"
     },
@@ -82,13 +92,23 @@
       "date": "2026-08-12T15:53:06Z"
     },
     {
+      "id": "de-aHR0cHM6",
+      "title": "Managed Inference on Google Cloud: Pairing the Gemini Enterprise Agent Platform with Cloud Run",
+      "url": "https://dev.to/gdg/managed-inference-on-google-cloud-pairing-the-gemini-enterprise-agent-platform-with-cloud-run-246j",
+      "source": "devto",
+      "score": 6,
+      "summary": "Guide to running managed AI inference on Google Cloud with Gemini and Cloud Run.",
+      "tag": "Backend",
+      "date": "2026-08-12T15:45:27Z"
+    },
+    {
       "id": "ha-aHR0cHM6",
       "title": "Qwen/Qwen3.8-2.4T-A95B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
       "source": "hackernews",
       "score": 162,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "Qwen/Qwen3.8-2.4T-A95B has been introduced with new specifications.",
+      "tag": "AI/ML",
       "date": "2026-08-12T15:01:17.000Z"
     },
     {
@@ -107,8 +127,8 @@
       "url": "https://andrewpwheeler.com/2026/08/12/license-plate-reader-searches-should-require-a-warrant/",
       "source": "hackernews",
       "score": 304,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "A warrant should be required for license plate reader searches.",
+      "tag": "Security",
       "date": "2026-08-12T14:43:39.000Z"
     },
     {
@@ -127,8 +147,8 @@
       "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
       "source": "hackernews",
       "score": 359,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "Tailscale identifies a 16-year-old SQLite bug causing database corruption.",
+      "tag": "Backend",
       "date": "2026-08-12T14:22:30.000Z"
     },
     {
@@ -137,7 +157,7 @@
       "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
       "source": "hackernews",
       "score": 106,
-      "summary": "No summary available.",
+      "summary": "Tim King, a notable AmigaDOS developer, has passed away.",
       "tag": "General",
       "date": "2026-08-12T14:09:11.000Z"
     },
@@ -147,8 +167,8 @@
       "url": "https://knownagents.com/insights",
       "source": "hackernews",
       "score": 111,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "Mass vulnerability scans are being conducted, spoofing AI bots like ClaudeBot.",
+      "tag": "Security",
       "date": "2026-08-12T14:02:46.000Z"
     },
     {
@@ -157,8 +177,8 @@
       "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome/",
       "source": "hackernews",
       "score": 137,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "Tiny JPEGs appear differently in Chrome due to rendering issues.",
+      "tag": "Frontend",
       "date": "2026-08-12T14:00:54.000Z"
     },
     {
@@ -167,8 +187,8 @@
       "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
       "source": "hackernews",
       "score": 372,
-      "summary": "No summary available.",
-      "tag": "General",
+      "summary": "AI advancements are significantly impacting the software engineering job market.",
+      "tag": "AI/ML",
       "date": "2026-08-12T13:20:05.000Z"
     },
     {
@@ -197,7 +217,7 @@
       "url": "https://jonty.github.io/2026_eclipse_webcams/",
       "source": "hackernews",
       "score": 366,
-      "summary": "No summary available.",
+      "summary": "Eclipse webcams are set to be released in 2026.",
       "tag": "General",
       "date": "2026-08-12T11:53:01.000Z"
     },
@@ -260,6 +280,16 @@
       "summary": "I'd been waiting for more than 30 minutes. The terminal just sat there, blinking, without returning a...",
       "tag": "General",
       "date": "2026-08-12T03:32:11Z"
+    },
+    {
+      "id": "de-aHR0cHM6",
+      "title": "Two AI agents checked the same script for a safety guard. One found it, one didn't. Both were right.",
+      "url": "https://dev.to/locoprowrestling/two-ai-agents-checked-the-same-script-for-a-safety-guard-one-found-it-one-didnt-both-were-right-57pc",
+      "source": "devto",
+      "score": 3,
+      "summary": "Two AI agents evaluated the same script, highlighting differing safety guard detections.",
+      "tag": "AI/ML",
+      "date": "2026-08-12T02:47:45Z"
     },
     {
       "id": "de-aHR0cHM6",
