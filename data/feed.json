@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-12T21:31:46.149Z",
+  "updated": "2026-08-12T21:38:54.131Z",
   "articles": [
+    {
+      "id": "go-FOqNQORt2Yd7",
+      "title": "2 adults, 1 child dead in incident at in-home daycare in Hopkins, Minnesota - fox9.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1pRkpyOHNuUDZSV0VUYXF2NUFqWi1fWXE0emVOaU04LWUwa2ZJY0tfVklld0ZVTG5CYTAzYUh4Zll1QmhwMDYyODRJRy03OXlyT19kME1qTE42WVJRS19PS19Qbk9SMF9tVk5hSWwxTUI0UQ?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article reports a deadly incident at an in-home daycare in Hopkins, Minnesota, where **2 adults and 1 child** were found dead. The case affects a daycare setting, which makes the victims especially significant because children and caregivers are among the most vulnerable people in the community. It matters beyond Minnesota because deaths in childcare settings raise broader concerns about safety, supervision, and the protection of children in home-based care, which is a global issue wherever families rely on informal or licensed daycare systems. I can’t verify additional specifics from the provided search results because the article text itself was not available here.",
+      "tag": "General",
+      "date": "2026-08-12T21:28:31.000Z",
+      "type": "world"
+    },
     {
       "id": "bb-0lvb6vyZaEM6",
       "title": "Trump says White House press secretary Karoline Leavitt to leave post",
@@ -442,6 +453,17 @@
       "type": "dev"
     },
     {
+      "id": "go-OFkdqD_FpIaW",
+      "title": "Timber Fire passes 3,000 acres as Highway 1 closure, evacuations remain in Big Sur - KSBW",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM24zMWRmNUlIT3YySHJHLTdqREgxc0JWc1ZrMmZTa3dDZ3dnT2FCQkF3X2gzWnJGWGpmM2pkV3N3ZEhDOTdzZ2o1cV9UU1YydWdOYzZSX096VU8wWjNlWGhZNUhDdEJELVNaTUN4LXI4M2t5SUhNY0pWS2g0TGczUm56WVJ6ckRVTzU5bmEwblo?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "I can’t access the underlying KSBW article from the Google News RSS link provided, so I can’t verify the fire’s exact size, evacuations, or the Highway 1 closure details from the article itself. The title indicates the Timber Fire in Big Sur has grown past 3,000 acres, is still forcing evacuations, and is keeping Highway 1 closed, which would affect residents, travelers, and local emergency response in California’s Central Coast. It matters globally because Big Sur is an internationally known coastal corridor and wildfire-driven road closures and evacuations are part of the broader climate-fueled wildfire disruption affecting communities, transportation, and tourism worldwide.",
+      "tag": "Climate",
+      "date": "2026-08-12T16:23:00.000Z",
+      "type": "world"
+    },
+    {
       "id": "ha-gJ26vRw-HSkA",
       "title": "Wednesday, August 12: GitHub, Incident with Pull Requests and Issues",
       "url": "https://www.githubstatus.com/incidents/76t89hbfb09h",
@@ -506,28 +528,6 @@
       "tag": "Frontend",
       "date": "2026-08-12T16:14:37.000Z",
       "type": "dev"
-    },
-    {
-      "id": "bb-UZHtHRsQ346q",
-      "title": "Israeli settlers besieging Palestinian families in West Bank village",
-      "url": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "Israeli settlers have besieged two Palestinian families in a West Bank village, reportedly with the withdrawal of Israeli security forces from the area. This situation escalates tensions in the region and affects the lives of the Palestinian families involved, drawing international attention to the ongoing Israeli-Palestinian conflict. It matters globally as it raises concerns about human rights and the stability of the Middle East.",
-      "tag": "Politics",
-      "date": "2026-08-12T16:14:08.000Z",
-      "type": "world"
-    },
-    {
-      "id": "bb-2ZT3GEGfrw2b",
-      "title": "Israeli settlers besieging Palestinian families in West Bank village",
-      "url": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "Israeli settlers are reportedly besieging Palestinian families in a West Bank village, exacerbating tensions in the region and impacting the lives of those affected by the conflict. This situation is significant as it highlights ongoing human rights concerns and the broader Israeli-Palestinian conflict, which has global implications for peace and stability in the Middle East.",
-      "tag": "Politics",
-      "date": "2026-08-12T16:14:08.000Z",
-      "type": "world"
     },
     {
       "id": "ha-dAjGzXncOlOe",
