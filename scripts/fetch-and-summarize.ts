@@ -122,7 +122,7 @@ async function summarizeBatch(entries: RawEntry[]): Promise<Omit<Article, 'id' |
     .map((e, i) => `${i + 1}. [${e.source}] ${e.title}\n   ${e.description}`)
     .join('\n\n');
 
-  const prompt = `You are a technical editor. Here are developer articles. For each, write a ONE-SENTENCE summary (max 100 chars) and pick ONE tag from: AI/ML, Frontend, Backend, DevOps, Security, Open Source, General.
+  const prompt = `You are a technical editor writing for developers. For each article below, write a 2-3 sentence summary that captures the key technical insight, what stack/tools are involved, and why it matters to a developer. Pick ONE tag from: AI/ML, Frontend, Backend, DevOps, Security, Open Source, General.
 
 Articles:
 ${entryList}
@@ -143,7 +143,7 @@ Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summ
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 2000,
+      max_tokens: 4000,
     }),
   });
 
