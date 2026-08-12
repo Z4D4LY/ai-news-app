@@ -19,7 +19,6 @@ const SOURCE_DOT: Record<string, string> = {
 interface Props {
   article: Article;
   index: number;
-  onClick: () => void;
 }
 
 function timeAgo(dateStr: string): string {
@@ -37,12 +36,14 @@ function formatScore(score: number): string {
   return String(score);
 }
 
-export default function ArticleCard({ article, index, onClick }: Props) {
+export default function ArticleCard({ article, index }: Props) {
   return (
-    <div
-      onClick={onClick}
-      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded cursor-pointer transition-colors"
-      style={{ background: 'transparent' }}
+    <a
+      href={article.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex gap-3 py-3.5 px-1 -mx-1 rounded no-underline transition-colors"
+      style={{ background: 'transparent', color: 'var(--text)' }}
       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-hover)'; }}
       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
     >
@@ -87,6 +88,6 @@ export default function ArticleCard({ article, index, onClick }: Props) {
             : article.summary}
         </p>
       </div>
-    </div>
+    </a>
   );
 }

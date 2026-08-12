@@ -4,7 +4,6 @@ import feedData from '../../data/feed.json';
 
 interface Props {
   articles: Article[];
-  onSelectArticle: (article: Article) => void;
   tab: 'dev' | 'world';
 }
 
@@ -27,7 +26,7 @@ function groupByTime(articles: Article[]) {
   return { today, yesterday, earlier };
 }
 
-export default function Feed({ articles, onSelectArticle, tab }: Props) {
+export default function Feed({ articles, tab }: Props) {
   if (feedData.articles.length === 0) {
     return (
       <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
@@ -68,11 +67,7 @@ export default function Feed({ articles, onSelectArticle, tab }: Props) {
           <hr className="divider mb-1" />
           {section.items.map((article, i) => (
             <div key={article.id}>
-              <ArticleCard
-                article={article}
-                index={i}
-                onClick={() => onSelectArticle(article)}
-              />
+              <ArticleCard article={article} index={i} />
             </div>
           ))}
         </div>
