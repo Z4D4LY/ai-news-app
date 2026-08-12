@@ -94,7 +94,9 @@ export default function ArticleCard({ article, isBookmarked, onToggleBookmark }:
       </div>
 
       <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-        {article.summary}
+        {article.summary === 'No summary available.'
+          ? 'Click to read the full article.'
+          : article.summary}
       </p>
     </article>
   );

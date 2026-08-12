@@ -215,6 +215,27 @@ async function main() {
   if (devto.status === 'rejected') console.error('Dev.to fetch failed:', devto.reason);
 
   const newEntries = allRaw.filter((e) => !existingUrls.has(e.url));
+
+  const needsResummarize = feed.articles.filter(
+    (a) => a.summary === 'No summary available.'
+  );
+  if (needsResummarize.length > 0) {
+    console.log(`Re-summarizing ${needsResummarize.length} orphaned articles...`);
+    const rawForRetry: RawEntry[] = needsResummarize.map((a) => ({
+      title: a.title,
+      url: a.url,
+      source: a.source,
+      score: a.score,
+      description: '',
+      date: a.date,
+    }));
+    const retried = await summarizeBatch(rawForRetry);
+    for (let i = 0; i < needsResummarize.length; i++) {
+      needsResummarize[i].summary = retried[i].summary;
+      needsResummarize[i].tag = retried[i].tag;
+    }
+  }
+
   console.log(`Total: ${allRaw.length} | New: ${newEntries.length}`);
 
   if (newEntries.length === 0) {
