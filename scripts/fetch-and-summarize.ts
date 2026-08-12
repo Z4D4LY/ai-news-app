@@ -53,7 +53,7 @@ async function fetchHackerNews(): Promise<RawEntry[]> {
   const topIds = await fetchJson<number[]>(
     'https://hacker-news.firebaseio.com/v0/topstories.json'
   );
-  const sliced = topIds.slice(0, 15);
+  const sliced = topIds.slice(0, 20);
 
   const items = await Promise.all(
     sliced.map(async (id) => {
@@ -83,28 +83,10 @@ async function fetchHackerNews(): Promise<RawEntry[]> {
     }));
 }
 
-async function fetchReddit(): Promise<RawEntry[]> {
-  console.log('Fetching Reddit...');
-  const res = await fetch('https://www.reddit.com/r/programming/hot.json?limit=5', {
-    headers: { 'User-Agent': 'DevNewsAI/1.0 (news aggregator bot)' },
-  });
-  const data = await res.json() as any;
-
-  const children = data?.data?.children ?? [];
-  return children.slice(0, 5).map((c: any) => ({
-    title: c.data.title,
-    url: c.data.url,
-    source: 'reddit' as const,
-    score: c.data.score ?? 0,
-    description: c.data.selftext?.slice(0, 300) ?? '',
-    date: new Date((c.data.created_utc ?? 0) * 1000).toISOString(),
-  }));
-}
-
 async function fetchDevTo(): Promise<RawEntry[]> {
   console.log('Fetching Dev.to...');
   const items = await fetchJson<any[]>(
-    'https://dev.to/api/articles?top=1&per_page=5'
+    'https://dev.to/api/articles?top=1&per_page=10'
   );
   return items.map((a) => ({
     title: a.title,
@@ -156,7 +138,7 @@ Return ONLY a valid JSON array. Each item: {"idx": <number starting at 1>, "summ
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'google/gemini-2.0-flash-lite',
+      model: 'openai/gpt-4o-mini',
       messages: [
         { role: 'user', content: prompt },
       ],
@@ -219,20 +201,17 @@ async function main() {
   const existingUrls = new Set(feed.articles.map((a) => a.url));
   const now = new Date().toISOString();
 
-  const [hn, reddit, devto] = await Promise.allSettled([
+  const [hn, devto] = await Promise.allSettled([
     fetchHackerNews(),
-    fetchReddit(),
     fetchDevTo(),
   ]);
 
   const allRaw: RawEntry[] = [
     ...(hn.status === 'fulfilled' ? hn.value : []),
-    ...(reddit.status === 'fulfilled' ? reddit.value : []),
     ...(devto.status === 'fulfilled' ? devto.value : []),
   ];
 
   if (hn.status === 'rejected') console.error('HN fetch failed:', hn.reason);
-  if (reddit.status === 'rejected') console.error('Reddit fetch failed:', reddit.reason);
   if (devto.status === 'rejected') console.error('Dev.to fetch failed:', devto.reason);
 
   const newEntries = allRaw.filter((e) => !existingUrls.has(e.url));
