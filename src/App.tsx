@@ -1,8 +1,8 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Header from './components/Header';
 import Feed from './components/Feed';
 import { useArticles } from './hooks/useArticles';
-import { TABS, type TabType } from './types';
+import { TABS, FONT_SIZES, type TabType, type FontSize } from './types';
 
 function getInitialDark(): boolean {
   try {
@@ -22,6 +22,19 @@ function applyTheme(dark: boolean) {
   try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch {}
 }
 
+function getInitialFontSize(): FontSize {
+  try {
+    const stored = localStorage.getItem('fontSize');
+    if (stored === 'large' || stored === 'xl') return stored;
+  } catch {}
+  return 'normal';
+}
+
+function applyFontSize(size: FontSize) {
+  document.documentElement.style.fontSize = `${FONT_SIZES[size]}px`;
+  try { localStorage.setItem('fontSize', size); } catch {}
+}
+
 export default function App() {
   const [isDark, setIsDark] = useState(() => {
     const dark = getInitialDark();
@@ -29,12 +42,26 @@ export default function App() {
     return dark;
   });
 
+  const [fontSize, setFontSize] = useState<FontSize>(() => {
+    const size = getInitialFontSize();
+    applyFontSize(size);
+    return size;
+  });
+
+  useEffect(() => {
+    applyFontSize(fontSize);
+  }, [fontSize]);
+
   const toggleTheme = useCallback(() => {
     setIsDark((prev) => {
       const next = !prev;
       applyTheme(next);
       return next;
     });
+  }, []);
+
+  const cycleFontSize = useCallback(() => {
+    setFontSize((prev) => prev === 'normal' ? 'large' : prev === 'large' ? 'xl' : 'normal');
   }, []);
 
   const [tab, setTab] = useState<TabType>('tech');
@@ -47,6 +74,8 @@ export default function App() {
         articleCount={articles.length}
         onToggleTheme={toggleTheme}
         isDark={isDark}
+        fontSize={fontSize}
+        onCycleFontSize={cycleFontSize}
       />
 
       <main className="mx-auto max-w-4xl px-4 sm:px-6 pb-16">
@@ -56,7 +85,7 @@ export default function App() {
               <button
                 key={t.id}
                 onClick={() => setTab(t.id)}
-                className="flex-1 rounded-md px-3 py-2 text-sm font-medium transition-all"
+                className="flex-1 rounded-md px-3 py-2 text-base font-medium transition-all"
                 style={{
                   background: tab === t.id ? 'var(--accent)' : 'transparent',
                   color: tab === t.id ? '#fff' : 'var(--text-dim)',

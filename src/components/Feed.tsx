@@ -56,10 +56,10 @@ export default function Feed({ articles }: Props) {
       {sections.map((section) => (
         <div key={section.label} className="mb-6">
           <div className="flex items-center gap-3 mb-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-dim)' }}>
+            <h3 className="text-sm font-semibold uppercase tracking-wider" style={{ color: 'var(--text-dim)' }}>
               {section.label}
             </h3>
-            <span className="text-xs" style={{ color: 'var(--text-dim)' }}>
+            <span className="text-sm" style={{ color: 'var(--text-dim)' }}>
               {section.items.length}
             </span>
           </div>

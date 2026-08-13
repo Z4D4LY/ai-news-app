@@ -8,6 +8,7 @@ const SOURCE_LABEL: Record<string, string> = {
   npr: 'NPR',
   france24: 'F24',
   moroccoworldnews: 'MWN',
+  hespress: 'Hespress',
 };
 
 const SOURCE_DOT: Record<string, string> = {
@@ -18,6 +19,7 @@ const SOURCE_DOT: Record<string, string> = {
   npr: 'text-blue-500',
   france24: 'text-indigo-500',
   moroccoworldnews: 'text-green-500',
+  hespress: 'text-emerald-500',
 };
 
 interface Props {
@@ -47,30 +49,30 @@ export default function ArticleCard({ article, index }: Props) {
       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
     >
       <span
-        className="shrink-0 w-6 text-right text-sm font-mono pt-0.5 select-none"
+        className="shrink-0 w-6 text-right text-base font-mono pt-0.5 select-none"
         style={{ color: 'var(--text-dim)' }}
       >
         {index + 1}
       </span>
 
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 mb-0.5">
+        <div className="flex items-center gap-2 mb-1">
           <div className="flex items-center gap-1.5">
             <span className={`w-1.5 h-1.5 rounded-full ${SOURCE_DOT[article.source] ?? 'text-gray-400'}`} />
-            <span className="text-xs font-medium" style={{ color: 'var(--text-dim)' }}>
+            <span className="text-sm font-medium" style={{ color: 'var(--text-dim)' }}>
               {SOURCE_LABEL[article.source] ?? article.source}
             </span>
           </div>
-          <span className="text-xs ml-auto" style={{ color: 'var(--text-dim)' }}>
+          <span className="text-sm ml-auto" style={{ color: 'var(--text-dim)' }}>
             {timeAgo(article.date)}
           </span>
         </div>
 
-        <span className="text-base font-medium leading-snug group-hover:text-accent transition-colors line-clamp-2">
+        <span className="text-lg font-medium leading-snug group-hover:text-accent transition-colors line-clamp-2">
           {article.title}
         </span>
 
-        <p className="mt-0.5 text-sm leading-relaxed" style={{ color: 'var(--text-dim)' }}>
+        <p className="mt-1 text-base leading-relaxed" style={{ color: 'var(--text-dim)' }}>
           {article.summary === 'No summary available.'
             ? 'Click to read the full article.'
             : article.summary}

@@ -11,7 +11,7 @@ interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'devto' | 'googlenews' | 'bbc' | 'npr' | 'france24' | 'moroccoworldnews';
+  source: 'hackernews' | 'devto' | 'googlenews' | 'bbc' | 'npr' | 'france24' | 'moroccoworldnews' | 'hespress';
   score: number;
   summary: string;
   date: string;
@@ -96,57 +96,6 @@ const xmlParser = new XMLParser({
   htmlEntities: false,
 });
 
-async function fetchGoogleNews(): Promise<RawEntry[]> {
-  console.log('Fetching Google News...');
-  const res = await fetch('https://news.google.com/rss?hl=en&gl=US&ceid=US:en');
-  if (!res.ok) throw new Error(`HTTP ${res.status} from Google News`);
-  const xml = await res.text();
-  const parsed = xmlParser.parse(xml);
-  const items = parsed?.rss?.channel?.item ?? [];
-  return items.slice(0, 10).map((item: any) => ({
-    title: item.title ?? '',
-    url: item.link ?? '',
-    source: 'googlenews' as const,
-    score: 0,
-    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
-    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
-  }));
-}
-
-async function fetchBBC(): Promise<RawEntry[]> {
-  console.log('Fetching BBC News...');
-  const res = await fetch('https://feeds.bbci.co.uk/news/world/rss.xml');
-  if (!res.ok) throw new Error(`HTTP ${res.status} from BBC`);
-  const xml = await res.text();
-  const parsed = xmlParser.parse(xml);
-  const items = parsed?.rss?.channel?.item ?? [];
-  return items.slice(0, 10).map((item: any) => ({
-    title: item.title ?? '',
-    url: item.link ?? '',
-    source: 'bbc' as const,
-    score: 0,
-    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
-    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
-  }));
-}
-
-async function fetchNPR(): Promise<RawEntry[]> {
-  console.log('Fetching NPR News...');
-  const res = await fetch('https://feeds.npr.org/1001/rss.xml');
-  if (!res.ok) throw new Error(`HTTP ${res.status} from NPR`);
-  const xml = await res.text();
-  const parsed = xmlParser.parse(xml);
-  const items = parsed?.rss?.channel?.item ?? [];
-  return items.slice(0, 10).map((item: any) => ({
-    title: item.title ?? '',
-    url: item.link ?? '',
-    source: 'npr' as const,
-    score: 0,
-    description: (item.description ?? '').replace(/<[^>]*>/g, '').slice(0, 300),
-    date: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
-  }));
-}
-
 async function fetchJson<T>(url: string): Promise<T> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status} from ${url}`);
@@ -182,10 +131,15 @@ async function summarizeArticle(
     };
   }
 
-  const prompt = `Visit this article URL and write a detailed 3-4 sentence summary covering the key facts and why it matters. Be specific — use real details from the article, not generic fluff. Return ONLY this JSON: {"summary":"your summary here"}
+  const prompt = `Write a detailed 3-4 sentence summary of the article below covering the key facts and why it matters. Be specific — use real details from the article, not generic fluff.
+
+Try to read the actual article at the URL. If the URL is inaccessible, base your summary entirely on the provided title and description. ALWAYS produce a real, useful summary — never say you can't.
+
+Return ONLY this JSON: {"summary":"your summary here"}
 
 URL: ${entry.url}
-Title: ${entry.title}`;
+Title: ${entry.title}
+Description: ${entry.description || 'N/A'}`;
 
   try {
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -198,30 +152,52 @@ Title: ${entry.title}`;
         model: 'perplexity/sonar',
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.3,
-        max_tokens: 350,
+        max_tokens: 400,
       }),
     });
 
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const body = await res.json() as any;
-    const raw = body?.choices?.[0]?.message?.content ?? '';
-    const parsed = JSON.parse(
-      raw.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
-    );
+    const raw = (body?.choices?.[0]?.message?.content ?? '').trim();
 
-    return {
-      title: entry.title, url: entry.url, source: entry.source,
-      score: entry.score, summary: parsed.summary ?? 'No summary available.',
-      type: entry.type ?? 'tech',
-    };
+    const summary = parseSummary(raw);
+    if (summary) {
+      return {
+        title: entry.title, url: entry.url, source: entry.source,
+        score: entry.score, summary,
+        type: entry.type ?? 'tech',
+      };
+    }
+    throw new Error('empty response');
   } catch (err) {
     console.warn(`Summarize failed for "${entry.title.slice(0, 50)}" — ${err}`);
     return {
       title: entry.title, url: entry.url, source: entry.source,
-      score: entry.score, summary: entry.description || 'No summary available.',
+      score: entry.score, summary: entry.description || 'A summary could not be generated — read the full article.',
       type: entry.type ?? 'tech',
     };
   }
+}
+
+function parseSummary(raw: string): string | null {
+  const cleaned = raw.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+  if (!cleaned) return null;
+
+  try {
+    const parsed = JSON.parse(cleaned);
+    if (typeof parsed?.summary === 'string' && parsed.summary.trim()) {
+      return parsed.summary.trim();
+    }
+  } catch {
+    /* fall through to regex */
+  }
+
+  const match = cleaned.match(/"summary"\s*:\s*"([\s\S]*?)"\s*}/);
+  if (match && match[1].trim()) return match[1].trim();
+
+  if (cleaned.length >= 20) return cleaned;
+
+  return null;
 }
 
 async function summarizeAll(
@@ -275,21 +251,23 @@ async function main() {
   const now = new Date().toISOString();
 
   // ---- FETCH ALL SOURCES ----
-  const [hn, devto, googleNews, bbc, npr, mwn, f24, gnEU, gnMA, gnAS] = await Promise.allSettled([
+  const [hn, devto, gnUS, npr, bbcUS, bbcEU, f24EU, gnMA, mwn, hespress, bbcAS, gnAS] = await Promise.allSettled([
     fetchHackerNews(),
     fetchDevTo(),
-    fetchGoogleNews(),
-    fetchBBC(),
-    fetchNPR(),
-    fetchRSS('https://www.moroccoworldnews.com/feed/', 'moroccoworldnews', 8),
-    fetchRSS('https://www.france24.com/en/rss', 'france24', 5),
-    fetchRSS('https://news.google.com/rss?hl=en&gl=EU&ceid=EU:en', 'googlenews', 5),
-    fetchRSS('https://news.google.com/rss?hl=en&gl=MA&ceid=MA:en', 'googlenews', 7),
-    fetchRSS('https://news.google.com/rss?hl=en&gl=IN&ceid=IN:en', 'googlenews', 5),
+    fetchRSS('https://news.google.com/rss/headlines/section/topic/NATION?hl=en-US&gl=US&ceid=US:en', 'googlenews', 10),
+    fetchRSS('https://feeds.npr.org/1001/rss.xml', 'npr', 10),
+    fetchRSS('https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml', 'bbc', 8),
+    fetchRSS('https://feeds.bbci.co.uk/news/world/europe/rss.xml', 'bbc', 8),
+    fetchRSS('https://www.france24.com/en/europe/rss', 'france24', 8),
+    fetchRSS('https://news.google.com/rss/search?q=Morocco&hl=en&gl=MA&ceid=MA:en', 'googlenews', 10),
+    fetchRSS('https://www.moroccoworldnews.com/feed/', 'moroccoworldnews', 10),
+    fetchRSS('https://en.hespress.com/feed', 'hespress', 10),
+    fetchRSS('https://feeds.bbci.co.uk/news/world/asia/rss.xml', 'bbc', 8),
+    fetchRSS('https://news.google.com/rss/search?q=Asia&hl=en&gl=SG&ceid=SG:en', 'googlenews', 8),
   ]);
 
-  const get = (r: PromiseSettledResult<RawEntry[]>): RawEntry[] =>
-    r.status === 'fulfilled' ? r.value : [];
+  const get = (r: PromiseSettledResult<RawEntry[]> | undefined): RawEntry[] =>
+    r?.status === 'fulfilled' ? r.value : [];
 
   // ---- PROCESS EACH TAB ----
   const seenUrls = new Set<string>();
@@ -299,19 +277,19 @@ async function main() {
   ], 'tech', 20, seenUrls);
 
   const europeArticles = await processTab('EUROPE', [
-    ...get(gnEU), ...get(f24),
+    ...get(bbcEU), ...get(f24EU),
   ], 'europe', 10, seenUrls);
 
   const usArticles = await processTab('US', [
-    ...get(googleNews).slice(0, 5), ...get(npr).slice(0, 5),
+    ...get(gnUS).slice(0, 5), ...get(npr).slice(0, 5), ...get(bbcUS).slice(0, 4),
   ], 'us', 10, seenUrls);
 
   const moroccoArticles = await processTab('MOROCCO', [
-    ...get(mwn), ...get(gnMA),
+    ...get(gnMA), ...get(mwn), ...get(hespress),
   ], 'morocco', 10, seenUrls);
 
   const asiaArticles = await processTab('ASIA', [
-    ...get(gnAS), ...get(bbc).slice(0, 5),
+    ...get(bbcAS), ...get(gnAS),
   ], 'asia', 10, seenUrls);
 
   const allArticles = [...techArticles, ...europeArticles, ...usArticles, ...moroccoArticles, ...asiaArticles]
