@@ -1,7 +1,7 @@
-import type { Article } from '../types';
+import type { Article, Source } from '../types';
 import { timeAgo } from '../lib/date';
 
-const SOURCE_LABEL: Record<string, string> = {
+const SOURCE_LABEL: Record<Source, string> = {
   hackernews: 'HN',
   devto: 'Dev.to',
   googlenews: 'News',
@@ -12,7 +12,7 @@ const SOURCE_LABEL: Record<string, string> = {
   hespress: 'Hespress',
 };
 
-const SOURCE_DOT: Record<string, string> = {
+const SOURCE_DOT: Record<Source, string> = {
   hackernews: 'text-orange-500',
   devto: 'text-sky-500',
   googlenews: 'text-slate-500',
@@ -46,11 +46,9 @@ export default function ArticleCard({ article, index }: Props) {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1">
           <div className="flex items-center gap-1.5">
-            <span
-              className={`w-1.5 h-1.5 rounded-full ${SOURCE_DOT[article.source] ?? 'text-gray-400'}`}
-            />
+            <span className={`w-1.5 h-1.5 rounded-full ${SOURCE_DOT[article.source]}`} />
             <span className="text-sm font-medium" style={{ color: 'var(--text-dim)' }}>
-              {SOURCE_LABEL[article.source] ?? article.source}
+              {SOURCE_LABEL[article.source]}
             </span>
           </div>
           <span className="text-sm ml-auto" style={{ color: 'var(--text-dim)' }}>
@@ -58,7 +56,7 @@ export default function ArticleCard({ article, index }: Props) {
           </span>
         </div>
 
-        <span className="text-lg font-medium leading-snug group-hover:text-accent transition-colors line-clamp-2">
+        <span className="text-lg font-medium leading-snug group-hover:text-[var(--accent)] transition-colors line-clamp-2">
           {article.title}
         </span>
 

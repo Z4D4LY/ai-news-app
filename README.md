@@ -1,8 +1,8 @@
-# DevNews AI
+# Atlas Daily Digest
 
 Daily AI-summarized news digest — zero-cost, fully automated.
 
-**[z4d4ly.github.io/ai-news-app](https://z4d4ly.github.io/ai-news-app/)**
+**[z4d4ly.github.io/atlas-daily-digest](https://z4d4ly.github.io/atlas-daily-digest/)**
 
 ## How it works
 

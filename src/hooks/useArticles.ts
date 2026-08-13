@@ -11,5 +11,5 @@ export function useArticles({ type }: UseArticlesOptions) {
     return (feedData.articles as Article[]).filter((a) => a.type === type);
   }, [type]);
 
-  return { articles };
+  return { articles, feedEmpty: feedData.articles.length === 0 };
 }

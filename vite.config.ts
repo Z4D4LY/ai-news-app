@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ai-news-app/',
+  base: '/atlas-daily-digest/',
 });

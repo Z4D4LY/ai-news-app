@@ -30,7 +30,7 @@ export default function Header({
     <header style={{ background: 'var(--accent)', color: '#fff' }}>
       <div className="mx-auto flex max-w-4xl items-center justify-between px-4 sm:px-6 py-3">
         <div className="flex items-center gap-3 min-w-0">
-          <h1 className="text-xl font-bold tracking-tight shrink-0">DevNews AI</h1>
+          <h1 className="text-xl font-bold tracking-tight shrink-0">Atlas Daily Digest</h1>
           <span className="shrink-0 rounded bg-white/20 px-1.5 py-0.5 text-sm font-semibold">
             Beta
           </span>

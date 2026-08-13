@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useLayoutEffect } from 'react';
 import Header from './components/Header';
 import Feed from './components/Feed';
 import { useArticles } from './hooks/useArticles';
@@ -48,36 +48,25 @@ function applyFontSize(size: FontSize) {
 }
 
 export default function App() {
-  const [isDark, setIsDark] = useState(() => {
-    const dark = getInitialDark();
-    applyTheme(dark);
-    return dark;
-  });
+  const [isDark, setIsDark] = useState(getInitialDark);
+  const [fontSize, setFontSize] = useState<FontSize>(getInitialFontSize);
 
-  const [fontSize, setFontSize] = useState<FontSize>(() => {
-    const size = getInitialFontSize();
-    applyFontSize(size);
-    return size;
-  });
+  useLayoutEffect(() => {
+    applyTheme(isDark);
+  }, [isDark]);
 
   useEffect(() => {
     applyFontSize(fontSize);
   }, [fontSize]);
 
-  const toggleTheme = useCallback(() => {
-    setIsDark((prev) => {
-      const next = !prev;
-      applyTheme(next);
-      return next;
-    });
-  }, []);
+  const toggleTheme = useCallback(() => setIsDark((prev) => !prev), []);
 
   const cycleFontSize = useCallback(() => {
     setFontSize((prev) => (prev === 'normal' ? 'large' : prev === 'large' ? 'xl' : 'normal'));
   }, []);
 
   const [tab, setTab] = useState<TabType>('tech');
-  const { articles } = useArticles({ type: tab });
+  const { articles, feedEmpty } = useArticles({ type: tab });
 
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
@@ -115,7 +104,7 @@ export default function App() {
           </div>
         </div>
 
-        <Feed articles={articles} />
+        <Feed articles={articles} feedEmpty={feedEmpty} />
       </main>
     </div>
   );

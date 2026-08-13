@@ -51,7 +51,7 @@ interface RssSource {
   limit: number;
 }
 
-const RSS_SOURCES: Record<string, RssSource> = {
+const RSS_SOURCES = {
   gnUS: {
     url: 'https://news.google.com/rss/headlines/section/topic/NATION?hl=en-US&gl=US&ceid=US:en',
     source: 'googlenews',
@@ -78,7 +78,9 @@ const RSS_SOURCES: Record<string, RssSource> = {
     source: 'googlenews',
     limit: 8,
   },
-};
+} satisfies Record<string, RssSource>;
+
+type RssKey = keyof typeof RSS_SOURCES;
 
 function saveFeed(feed: Feed): void {
   writeFileSync(FEED_PATH, JSON.stringify(feed, null, 2) + '\n');
@@ -153,18 +155,20 @@ async function fetchRSS(url: string, source: Source, limit = 10): Promise<RawEnt
   }));
 }
 
-async function fetchRssSources(): Promise<Record<string, RawEntry[]>> {
+async function fetchRssSources(): Promise<Record<RssKey, RawEntry[]>> {
+  const keys = Object.keys(RSS_SOURCES) as RssKey[];
   const entries = await Promise.all(
-    Object.entries(RSS_SOURCES).map(async ([key, s]): Promise<[string, RawEntry[]]> => {
+    keys.map(async (key): Promise<[RssKey, RawEntry[]]> => {
+      const source = RSS_SOURCES[key];
       try {
-        return [key, await fetchRSS(s.url, s.source, s.limit)];
+        return [key, await fetchRSS(source.url, source.source, source.limit)];
       } catch (err) {
         console.warn(`Fetch failed for "${key}" — ${err}`);
         return [key, []];
       }
     }),
   );
-  return Object.fromEntries(entries);
+  return Object.fromEntries(entries) as Record<RssKey, RawEntry[]>;
 }
 
 function parseSummary(raw: string): string | null {
@@ -193,16 +197,18 @@ function parseSummary(raw: string): string | null {
 
 async function summarizeArticle(entry: RawEntry): Promise<Omit<Article, 'id' | 'date'>> {
   const apiKey = process.env.OPENROUTER_API_KEY;
+  const type = entry.type ?? 'tech';
+  const result = (summary: string): Omit<Article, 'id' | 'date'> => ({
+    title: entry.title,
+    url: entry.url,
+    source: entry.source,
+    score: entry.score,
+    summary,
+    type,
+  });
 
   if (!apiKey) {
-    return {
-      title: entry.title,
-      url: entry.url,
-      source: entry.source,
-      score: entry.score,
-      summary: entry.description || 'No summary available.',
-      type: entry.type ?? 'tech',
-    };
+    return result(entry.description || 'No summary available.');
   }
 
   const prompt = `Write a detailed 3-4 sentence summary of the article below covering the key facts and why it matters. Be specific — use real details from the article, not generic fluff.
@@ -233,29 +239,12 @@ Description: ${entry.description || 'N/A'}`;
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const body = (await res.json()) as OpenRouterResponse;
     const raw = (body.choices?.[0]?.message?.content ?? '').trim();
-
     const summary = parseSummary(raw);
-    if (summary) {
-      return {
-        title: entry.title,
-        url: entry.url,
-        source: entry.source,
-        score: entry.score,
-        summary,
-        type: entry.type ?? 'tech',
-      };
-    }
+    if (summary) return result(summary);
     throw new Error('empty response');
   } catch (err) {
     console.warn(`Summarize failed for "${entry.title.slice(0, 50)}" — ${err}`);
-    return {
-      title: entry.title,
-      url: entry.url,
-      source: entry.source,
-      score: entry.score,
-      summary: entry.description || 'A summary could not be generated — read the full article.',
-      type: entry.type ?? 'tech',
-    };
+    return result(entry.description || 'A summary could not be generated — read the full article.');
   }
 }
 

@@ -8,6 +8,8 @@ export type Source =
   | 'moroccoworldnews'
   | 'hespress';
 
+export type TabType = 'tech' | 'europe' | 'us' | 'morocco' | 'asia';
+
 export interface Article {
   id: string;
   title: string;
@@ -23,8 +25,6 @@ export interface Feed {
   updated: string;
   articles: Article[];
 }
-
-export type TabType = 'tech' | 'europe' | 'us' | 'morocco' | 'asia';
 
 export const TABS: { id: TabType; label: string }[] = [
   { id: 'tech', label: 'Tech' },

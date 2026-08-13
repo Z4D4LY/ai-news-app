@@ -1,14 +1,14 @@
 import ArticleCard from './ArticleCard';
 import type { Article } from '../types';
 import { groupByTime } from '../lib/date';
-import feedData from '../../data/feed.json';
 
 interface Props {
   articles: Article[];
+  feedEmpty: boolean;
 }
 
-export default function Feed({ articles }: Props) {
-  if (feedData.articles.length === 0) {
+export default function Feed({ articles, feedEmpty }: Props) {
+  if (feedEmpty) {
     return (
       <div className="py-20 text-center" style={{ color: 'var(--text-dim)' }}>
         <p>No articles yet.</p>
