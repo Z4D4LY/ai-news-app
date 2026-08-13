@@ -16,7 +16,14 @@ const FONT_LABEL: Record<FontSize, string> = {
   xl: 'A++',
 };
 
-export default function Header({ tab, articleCount, onToggleTheme, isDark, fontSize, onCycleFontSize }: Props) {
+export default function Header({
+  tab,
+  articleCount,
+  onToggleTheme,
+  isDark,
+  fontSize,
+  onCycleFontSize,
+}: Props) {
   const label = TABS.find((t) => t.id === tab)?.label ?? tab;
 
   return (

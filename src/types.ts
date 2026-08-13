@@ -1,12 +1,22 @@
+export type Source =
+  | 'hackernews'
+  | 'devto'
+  | 'googlenews'
+  | 'bbc'
+  | 'npr'
+  | 'france24'
+  | 'moroccoworldnews'
+  | 'hespress';
+
 export interface Article {
   id: string;
   title: string;
   url: string;
-  source: 'hackernews' | 'devto' | 'googlenews' | 'bbc' | 'npr' | 'france24' | 'moroccoworldnews' | 'hespress';
+  source: Source;
   score: number;
   summary: string;
   date: string;
-  type: 'tech' | 'europe' | 'us' | 'morocco' | 'asia';
+  type: TabType;
 }
 
 export interface Feed {

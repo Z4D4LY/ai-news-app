@@ -9,7 +9,9 @@ function getInitialDark(): boolean {
     const stored = localStorage.getItem('theme');
     if (stored === 'dark') return true;
     if (stored === 'light') return false;
-  } catch {}
+  } catch {
+    /* localStorage unavailable */
+  }
   const mq = window.matchMedia('(prefers-color-scheme: dark)');
   if (mq.matches) return true;
   if (window.matchMedia('(prefers-color-scheme: light)').matches) return false;
@@ -19,20 +21,30 @@ function getInitialDark(): boolean {
 
 function applyTheme(dark: boolean) {
   document.documentElement.classList.toggle('dark', dark);
-  try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch {}
+  try {
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  } catch {
+    /* localStorage unavailable */
+  }
 }
 
 function getInitialFontSize(): FontSize {
   try {
     const stored = localStorage.getItem('fontSize');
     if (stored === 'large' || stored === 'xl') return stored;
-  } catch {}
+  } catch {
+    /* localStorage unavailable */
+  }
   return 'normal';
 }
 
 function applyFontSize(size: FontSize) {
   document.documentElement.style.fontSize = `${FONT_SIZES[size]}px`;
-  try { localStorage.setItem('fontSize', size); } catch {}
+  try {
+    localStorage.setItem('fontSize', size);
+  } catch {
+    /* localStorage unavailable */
+  }
 }
 
 export default function App() {
@@ -61,14 +73,14 @@ export default function App() {
   }, []);
 
   const cycleFontSize = useCallback(() => {
-    setFontSize((prev) => prev === 'normal' ? 'large' : prev === 'large' ? 'xl' : 'normal');
+    setFontSize((prev) => (prev === 'normal' ? 'large' : prev === 'large' ? 'xl' : 'normal'));
   }, []);
 
   const [tab, setTab] = useState<TabType>('tech');
   const { articles } = useArticles({ type: tab });
 
   return (
-    <div className="min-h-screen" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
       <Header
         tab={tab}
         articleCount={articles.length}
@@ -79,7 +91,13 @@ export default function App() {
       />
 
       <main className="mx-auto max-w-4xl px-4 sm:px-6 pb-16">
-        <div className="sticky top-0 z-10 space-y-4 pt-4 pb-4 backdrop-blur border-b" style={{ background: 'color-mix(in srgb, var(--bg) 98%, transparent)', borderColor: 'var(--border)' }}>
+        <div
+          className="sticky top-0 z-10 space-y-4 pt-4 pb-4 backdrop-blur border-b"
+          style={{
+            background: 'color-mix(in srgb, var(--bg) 98%, transparent)',
+            borderColor: 'var(--border)',
+          }}
+        >
           <div className="flex rounded-lg p-1" style={{ background: 'var(--bg-card)' }}>
             {TABS.map((t) => (
               <button
