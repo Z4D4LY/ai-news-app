@@ -1,35 +1,415 @@
 {
-  "updated": "2026-08-13T17:29:55.860Z",
+  "updated": "2026-08-14T07:02:46.587Z",
   "articles": [
     {
-      "id": "ha-f_EMmBdiiwzB",
-      "title": "Gemini 3.7 Flash",
-      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "id": "bb-AUUs-ktnLZn-",
+      "title": "'Unprecedented' rains in Japan kill six people",
+      "url": "https://www.bbc.co.uk/news/articles/cq561gpen8lo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Unprecedented heavy rain in eastern Japan, especially Chiba prefecture near Tokyo, has killed at least four people and injured five others, while also knocking out power to more than 20,000 homes. The Japan Meteorological Agency described the downpour as an unprecedented level of heavy rain, with Chiba seeing more than 100mm per hour since Thursday afternoon—roughly three times the area’s usual August rainfall and the highest such level recorded in Japan. The storm forced a level-five emergency alert, prompted evacuation advice for over 100,000 households, and stranded about 7,000 travelers overnight at Tokyo’s Narita Airport as landslide and flood risks continued. It matters because it shows how extreme rainfall is disrupting infrastructure, endangering lives, and overwhelming transportation and emergency systems in the Tokyo region.",
+      "date": "2026-08-14T07:00:56.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "fr-4PJIqhmQR_lA",
+      "title": "Nigel Farage beats Count Binface to regain UK parliamentary seat in widely mocked by-election",
+      "url": "https://www.france24.com/en/europe/20260814-nigel-farage-beats-count-binface-regain-uk-parliamentary-seat-by-election",
+      "source": "france24",
+      "score": 0,
+      "summary": "Nigel Farage won the Clacton by-election and returned to Parliament after resigning a month earlier to force the vote, beating comic candidate Count Binface in a contest that drew attention for its unusual lineup and mockery. According to the official count, Farage received 22,239 votes, ahead of Count Binface’s 9,455, with turnout at 44.37 percent and 34 candidates on the ballot. Farage had also won Clacton in the 2024 general election with 21,225 votes, so the result confirmed his continued hold on the seat despite a lower-turnout, widely ridiculed rerun. It matters because it restores the Reform UK leader to Westminster and underscores both his personal political strength in Clacton and the attention his tactics continue to generate.",
+      "date": "2026-08-14T06:34:35.000Z",
+      "type": "europe"
+    },
+    {
+      "id": "np-V8A_0qo3aKw1",
+      "title": "New aircraft carrier heads toward Mideast after reports of issues on long-deployed USS Lincoln",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5931183/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln",
+      "source": "npr",
+      "score": 0,
+      "summary": "The Pacific-based aircraft carrier USS George Washington is moving to the Middle East to replace the USS Abraham Lincoln, which has been deployed for more than 250 days and has spent about 200 days without a port call. The shift comes after reports that Lincoln sailors have faced severe strain, including mental health concerns, exhaustion, supply shortages, air-conditioning problems, plumbing and water issues, and even attempts to jump overboard, though a U.S. official said there has not been an observed increase in suicidal ideations or attempts. George Washington, which is based in Japan, had recently been operating in the South China Sea and finished a port visit in Da Nang, Vietnam before heading west. The deployment matters because it highlights the pressure created by long carrier deployments in an active regional conflict and the Navy’s effort to rotate in a fresh ship to sustain operations in the Arabian Sea and broader Middle East.",
+      "date": "2026-08-14T06:31:29.000Z",
+      "type": "us"
+    },
+    {
+      "id": "go-QSyw8OVb-LQE",
+      "title": "Asia can step up as humanitarian aid sees ‘biggest contraction’ in recent history: IFRC - channelnewsasia.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbnpxOG1vTnYxMGtnMUxwN1Z6OHZfdkFjdmVvd3RXMXNBN3ZXclBuajBTTm01S2RTbnZfYjY0MWkwcm5rbWV5S3B1bU1sQlV1M1pmWnQ5aDJRLW1LY0ptLVM1eE56Wm1aNEt6a2gtU3BzSEIwSlVKMkFmM0s0T2NfVEpPZDJVOV9rdTBqOHNYLTNVenZHZFB1NldReG9iWGFwdXNZSXNGYjJkblJwdVZBYXFXZVJMOWpWWEVDRnROMy1DZm9j?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article says the International Federation of Red Cross and Red Crescent Societies (IFRC) is warning that global humanitarian aid has suffered its **biggest contraction in recent history**, and that Asian countries may need to play a larger role in filling the gap. It argues that shrinking budgets and donor fatigue are making it harder to respond to crises, even as needs remain high across the region and beyond. The significance is that Asia is being pushed from being mainly a recipient of aid to potentially becoming a more important source of humanitarian support and leadership. That shift matters because it could reshape how disaster relief and emergency assistance are funded and delivered in future crises.",
+      "date": "2026-08-14T06:16:21.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "np-YYxmg4YHlkC6",
+      "title": "Judge dismisses Trump administration lawsuit alleging antisemitism at Harvard University",
+      "url": "https://www.npr.org/2026/08/14/g-s1-138721/trump-antisemitism-harvard",
+      "source": "npr",
+      "score": 0,
+      "summary": "A federal judge in Boston dismissed the Trump administration’s lawsuit accusing Harvard University of ignoring antisemitism and harassment of Jewish students, ruling that the government did not show an ongoing violation of Title VI civil rights law. U.S. District Judge Richard G. Stearns said the complaint relied mostly on incidents from the 2023-24 academic year, with only a few later examples, and called the alleged misconduct “too isolated and episodic” to prove persistent institutional noncompliance. The ruling matters because it undercuts the administration’s effort to use the lawsuit to pressure Harvard over campus antisemitism and federal funding, and it represents another setback in its broader conflict with the university.",
+      "date": "2026-08-14T06:15:54.000Z",
+      "type": "us"
+    },
+    {
+      "id": "np-uJ8nVujSVvsL",
+      "title": "Judge drops Nevada case against electors accused of forging certificate in 2020 election",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5931179/judge-drops-nevada-case-against-electors-accused-of-forging-certificate-in-2020-election",
+      "source": "npr",
+      "score": 0,
+      "summary": "A Nevada judge dismissed the long-running criminal case against six Republican electors accused of submitting a bogus certificate falsely declaring Donald Trump the winner of Nevada’s 2020 presidential election. Judge Mary Kay Holthus said the state had not shown enough evidence that the electors intended to deceive government officials and also found that prosecutors failed to disclose exculpatory evidence to the grand jury. The defendants, including Nevada GOP chair Michael McDonald and former Clark County GOP chair Jesse Law, had argued they were preserving their right to challenge the election outcome rather than trying to pass off a fake certificate as real. The ruling is another major setback for state efforts to prosecute the fake-elector scheme, following dismissals in Arizona, Michigan and Georgia, even as Nevada Attorney General Aaron Ford says his office plans to appeal.",
+      "date": "2026-08-14T05:42:35.000Z",
+      "type": "us"
+    },
+    {
+      "id": "go-KbcfKSCsbodW",
+      "title": "Climate change and El Nino intensifying Asia's typhoon risks: Expert - channelnewsasia.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0pUOEN6RGIwYmU1YkIzNF9SNnNoWWFGSnlyMXA3VTJNdG5kUkZCTU8tMUI2cUdURWFOMnFGY0dwUTg5R2RON0ktMkE5Z0FfRENvanZUS1hZMS1Ja1Q4dlhQQmVEUmlORHEtWXlBaDZkWGhOWmhBYlZRQ1RSV2w1dnNLSnVRb3ZVSDRZcVdBSHFQbHZJMlJ0NlVKNWJsWV9LV2RJa3hRYkhDcHFRa1pMaGtB?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article says climate change and El Nino are combining to raise Asia’s typhoon risk, according to an expert quoted by Channel NewsAsia. It explains that warmer ocean conditions can strengthen storms and shift rainfall patterns, making typhoons more intense and harder to predict across vulnerable coastal areas. The warning matters because millions of people in countries such as the Philippines, Taiwan, Japan, and China face greater threats to lives, infrastructure, and food supplies as extreme weather becomes more frequent and destructive.",
+      "date": "2026-08-14T05:39:53.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "go-dM6oVjo8y82E",
+      "title": "Jimmy Fallon Reacts to Karoline Leavitt’s White House Exit - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQmNGTWZSQVVyZm50OHR1OG1zUmxuNzM0dU1DcGJmYnVUNFBoOHpXSFlMWU50RVZ4NVRfVC1RRlVrMWdKM3NOeGRaaVA1aVV6OGx1bTViMGxoX2M4RDhSSU81SmVHNTJVV2ZpZXQ0MzQ1NkJkU1dpandjNGZNYnhUcVVSSFYtajA0UzhHa2VTbzBlZ2tKRG5NQXJmUG0?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Jimmy Fallon’s reaction to Karoline Leavitt’s White House exit appears to be part of a broader late-night/news-commentary segment rather than a major policy story, but the article’s exact details are not accessible from the provided material. Based on the title, the piece centers on Fallon responding to Leavitt leaving the White House and likely frames the moment as a notable political-pop culture crossover. The story matters because Leavitt has been a visible White House figure, so her departure would draw attention both for its political implications and for how it becomes fodder for national media and comedy commentary.",
+      "date": "2026-08-14T05:34:38.000Z",
+      "type": "us"
+    },
+    {
+      "id": "ha-GYh2FGYQmwey",
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities",
+      "url": "https://z.ai/blog/glm-5.3",
       "source": "hackernews",
-      "score": 22,
-      "summary": "Google has introduced Gemini 3.7 Flash as the next version of its fast, workhorse AI model, positioning it as an upgrade for coding, knowledge work, and more reliable tool use. According to the article, it is more responsive to developers, better at clarifying intent, follows instructions more faithfully, and spends more effort on multi-step planning and tool calls. Google is also pricing it competitively at $0.75 per million input tokens and $3.75 per million output tokens, which is half the launch price of Gemini 3.6 Flash, and it is being added to Gemini Spark for Google AI Pro and Ultra subscribers. The launch matters because it shows Google pushing to improve its mainstream model quickly with stronger performance and safety guardrails, even before delivering its larger Pro-tier update.",
+      "score": 225,
+      "summary": "Z.ai’s GLM-5.3 is a new open-weights coding model that the company says keeps the same base model as GLM-5.2 and improves entirely through scaled-up post-training, with the biggest gains in coding and cybersecurity. Z.ai says it is now available through its API and Coding Plan, but the weights will not be released for about two weeks while safety evaluation and hardening are completed. The company reports that GLM-5.3 is its strongest open-weights coding system so far and that cyber capability improved in a surprising way: instead of just finding individual bugs, the model began reasoning across multi-stage exploitation chains and planning complete attacks. The article matters because it shows how quickly open models are closing in on frontier performance while also raising safety concerns, especially since the API now forces thinking on and supports low, high, and max effort levels only.",
+      "date": "2026-08-14T05:19:59.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "go-rZaF8SEA6Og5",
+      "title": "Elon Musk's Starlink launches satellite internet service in Vietnam - Nikkei Asia",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQS0xBRm82NThTVDl1UkIyTGpnMzVqbVo0QndNc2licGhsUlVPc0NOcTlIZGlMZ0xBN25lMFVlcWdKN2h5WVNsNUdYZUhWcUxJWGVSSXIzN1hCRXEzOVNJYVlPMEpPUFVsOFVMUEhqbFFuYUM2X2J0YXRJdUgyRWdxWjhwU01LSkcwZ2dfQlNWMlJUZ2Z5cnRNaEgwenVISzgxLXBYdnJqeWZXYkpiOHVnSGUtbDRYczd5TXc?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article says Elon Musk’s Starlink has officially launched satellite internet service in Vietnam, marking the company’s entry into one of Southeast Asia’s fast-growing markets. The move is significant because Starlink can provide high-speed connectivity in areas where fixed broadband is limited or unreliable, which could help connect rural communities, remote businesses, and users affected by Vietnam’s uneven internet infrastructure. It also matters geopolitically and commercially because Starlink’s expansion depends on local regulatory approval, and Vietnam has been cautious about telecom and foreign technology services. The launch shows SpaceX is continuing to push Starlink into new countries as it seeks to build a global customer base beyond its core markets.",
+      "date": "2026-08-14T04:22:00.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "go-EbkDepylaDi1",
+      "title": "China tests canal link to Southeast Asia; rocket failure concerns: 7 highlights - South China Morning Post",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORVJSMi1LZGpnd2NWVEY0VVdmc1lSOWNZY19MWXY2Y0l6U280TEpNTHltY2JxeUdSemhWeE50U2pYdkU4QXpSZExIMGp2SG95RG1vTFJ4OGdoU3lTWFdYXzN0RVVYdVJrMFd5d21pdUQ0aWZSLVpPQkVJVGE2d2FrZnphX3hwcjJpZ0s2ZzVXZy1YTnRYdUxjUTJfTUU4SU5Va045TGJmQkhURk5DZmsxWElhNERJWDhHYk1tOXpQaXBGcU5xa2o00gHHAUFVX3lxTE9CZURaQ05UQVRsR0xhV2lsemVNazkySDRjVDRCcEpXS2JJMzBxcjlMal83Z3lsaHNvWXRHejJXUjA0ckdrMVN1U1h4cjhYMzEyVXNYWkNpekluMl82VlR5TGhRQktBeTQtQlJmN0xWbk5GVEpHdWE2VG9UV1VoU0pGT1VqaVNHaFJjTmJLSEJGUmxxY1MzNXRsYVk0Q2ZpeVAxaXRlQ2x5OGVKZmFTUk9jdkxZcW14TVlZT0pURG5IOWpZSkYwUlE?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article says China is testing a new canal link to Southeast Asia, signaling a potential boost to trade and regional connectivity. It also flags worries about rocket failure, suggesting the piece connects China’s infrastructure and technology ambitions with the risks of high-profile setbacks. As a roundup of seven highlights, the story appears to frame these developments as part of China’s broader push to expand influence and manage strategic vulnerabilities across Asia.",
+      "date": "2026-08-14T04:15:07.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "go-AwSvc5cVvpsR",
+      "title": "How one diversified ETF provides exposure to Asia’s AI rally and what could come after it - The Edge Singapore",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNY2dPdTNGNU9KTldtSTZwM1ZVcGUtdEdIamY1czVHc0c2Z3NaNHFFa18tcFc0WkU5MDNCa1ItY193aXB2cklGS3dNUFVNVmRTR3VaSkhlWjFNTlUxUk9STDlnOGxVUXB0RXBHdlByNnNqRjAwV2o0cEc5NnNPN2s2ZFZXdTY5QWxDTm56X2lmN1poOG9mQ2lBbEx5VVctckdjOU9CbmxNdllvSWdtbHUzSGJta1pycVUzRHEtOWRkZllGN3RHY1lfMnh30gHPAUFVX3lxTE0zRTJPbVlNTGdNMEFPVE05V09ZOHRRSDZ2b3Q2LUxnY3BHQTNQcnN5RXpvYVIxRlpkR3p2SGl4WmJLVzJzTEpnY1hKMFlTUTA2NlJFQlItOXZoYmJqajBtWC1xZDRiMWJXd0hZR29NdElPMXpjTG82YzFHSmhCaDFHbXBsRGJiMUJqVVdtVVNIU1gxemtwTEdPdDkwSFIwMnpkc09oNHdYWmdONXdVWXhSMUhwNUdjZDFYVFpXNUE4MER5LTB4eU8yc0VfQkRKcw?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article explains how a diversified ETF gives investors exposure to Asia’s artificial-intelligence rally, rather than relying on a single stock or country to capture the theme. It highlights that the fund’s holdings spread across several Asian markets and AI-related companies, which can reduce some of the concentration risk that comes with betting on the region’s biggest winners alone. The piece also looks ahead at what may come after the current AI surge, suggesting that the next phase of returns could depend on broader adoption, earnings growth, and whether valuations stay justified. It matters because it shows a more balanced way for investors to participate in one of Asia’s strongest market trends while thinking about how sustainable the boom really is.",
+      "date": "2026-08-14T03:00:00.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "go-trP35ShoZwAn",
+      "title": "Democrats seek answers after reports of poor conditions on USS Abraham Lincoln - The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOLThOUTdEamEyRGJLcEthOFQyUm9WdVNnSml1SE9tZzJfbEFxdlpSOENjeFp3ZHpmdzlBWFpPV0hKMWkxdXVhQXNrLWJGLWU1eWdSM2hXSWNxLXlmdzhFOEZPdmhDUUg5M1BsZHZhbGtIcmFoVVY2clFGX2otdWZSZ1l1amZKQ29EV1RUSnpSYkdiaXZCcXFjZUZodThQZktFTXFjWmpZejdOVmNqeVZZNGtHU1ZNc1BVdW9STmZLWUJ3c2d1MmRLc1NCWmJhU28?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Democrats are pressing for answers after reports that conditions aboard the USS Abraham Lincoln have deteriorated during its nearly nine-month deployment, with members of Congress expressing concern about the crew’s well-being. The article focuses on worries about fatigue, morale, and whether the Navy has kept sailors in a healthy and safe environment on the carrier. It matters because the Lincoln is a major U.S. warship, and prolonged deployments raise broader questions about military readiness, retention, and how long crews can be asked to operate under strain.",
+      "date": "2026-08-14T02:11:16.000Z",
+      "type": "us"
+    },
+    {
+      "id": "np-_Iw0HTjf_1wp",
+      "title": "Feds probe &apos;mention markets&apos; amid White House Kalshi controversy",
+      "url": "https://www.npr.org/2026/08/13/nx-s1-5930689/cftc-probe-mention-markets-prediction-markets-kalshi",
+      "source": "npr",
+      "score": 0,
+      "summary": "Federal regulators have launched a review of so-called “mention markets” on prediction sites like Kalshi, where people bet on whether public figures will say specific words or phrases, after concerns that these markets can be especially easy to manipulate. NPR says Kalshi has already removed all sports-related mention markets “until further notice” while the Commodity Futures Trading Commission investigates, and the scrutiny follows a recent White House scandal in which a longtime teleprompter operator was accused of profiting from bets on President Trump’s speeches. The article says Kalshi’s own surveillance systems flagged the suspicious trading and reported it to regulators, underscoring why officials are now questioning whether these markets fit the basic purpose of prediction markets or instead invite insider-style abuse.",
+      "date": "2026-08-14T02:06:10.000Z",
+      "type": "us"
+    },
+    {
+      "id": "go-WwtQBCAcHMAR",
+      "title": "Alabama man put to death for the murder of a 5-year-old girl in last of three US executions in a day - AP News",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcjJXcUxELVBkb3dsclNBbDBsZUswNHB2WW5QNlpQTW5adGdNVGFoZC1aTEJqSUhRbk9XTVNHUUZnVHlGM3JuT29weS1pa3NsTmFGdzJMRktTcmpUc2tNa3g4Yk9ObWoxamd4X2sxZ1dJa1d1Q0dZMk11UXFBY3phbnRHbi0yMkNuanVoeGhjZURpMzVhU1NDVkRvazVyRFlGQkstZkVTZERtTllwb013?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "An Alabama man was executed for the murder of a 5-year-old girl, making his death the last of three U.S. executions carried out in a single day, according to the AP. The case centers on the killing of a young child, which has kept attention on the severity of the crime and the state’s use of capital punishment. The article matters because it underscores how the death penalty is still being actively carried out in the U.S., even as executions remain politically and morally contested. It also highlights the emotional weight of cases involving child victims, which often intensify debate over whether executions deliver justice or simply extend the cycle of violence.",
+      "date": "2026-08-14T02:01:00.000Z",
+      "type": "us"
+    },
+    {
+      "id": "go-X__mr62qEQSk",
+      "title": "Flock Safety's CEO says safeguards will be added to cameras in January - WRAL",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPOGhRMkpnOFNTSklmeVBQV1VjRllqYWNyOUZVU2pELXVHbmJtWmVaekNIVEw1OUt2d3dOM2h6d1M3UHFxbFVnbGhMWVVzTFA4cmpyWmJhc3dtOTVwTzZ1SEtOQ1lQUEZsSG5kUkp3eVBFRHNRczZ4d2FCRF9xdE80Q3JPRFRISzNuWE02di1Mc3J2OG8?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "Flock Safety’s CEO said the company will add new safeguards to its cameras in January, a move that appears aimed at addressing concerns about how the devices are used and what data they collect. The article likely focuses on the timing of those changes, the company’s response to scrutiny, and what the safeguards will mean for agencies and communities that rely on the cameras. It matters because Flock Safety’s license-plate-reading and surveillance tools are widely used by police and neighborhoods, so any added protections could affect privacy, oversight, and the future of public-private surveillance technology.",
+      "date": "2026-08-14T00:50:22.000Z",
+      "type": "us"
+    },
+    {
+      "id": "go-Nwsjfj5351qA",
+      "title": "AUBL Scholars program nurtures hoops and dreams of Asia's children - China Daily",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5tWTRqZ3QyZXBfUHVjeXQtWDA1aU5nb3ZDbzYzbjVTeDljaDEyZEdxT3pBQnI4VElXazlDc1JQQThDcXRRRVpKX1lpOFJhc25NSm5sVDV1VlhzMXRjMEJLeVlFaDBzMVAyYThMcjlVdzBZMFlsdEo3bnlRY2lzdw?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article says the Asian University Basketball League’s AUBL Hoop Scholars program is expanding youth basketball development by combining elite coaching with academic ambition, starting with a winter clinic in Hong Kong for student-athletes from top universities and secondary schools. It highlights coach Gary Maitland, who has trained NBA players like Jimmy Butler, Jordan Poole, and Brandin Podziemski, and frames the program as a bridge between grassroots players, school basketball, and higher-level competition. The initiative matters because AUBL is trying to build a real student-athlete pathway in Asia, where young players are encouraged to grow both in the classroom and on the court rather than having to choose one over the other.",
+      "date": "2026-08-14T00:19:46.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "ha-7TrVSkewkfzj",
+      "title": "Bluesky Protocol Services",
+      "url": "https://atproto.com/blog/introducing-bluesky-protocol-services",
+      "source": "hackernews",
+      "score": 140,
+      "summary": "Bluesky Protocol Services explains how Bluesky is splitting parts of its social network into shared protocol-level services rather than keeping everything inside one app. The article says this should make it easier for different AT Protocol apps to reuse core infrastructure, while also improving scalability, portability, and interoperability across the network. That matters because Bluesky’s long-term goal is a decentralized social ecosystem where users can move between providers and apps without losing identity, social graph, or access to their data. In practice, protocol services are meant to turn Bluesky from a single product into more of a common platform for the wider AT Protocol “Atmosphere.”",
+      "date": "2026-08-14T00:14:28.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "go-b-41WLGXHlTC",
+      "title": "To become major hubs, South-east Asia’s new airports need strong national carriers - businesstimes.com.sg",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQ2lVTzM2UWZDbkNxZjdfRDQ4MFN4U3o1UW82czJqUzBWMWY3eEd1Szlpa2o5Z3Nab0ZRVFg1TDd4WmhRTUdQb25HbVlIMDVJVWF0cDNRWUNrVkktXzNFWmlUY1F2aGV1SU9IdXZNQTFNNzc5dF9vdXVVOFcxakZxbFZHSzlmOUFUdWpQT3FrbEtTSzh1UkI2NWlqZDJsQ0VkMndKNVFWRlRKRUc3ZVVEbldaeXQ5RFFBdVBxQWk3Qy1qUQ?oc=5",
+      "source": "googlenews",
+      "score": 0,
+      "summary": "The article argues that South-east Asia’s new airports will only become true major hubs if they are backed by strong national carriers that can consistently funnel passengers through them. It highlights the core aviation challenge in the region: airports alone do not create hub status unless airlines have enough traffic, network reach, and commercial power to fill connecting flights. The piece matters because several countries are investing heavily in airport expansion, but without a dominant home airline those facilities risk becoming oversized terminals rather than international transfer centers. In short, the article frames airport development as an airline-and-airport ecosystem problem, not just an infrastructure project.",
+      "date": "2026-08-13T23:00:00.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "he-RTnr__0qEXSH",
+      "title": "Europe swelters under fresh wave of extreme heat",
+      "url": "https://en.hespress.com/143769-europe-swelters-under-fresh-wave-of-extreme-heat.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Europe is being hit by another intense heatwave, with millions of people in France, Italy, Spain and Britain facing temperatures above 35C and some areas forecast to reach 40C or even 42C. The article says Britain issued amber extreme heat warnings, France expected highs of 35C to 39C with some southern areas hitting 40C, and Italy’s hottest regions were forecast to reach 39C. It matters because this is part of a broader summer of repeated extreme heat across the continent, with dangerous conditions for health, drought and wildfire risk, and it comes after record-breaking temperatures in several European countries this year.",
+      "date": "2026-08-13T22:40:02.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "bb-S87rOVP4vlvY",
+      "title": "Kennedy Center board votes to put Trump's name back on building",
+      "url": "https://www.bbc.co.uk/news/articles/cn7n5l5xy5ro?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "The Kennedy Center’s board voted Thursday to restore Donald Trump’s name to the building and to move ahead with a two-year closure for renovations, a plan that had already been blocked by a federal judge. According to reports from board members and news outlets, the facade could be changed to read that the venue was “restored and renovated by President Donald J. Trump,” and an outdoor plaza may also be named for him. The move matters because it directly challenges Judge Christopher Cooper’s earlier ruling that only Congress can rename the Kennedy Center and that the prior closure vote was legally flawed. If the board’s new plan is approved, it would reopen a major fight over who controls the institution’s name, branding, and renovation schedule.",
+      "date": "2026-08-13T22:21:36.000Z",
+      "type": "us"
+    },
+    {
+      "id": "bb-_TBlfW1kMCzE",
+      "title": "'I lost $14,000 in a month': Investors hit by Korean stock market's wild swings",
+      "url": "https://www.bbc.co.uk/news/articles/c2k7zj4knwlo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "The BBC article describes how South Korean retail investors were hit hard by a violent reversal in the Kospi, with one bank employee losing 20 million won, or about $14,000, in a month after money he had set aside for a home purchase instead went into technology stocks that fell roughly 25% in July. The index had more than doubled earlier in the year and surged above 9,000 in mid-June before plunging to 5,500 within weeks, then partially recovering to around 6,800, a swing analysts called one of the sharpest corrections in the market’s history. The sell-off was driven in part by fears over heavy AI-related investment spending, and it has badly hurt many individual investors who concentrated in semiconductor and tech shares. It matters because it shows how fast retail-heavy, leverage-friendly markets can erase household wealth and trigger broader financial stress, especially when investors chase the hottest sectors at the peak of a rally.",
+      "date": "2026-08-13T22:00:10.000Z",
+      "type": "asia"
+    },
+    {
+      "id": "bb-pLDXqBCruCfW",
+      "title": "Engine parts smashed Ryanair window that man's head was sucked out of, report says",
+      "url": "https://www.bbc.co.uk/news/articles/cr59j4z3vl8o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "A preliminary U.S. investigation says a broken fan blade in the right engine of a Ryanair Boeing 737-800 sent engine fragments into the fuselage on July 10, shattering a cabin window and briefly pulling passenger Ljubisa Karović’s head and right shoulder outside the aircraft. The flight, traveling from Thessaloniki, Greece, to Memmingen, Germany, turned back and landed safely, but Karović suffered serious injuries and the cabin depressurized. Investigators found bird remains inside the engine and signs of fatigue cracking and blade deformation, but they have not yet determined the exact cause. The case matters because it raises aviation safety questions about engine failure, bird strikes, and whether existing inspections were enough to prevent a dangerous window-breaching breakup.",
+      "date": "2026-08-13T21:43:47.000Z",
+      "type": "europe"
+    },
+    {
+      "id": "np-SaiAjzwhcos4",
+      "title": "Hit hard by the earthquake in western Colombia, the mayor of Cali gets to work",
+      "url": "https://www.npr.org/2026/08/13/nx-s1-5930188/around-the-clock-search-continues-to-reach-victims-of-the-7-4-earthquake-in-colombia",
+      "source": "npr",
+      "score": 0,
+      "summary": "An NPR report says search teams are still working around the clock in western Colombia after a 7.4-magnitude earthquake killed more than 250 people, even as hopes of finding more survivors are fading. The story centers on Cali, where the mayor is scrambling to organize the response as rescuers dig through collapsed buildings and damaged neighborhoods left in ruins by the quake. It also notes that the disaster hit a broad swath of the region, with emergency crews trying to reach victims despite widespread destruction and the growing likelihood that the death toll will keep rising. The article matters because it shows both the scale of the human toll and how local leaders are racing to manage rescue and recovery in one of Colombia's deadliest earthquakes in years.",
+      "date": "2026-08-13T21:39:19.000Z",
+      "type": "us"
+    },
+    {
+      "id": "he-UKAKclBu78M5",
+      "title": "Morocco sets Mawlid observance for August 25",
+      "url": "https://en.hespress.com/143771-morocco-sets-mawlid-observance-for-august-25.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Morocco’s Ministry of Endowments and Islamic Affairs has announced that the country will observe Mawlid, the Prophet Mohammed’s birthday, on Tuesday, Aug. 25, with Friday, Aug. 14 set as the first day of Rabi al-Awwal 1448 AH. That timing matches the expected start of the Islamic month in 2026 and places the 12th day of Rabi al-Awwal—the traditional Mawlid date—on Aug. 25. The announcement matters because Mawlid is a major religious observance in Morocco and across the Muslim world, marking the third month of the Islamic calendar and the commemoration of the Prophet’s birth.",
+      "date": "2026-08-13T21:37:31.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "he-Th__xPKz9x7J",
+      "title": "Morocco, Iberian storms trigger €126.4 million in insurance losses",
+      "url": "https://en.hespress.com/143766-morocco-iberian-storms-trigger-e126-4-million-in-insurance-losses.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Hannover Re said severe Atlantic windstorms that hit Morocco and the Iberian Peninsula early in the year caused **€126.4 million** in insurance losses, making them one of the reinsurer’s biggest natural-catastrophe claims in the first half of 2026. The storms ranked just behind Winter Storm Fern in the United States and Canada, which cost Hannover Re **€130.4 million**, and above the **€75 million** reserved for the June earthquake in Venezuela. Hannover Re’s total large-loss payments for January through June reached **€784.7 million**, which was below its **€1.02 billion** budget for the period. The article matters because it shows how a single regional windstorm outbreak can generate major cross-border insurance losses and become one of the largest claims in a reinsurer’s half-year results.",
+      "date": "2026-08-13T21:03:34.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "he-N2QThMurkohu",
+      "title": "Morocco&#039;s Treasury Places MAD 11.325 Bln in Four Cash Surplus Operations",
+      "url": "https://en.hespress.com/143764-moroccos-treasury-places-mad-11-325-bln-in-four-cash-surplus-operations.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Morocco’s Treasury and External Finance Department (DTFE) placed MAD 11.325 billion in surplus cash through four operations on Thursday, using short-term cash management to absorb excess funds. The first placement was MAD 5.9 billion for 11 days at a weighted average rate of 2.25%, and the article says the other placements brought the total to the full MAD 11.325 billion. This matters because it shows the Treasury actively managing liquidity and short-term financing conditions, which can affect money-market rates and public cash-flow planning.",
+      "date": "2026-08-13T20:24:37.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "ha-_jygZynRLQ2x",
+      "title": "NP-overrated",
+      "url": "https://gruhn.me/blog/2026-08-13/",
+      "source": "hackernews",
+      "score": 192,
+      "summary": "The article argues that NP-hardness is often misunderstood as meaning a problem is practically unsolvable, when in reality many NP-hard problems are handled successfully in production systems. It points to examples such as dependency resolution in package managers, type checking in some type systems, scheduling, the traveling salesman problem, and even Boolean satisfiability (SAT), noting that SAT—the classic NP-hard problem—is routinely solved at scale. The core point is that worst-case complexity does not always reflect real-world difficulty, because practical instances are often structured enough for good algorithms, heuristics, and solvers to work well. This matters because it challenges the common assumption that NP-hard problems are automatically hopeless, and shows why these problems remain central to software and optimization work.",
+      "date": "2026-08-13T20:14:17.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "bb-b4tKIz65QsZw",
+      "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+      "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Romania has shut down its only nuclear power plant at Cernavodă after an intense heatwave drove Danube River levels so low that the reactors could no longer be safely cooled. The plant normally supplies about 20% of Romania’s electricity, and officials say it is not expected to restart for at least 10 days, increasing pressure on power supplies and forcing the country to rely more on imports. In an effort to keep the plant running, authorities had already tried emergency measures such as sinking rock-loaded barges and redirecting river flow, underscoring how severe the drought and heat have become across Europe. The shutdown matters because it shows climate-driven water shortages can quickly threaten national energy security, especially for nuclear plants that depend on large rivers for cooling.",
+      "date": "2026-08-13T19:46:27.000Z",
+      "type": "europe"
+    },
+    {
+      "id": "he-MnbaebRvoRB5",
+      "title": "Melilla gets new maritime barrier as Spain sends more officers to Ceuta",
+      "url": "https://en.hespress.com/143761-melilla-gets-new-maritime-barrier-as-spain-sends-more-officers-to-ceuta.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Spain began installing a new floating maritime barrier along Melilla’s southern breakwater on Thursday to strengthen control of irregular sea crossings, using a device similar to the one recently deployed at Ceuta’s El Tarajal jetty after a mass entry from Morocco at the end of July.[2][3][8] The barrier is part of a broader Interior Ministry push to reinforce both Spanish enclaves in North Africa, and the regulations now provide a legal framework for border refusals when migrants try to breach these maritime defenses.[2][3] Authorities also tightened access around the work zone and sent additional immigration officers to Ceuta, underscoring how seriously Madrid is treating the recent surge in crossings.[2][8] The move matters because it shows Spain turning to physical barriers and expanded enforcement to deter repeated mass attempts to reach Ceuta and Melilla by sea, after a crisis that has already caused deaths and intense scrutiny of border policy.[1][2][8]",
+      "date": "2026-08-13T19:21:17.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "he-5kyE6W3wFyid",
+      "title": "Algerians lead arrivals to Ceuta and Melilla as land crossings surge 300% in first four months of 2026",
+      "url": "https://en.hespress.com/143759-algerians-lead-arrivals-to-ceuta-and-melilla-as-land-crossings-surge-300-in-first-four-months-of-2026.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Land arrivals to Spain’s North African enclaves of Ceuta and Melilla jumped sharply in early 2026, with an International Organization for Migration report saying 2,164 people reached the two cities by land in the first four months of the year, a 300% increase from the same period in 2025. Algerians were the largest nationality group among those arrivals, underscoring how migration pressures into these small Spanish territories are rising even as overall irregular sea crossings to Spain fell. The surge matters because Ceuta and Melilla are the EU’s only land borders in Africa, so abrupt increases there quickly become a border-management and humanitarian issue for Spain and Europe.",
+      "date": "2026-08-13T19:15:20.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "bb-bhu6J9opuij6",
+      "title": "Family of Irish plane crash victim awarded $29m in damages",
+      "url": "https://www.bbc.co.uk/news/articles/ce85p80nn2yo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "A Chicago jury has awarded $29 million in damages to the family of Michael “Mick” Ryan, an Irish United Nations World Food Programme engineer who was killed in the 2019 Ethiopian Airlines Boeing 737 Max crash. His widow, Naoise Connolly Ryan, brought the civil suit against Boeing, and her lawyers said the verdict represents accountability and justice for the loss of the father of two, who lived in Cork and was originally from County Clare. The award matters because it is one of the remaining civil cases tied to the fatal 737 Max disasters, which killed 346 people across two crashes and continue to drive legal and safety scrutiny of Boeing.",
+      "date": "2026-08-13T19:08:49.000Z",
+      "type": "europe"
+    },
+    {
+      "id": "ha-yhSpU_mJQ30L",
+      "title": "Understanding is the new bottleneck",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+      "source": "hackernews",
+      "score": 292,
+      "summary": "Geoffrey Litt’s article argues that as AI agents become capable of writing code quickly, the real limiting factor is no longer generation but human understanding of what the agents produce. Based on a talk he gave at the AI Engineer conference in July 2026, he says developers still need to understand agent-written systems and describes practical techniques for doing that: explainer docs, quizzes, and micro-worlds that let people interact with the system. He emphasizes two principles for explainers — teach background first and give intuition before details — and says he uses a five-question quiz at the bottom of each explainer, with a rule that he won’t send code to others until he can pass it. The article matters because it reframes AI-assisted development around comprehension, review, and ownership, warning that teams may become bottlenecked by how well they can understand what their agents build, not how fast those agents can produce it.",
+      "date": "2026-08-13T18:47:19.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "de-RFzmnsYairnY",
+      "title": "Running Gemma 4 on EC2 G5g: Graviton2 AMD with NVIDIA GPU",
+      "url": "https://dev.to/aws-builders/running-gemma-4-on-ec2-g5g-graviton2-amd-with-nvidia-gpu-13j",
+      "source": "devto",
+      "score": 0,
+      "summary": "This article is a field report on getting Google’s Gemma 4 E2B running under vLLM on an AWS EC2 G5g instance, specifically a `g5g.4xlarge` with Graviton2 aarch64 CPU and an NVIDIA T4G GPU (compute capability 7.5). It highlights three practical blockers: no published build targets this exact ARM64 + SM 7.5 combination, the need for a very recent vLLM version built from source with `TORCH_CUDA_ARCH_LIST=7.5`, and a hard failure caused by only 64 KiB of shared memory in the Turing GPU path. The author shows that AWS’s ARM64 GPU PyTorch DLAMI is the only maintained stack that still includes `sm_75`, then adds CUDA 13.2, Rust, and a Triton kernel patch before serving the model with `--dtype float16` and `--kv-cache-dtype auto`. It matters because it documents a working path for a rare hardware/software mix that is not covered by standard Gemma 4 or vLLM deployment guides, and it pinpoints the exact low-level constraint that makes the setup fail or succeed.",
+      "date": "2026-08-13T18:45:41Z",
+      "type": "tech"
+    },
+    {
+      "id": "de-VKYFpn1PT00Z",
+      "title": "Running Gemma 4 on EC2 G5g: Graviton2 AMD with NVIDIA GPU",
+      "url": "https://dev.to/gde/running-gemma-4-on-ec2-g5g-graviton2-amd-with-nvidia-gpu-25ci",
+      "source": "devto",
+      "score": 7,
+      "summary": "The article is a field report on serving Google’s Gemma 4 E2B with vLLM on AWS EC2 G5g, a rare setup that combines an aarch64 Graviton host with an NVIDIA T4G GPU using SM 7.5. The author says the main obstacles are that no published build targets this exact architecture/GPU pair, older vLLM versions fail on compatibility issues, and the stock setup runs into a 64 KiB shared-memory limit that breaks the model’s attention kernel. To make it work, they use AWS’s ARM64 GPU PyTorch DLAMI, add CUDA 13.2 and a Rust toolchain, build vLLM v0.27.2rc0 or newer from source with `TORCH_CUDA_ARCH_LIST=7.5`, and patch Triton attention to fit Turing’s memory constraints. It matters because it shows that Gemma 4 can run on an unusual low-visibility AWS configuration, but only if you carefully match the software stack to the hardware rather than relying on prebuilt binaries.",
+      "date": "2026-08-13T18:42:09Z",
+      "type": "tech"
+    },
+    {
+      "id": "ha-frdUO2sfjkYs",
+      "title": "Hello, me. It's been a while",
+      "url": "https://themech.net/2026/08/hello-me-its-been-a-while/",
+      "source": "hackernews",
+      "score": 152,
+      "summary": "The article opens with the author saying it has been more than fourteen years since the last post on the blog, signaling a major return after a long silence. It makes clear that this is not a technical programming piece but a personal update, shaped by the many changes in both the world and the author over that time. The post matters because it marks a reboot of a long-dormant programming blog and suggests the author’s focus has shifted toward more reflective, personal writing rather than purely technical content.",
+      "date": "2026-08-13T18:37:18.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "ha-OGio1BoEOskd",
+      "title": "Accelerating GPT-5.6 Sol Ultrafast",
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "source": "hackernews",
+      "score": 543,
+      "summary": "Cerebras and OpenAI announced Ultrafast mode, a new OpenAI API service tier that runs GPT-5.6 Sol on Cerebras hardware and is launching first as a limited preview to selected customers. The company says the mode reaches up to 750 output tokens per second, up to 14× faster than Standard processing, while keeping the same model intelligence and avoiding quality loss. Cerebras backed the launch with benchmark claims, including finishing all 2,500 Humanity’s Last Exam questions in 11 hours and 11 minutes and delivering a 5.6× end-to-end speedup on GDP-Val, which matters because it shows frontier AI can be used for time-sensitive coding, analysis, and knowledge-work tasks much faster than before.",
+      "date": "2026-08-13T18:10:02.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "he-qprwnMk_yzfR",
+      "title": "Two Moroccan Cadets Join U.S. Military Academies in Historic Firsts",
+      "url": "https://en.hespress.com/143756-two-moroccan-cadets-join-u-s-military-academies-in-historic-firsts.html",
+      "source": "hespress",
+      "score": 0,
+      "summary": "Two Moroccan military cadets have made history by joining U.S. service academies: one Moroccan Air Force cadet entered the U.S. Air Force Academy, becoming the first Moroccan there in 30 years, and one Royal Moroccan Navy cadet was admitted to the U.S. Naval Academy for the first time ever. According to the U.S. Embassy in Rabat, both cadets will spend four years combining academic study with military training in the United States before returning to Morocco as commissioned officers. The development highlights the depth of U.S.-Morocco defense cooperation and gives both future officers access to elite training that could strengthen Morocco’s armed forces.",
+      "date": "2026-08-13T17:55:30.000Z",
+      "type": "morocco"
+    },
+    {
+      "id": "ha--cL67VsBDG65",
+      "title": "Choose Boring Technology (2015)",
+      "url": "https://mcfunley.com/choose-boring-technology",
+      "source": "hackernews",
+      "score": 320,
+      "summary": "Dan McKinley’s article argues that engineering teams should default to **boring technology**—the smallest set of well-understood tools that solves the problem—because mature systems have known failure modes and far fewer hidden costs than shiny new stacks. He recommends first asking how you would solve the immediate problem **without adding anything new**, since that question often reveals cases where the real goal is just to try a new technology. When new tech is justified, McKinley says to introduce it with low-risk experiments in production rather than a full rewrite, and if it replaces an existing system, teams should make a clear commitment and timeline for migrating old functionality. The article matters because it frames technology choice as a long-term operational decision, not a novelty contest, helping teams avoid unnecessary complexity and the maintenance burden that accumulates over time.",
+      "date": "2026-08-13T17:48:13.000Z",
+      "type": "tech"
+    },
+    {
+      "id": "ha-acvjFppbC_if",
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "source": "hackernews",
+      "score": 773,
+      "summary": "Google has introduced Gemini 3.7 Flash as its newest \"workhorse\" model, aimed at coding and agentic workflows, with the company saying it builds on the recent 3.6 Flash release and incorporates developer feedback plus algorithmic improvements. The model is described as delivering meaningful gains in software engineering, knowledge work, and web development, while also cutting costs with an introductory price of $0.75 per 1 million input tokens and $3.75 per 1 million output tokens through the end of 2026. It is generally available for production use and supports a 1M-token context window, 64K max output tokens, and tunable thinking levels, along with built-in tools like function calling, search, and computer use. The update matters because it gives developers and enterprises a faster, cheaper model for complex multi-step tasks, and it is already rolling out across Google AI Studio, Gemini Enterprise, the Gemini API, and the Gemini app.",
       "date": "2026-08-13T17:23:22.000Z",
       "type": "tech"
     },
     {
-      "id": "bb-RFg2m0GHsxG4",
-      "title": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
-      "url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "Reports about the USS Abraham Lincoln say the aircraft carrier has been at sea for more than 250 consecutive days, far beyond its originally planned seven-month deployment, with only brief time ashore and no clear return date. Families and some media reports describe food shortages, broken toilets, moldy showers, laundry outages, and shortages of basics like soap, toothpaste, and deodorant, while sailors’ exhaustion and morale have become a major concern. The Navy has disputed some of the worst claims, saying it has not seen increased suicide attempts and that sailors still have clean water, functional air conditioning, and healthy meal options. The story matters because it raises questions about how long the Navy can sustain crews on extended combat deployments without damaging living conditions, mental health, and readiness.",
-      "date": "2026-08-13T17:21:00.000Z",
-      "type": "us"
-    },
-    {
-      "id": "go-ly-0Wjy3pyRs",
-      "title": "Luigi Mangione expected to plead guilty in New York federal case - NBC News",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcTFzYkNVb2FMLUtiWEFXWVlQSkRTNnVYTVJCejZrXzNMZTlNQmlBYlNkRWtuMTB4d0kwTzl5THpTVHNSV0xXcHFfSUxyemxkdW1KMDdtYnB3UjZEbm8yT19fdlRSS0dVcm1mWnk4Y3FJdzltU1pFcWI5SlVuTmJGWkp4a09QSXpZX1VZcUlQUUMwcXRieVlRdmh5ZFM2WHRyOGxMd1I5bmJ6UQ?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "NBC News reports that Luigi Mangione is expected to plead guilty in a New York federal case, marking a major shift in a closely watched prosecution. The plea would move the case away from a trial and could reshape the timeline, legal strategy, and potential sentencing exposure in proceedings involving one of the most high-profile defendants in the country. The development matters because Mangione’s case has drawn intense public attention and could become a significant test of how federal authorities handle a case that has already become politically and culturally charged.",
-      "date": "2026-08-13T17:02:27.000Z",
-      "type": "us"
+      "id": "ha-fahcnpOuTAH0",
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "source": "hackernews",
+      "score": 311,
+      "summary": "Mistral OCR 4.1 is the latest version of Mistral’s OCR service for Document AI, adding native paragraph-level bounding boxes, structural block labels, and block-level confidence scores. According to the release notes, it improves how the model reads busy, marked-up pages: bounding boxes line up more precisely, nested images and drift are reduced, dense diagrams lose fewer blocks, and multi-column pages keep their structure instead of collapsing together. The update matters because it turns documents into a more structured, machine-readable representation that is useful for downstream extraction, search, and document intelligence workflows, while preserving page layout and element roles rather than just plain text.",
+      "date": "2026-08-13T17:05:12.000Z",
+      "type": "tech"
     },
     {
       "id": "he-EwQr8w4nG4Eq",
@@ -37,9 +417,19 @@
       "url": "https://en.hespress.com/143744-students-escalate-fight-against-paid-university-hours-with-sit-in-and-nationwide-mobilization.html",
       "source": "hespress",
       "score": 0,
-      "summary": "Students who are civil servants or employees are intensifying their campaign against fees imposed on flexible university schedules, announcing a sit-in for Aug. 23 and broader nationwide mobilization. The newly formed National Coordination of Civil Servants and Employees Subject to Paid Flexible Hours, created on Aug. 3, is leading the push and is calling on affected students across the country to join the protest. The issue matters because the group is framing the fees as a barrier to access for working students who need flexible class times to continue their education. The escalation suggests growing pressure on university authorities and could turn the dispute into a larger national debate over fairness, access, and the cost of higher education for working adults.",
+      "summary": "Students who are also civil servants or salaried employees are intensifying their campaign against fees for flexible university hours, with a national coordination formed on Aug. 3 and a sit-in planned for Aug. 23. The group says the payment system unfairly burdens working students and is organizing nationwide mobilization to pressure authorities to отмен the fees for flexible schedules. The dispute matters because it affects access to higher education for employed students, especially those who need evening or adapted class times to keep working while studying. By moving from complaint to coordinated protest, the students are signaling that the issue is no longer a local grievance but a broader fight over affordability and equal access in public universities.",
       "date": "2026-08-13T17:02:26.000Z",
       "type": "morocco"
+    },
+    {
+      "id": "bb-bbzyFnd3zisY",
+      "title": "Air India to test all pilots for banned substances",
+      "url": "https://www.bbc.co.uk/news/articles/c2352jyvm5xo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "bbc",
+      "score": 0,
+      "summary": "Air India will begin mandatory drug and banned-substance testing for all of its pilots, including those at Air India Express, after a Phuket-to-Delhi flight on August 4 suddenly dropped about 300 feet and injured 17 passengers and crew. The move goes beyond India’s normal rule of random testing for at least 10% of pilots, and it follows reports that the flight’s senior pilot later tested positive for marijuana in a confirmatory test. Both pilots have been removed from duty while Indian investigators, working with Airbus and France’s air-safety agency, continue examining what caused the altitude loss. The policy matters because it is a direct response to a serious safety incident and is meant to reassure passengers that Air India is tightening oversight of crew fitness and compliance.",
+      "date": "2026-08-13T16:52:15.000Z",
+      "type": "asia"
     },
     {
       "id": "fr-NmwL14HZKuxX",
@@ -47,19 +437,9 @@
       "url": "https://www.france24.com/en/europe/20260813-european-drought-shrivels-crops-despite-farmers-best-efforts-to-adapt",
       "source": "france24",
       "score": 0,
-      "summary": "Europe’s intense summer drought is drying out crops across the continent, hitting everything from potatoes in the Netherlands to corn in Bosnia despite farmers’ efforts to adapt. The article says the water stress is so widespread that Triodos, a Dutch sustainability-focused bank, warned it could cut EU GDP by 1% in 2026. That makes the drought not just a farming crisis but a broader economic threat, showing how climate-driven heat and water shortages can ripple through food production and national economies.",
+      "summary": "Europe’s summer drought is hitting agriculture hard across the continent, with crops from potatoes in the Netherlands to corn in Bosnia suffering despite farmers’ efforts to adapt. The article says the drying conditions are severe enough that Triodos, a Dutch sustainability-focused bank, warned the damage could cut EU gross domestic product by 1% in 2026. The story matters because it links climate-driven weather extremes directly to food production and the broader European economy, showing that even adaptation measures are not fully protecting farmers from escalating heat and water stress.",
       "date": "2026-08-13T16:47:27.000Z",
       "type": "europe"
-    },
-    {
-      "id": "bb-YnDbPhnIZSZV",
-      "title": "Mangione lawyers to meet federal prosecutors amid reports of plea deal",
-      "url": "https://www.bbc.co.uk/news/articles/c5yw71q9y00o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "Luigi Mangione’s lawyers are expected to meet with federal prosecutors in New York amid reports that they may discuss a plea deal in his federal case, which centers on the 2024 killing of UnitedHealthcare CEO Brian Thompson. The meeting comes after earlier plea talks in June failed, and after a judge removed the death-eligible counts from the indictment, leaving Mangione facing two federal stalking charges that still carry a maximum sentence of life in prison without parole. Mangione has pleaded not guilty in both the federal and state cases, and a plea deal could also affect the parallel state prosecution under New York’s double-jeopardy rules. The development matters because it could reshape one of the most closely watched murder prosecutions in the country and determine whether the case goes to trial or ends in an agreement.",
-      "date": "2026-08-13T16:45:06.000Z",
-      "type": "us"
     },
     {
       "id": "he-mzuWOw4VWkxZ",
@@ -67,29 +447,9 @@
       "url": "https://en.hespress.com/143754-tiznit-police-arrest-man-accused-of-organizing-trips-for-ceuta-crossing-attempt.html",
       "source": "hespress",
       "score": 0,
-      "summary": "Moroccan police in Tiznit arrested a 20-year-old man on suspicion of inciting and organizing irregular migration attempts toward the Spanish enclave of Ceuta, with the arrest made in the Widadiyat Al-Mowazzafin neighborhood based on intelligence and judicial police work. The case fits a broader crackdown on social-media-driven calls for mass crossings, as Moroccan authorities have been monitoring anonymous posts urging people to gather for coordinated attempts to enter Ceuta and Melilla. The significance is that it shows Morocco treating online migration facilitation as a security and criminal matter, not just an isolated local arrest, because such campaigns can quickly mobilize large numbers of people and trigger border unrest.",
+      "summary": "Moroccan police in Tiznit arrested a 20-year-old man on Thursday on suspicion of inciting and organizing irregular migration attempts toward the Spanish enclave of Ceuta, according to information obtained by Hespress. The arrest took place in the Widadiyat Al-Mowazzafin neighborhood after intelligence and judicial police work linked him to preparing trips for people hoping to cross the border illegally. The case matters because it reflects Morocco’s broader crackdown on social media-driven migration mobilization and on people accused of helping coordinate mass crossing attempts toward Ceuta, which authorities say they have been working to stop.",
       "date": "2026-08-13T16:44:41.000Z",
       "type": "morocco"
-    },
-    {
-      "id": "np-NoyLIAWlnNoU",
-      "title": "Vladimir Putin&apos;s first visit to disputed Pacific islands draws Tokyo protest",
-      "url": "https://www.npr.org/2026/08/13/g-s1-138631/vladimir-putins-first-visit-to-disputed-pacific-islands-draws-tokyo-protest",
-      "source": "npr",
-      "score": 0,
-      "summary": "Russian President Vladimir Putin made his first-ever visit to Iturup, one of the Russian-controlled Kuril Islands that Japan claims as part of its Northern Territories, triggering a sharp protest from Tokyo. According to reports, Putin toured a fish-processing plant, a hospital, and a school on the island after Russian state media said he had also overseen naval drills in Russia’s far east. Japan’s foreign minister said the islands are Japan’s inherent territory under international law, while Prime Minister Sanae Takaichi called the visit “absolutely unacceptable” and said it offended the sentiments of the Japanese people. The dispute matters because the four islands remain a longstanding obstacle to a formal post-World War II peace treaty between Russia and Japan, and the visit underscored how unresolved the territorial conflict remains.",
-      "date": "2026-08-13T16:40:26.000Z",
-      "type": "us"
-    },
-    {
-      "id": "go-A7n9ewsqrquJ",
-      "title": "Judge Dismisses Federal Government’s Antisemitism Case Against Harvard - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMkdqdTNsaGQyNkptVTBGeUd0aVRfYUhMeXRndl9oVmNzbThwcHNkX3BYbUtzZlpWOElsR2ZfU08xdDVYeXFuUXJHSHcxTjUycDRmbGhtcXFSSEZYRlkyV0ZjR0RTb21DbzVpUUlHY2Z6NWtKbFF1bjZwQkJIVUlHdDNnOWM?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "A federal judge has dismissed the Trump administration’s antisemitism-related civil rights case against Harvard, ending one of the government’s efforts to pressure the university over campus discrimination and free-speech issues. The ruling is significant because it curbs the government’s attempt to use federal enforcement to reshape how elite universities handle allegations of antisemitism, a fight that has intensified amid broader campus protests and political scrutiny. It also adds to the legal and public-relations pressure on Harvard, while signaling that courts may be skeptical of expansive federal claims in this area. The decision matters well beyond Harvard because it could influence how future disputes over antisemitism, discrimination, and university autonomy are handled nationwide.",
-      "date": "2026-08-13T16:06:15.000Z",
-      "type": "us"
     },
     {
       "id": "bb-U37Yc5vJcr7o",
@@ -97,7 +457,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c2el29e3m3xo?at_medium=RSS&amp;at_campaign=rss",
       "source": "bbc",
       "score": 0,
-      "summary": "Mali’s President Assimi Goïta has pardoned French national Yann Vezilier, who was sentenced in June to 20 years in prison over accusations that he helped plot to destabilize the country, and ordered him to leave Mali immediately. The Malian government says the pardon does not overturn the conviction or the facts established at trial, while France has already rejected the allegations as unfounded and said Vezilier was on a security cooperation mission at the French embassy. The case matters because it reflects the tense relationship between Mali’s military-led authorities and France, and it highlights how espionage and coup-plot claims have become part of the wider political struggle in the country.",
+      "summary": "Mali’s junta has pardoned and ordered the expulsion of French national Yann Vezilier, who had been sentenced to 20 years in prison for allegedly helping plot a coup against President Assimi Goïta’s government. Malian authorities say the pardon does not overturn the court’s findings, which accused Vezilier of working with army officers and acting on behalf of French intelligence, but France has denied the allegations and called them unfounded. The move matters because it ends a year-long diplomatic dispute between Bamako and Paris over a case tied to Mali’s broader security crackdown and tensions over foreign influence in the country.",
       "date": "2026-08-13T15:50:49.000Z",
       "type": "europe"
     },
@@ -107,7 +467,7 @@
       "url": "https://www.france24.com/en/eurovision-winners-involved-in-armed-conflict-now-ineligible-to-host-contest",
       "source": "france24",
       "score": 0,
-      "summary": "Eurovision has updated its rules so that a winning country cannot host the contest the following year if it is involved in an armed conflict or a sensitive geopolitical situation that could threaten the event’s safety. The change, announced after an annual review on August 12, is aimed at preventing a repeat of situations where political or security conditions could complicate preparations for the world’s biggest live music competition. The key impact is that host eligibility is now tied not just to winning, but to whether the country can safely stage a major international event.",
+      "summary": "The European Broadcasting Union has updated Eurovision’s rules so that a winning country cannot host the contest the following year if it is involved in an armed conflict or in a “sensitive geopolitical situation” that could threaten the safety of the event. The change, announced after an annual review, is meant to give organizers a clearer basis for moving the contest if security or political conditions make hosting impractical. It matters because Eurovision is normally awarded to the previous year’s winner, so this rule creates a formal exception that could affect future hosts in politically unstable regions.",
       "date": "2026-08-13T15:45:23.000Z",
       "type": "europe"
     },
@@ -117,7 +477,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2k1r97vx7o?at_medium=RSS&amp;at_campaign=rss",
       "source": "bbc",
       "score": 0,
-      "summary": "A person in Norway’s Svalbard archipelago was fined 50,000 kroner, about €4,559, after using a ship’s foghorn to wake a sleeping polar bear on land in a fjord in northeastern Svalbard. According to the governor’s office, the bear then moved away, and the unidentified person accepted the fine. The case matters because Svalbard has strict wildlife rules that forbid needlessly disturbing, attracting, or pursuing polar bears, which have been protected there since 1972. It also underscores how seriously local authorities treat human interference with Arctic wildlife, especially in a region near the North Pole where polar bears are a major conservation concern.",
+      "summary": "A person in Norway’s Svalbard archipelago was fined 50,000 kroner after using a ship’s foghorn to wake a sleeping polar bear on land, causing the animal to move away. According to the governor’s office, the incident happened earlier this month in a fjord in northeastern Svalbard, and other people on board reported it; the person accepted the fine. The case matters because Svalbard has strict rules against needlessly disturbing polar bears, which have been protected there since 1972, and the fine reinforces enforcement of those wildlife protections.",
       "date": "2026-08-13T15:30:57.000Z",
       "type": "europe"
     },
@@ -127,69 +487,9 @@
       "url": "https://en.hespress.com/143751-morocco-launches-mad-370-million-tenders-for-hassan-ii-stadium-pitch-and-seating.html",
       "source": "hespress",
       "score": 0,
-      "summary": "Morocco’s National Agency for Public Facilities has launched two international tenders worth nearly MAD 370 million for the Hassan II Grand Stadium in Benslimane, covering the installation of the pitch and seating, according to tender documents reviewed by Hespress. The larger contract is valued at MAD 277.5 million, making this a major step in outfitting the stadium after earlier earthworks and structural phases. The project matters because the Hassan II Stadium is being developed as a flagship venue for Morocco’s 2030 World Cup plans and is expected to become one of the largest stadiums in the world.",
+      "summary": "Morocco’s National Agency for Public Facilities has launched two international tenders worth nearly MAD 370 million to outfit the Hassan II Grand Stadium in Benslimane with its pitch and seating. The larger MAD 277.5 million contract covers spectator, media, VIP and VVIP seating, plus press tables and camera platforms, while the MAD 92.5 million contract covers a hybrid natural-grass field reinforced with synthetic fibers, artificial turf in some areas, drainage and ventilation, smart irrigation, sensors, and mobile LED lighting. Both packages are scheduled to take 14 months, and they are a major step toward finishing the 115,000-seat stadium that Morocco wants ready for FIFA requirements ahead of the 2030 World Cup, which it will co-host with Spain and Portugal. The article matters because it shows the project moving from structural planning into the final fit-out phase for what is intended to become one of the world’s biggest football venues.",
       "date": "2026-08-13T15:22:28.000Z",
       "type": "morocco"
-    },
-    {
-      "id": "np-ZtlUxQd2LiPZ",
-      "title": "By sky and sea, Ukraine&apos;s drone strikes challenge Russia&apos;s grip on Crimea",
-      "url": "https://www.npr.org/2026/08/13/nx-s1-5904418/ukraine-crimea-russia-drone-strikes",
-      "source": "npr",
-      "score": 0,
-      "summary": "Ukraine is using drones, missiles, and sea-based attacks to chip away at Russia’s control of Crimea, striking military targets such as air defenses, vessels, depots, rail and power infrastructure, and even key logistics routes. The campaign has also disrupted civilian life, with reports of power cuts, fuel restrictions, and heightened fear in places like Sevastopol, where earlier strikes killed and wounded beachgoers. The article matters because Crimea is both symbolically and militarily central: Russia annexed it in 2014, built it into a major Black Sea military hub, and also promoted it as a tourist destination, so sustained attacks there challenge both Moscow’s security posture and its claim of normalcy on the peninsula.",
-      "date": "2026-08-13T15:18:27.000Z",
-      "type": "us"
-    },
-    {
-      "id": "go-Kgwv_5V9js4p",
-      "title": "Tropical Storm Lala forms in the Pacific and hurricane watch is issued for the Big Island of Hawaii - AP News",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkVuUkY5OF9PNVM4OTcwRnVWOHJVSFp3c1Z2T0dFbjE0dzR6OTREN0pjNzVqcFNUMENXR2RQbHo1SGtPb2VLdmZZaXRabXRhaFF0bTlWVEpBREs4X0x5NGFvSWU1WndPSDZmUjE2MmVXd0dQcDBWcVlWR2xSbGJKOHdZOWVmd2ZVUlltSC1vZ0tkczBiQlJxbzg1akJmZ0xMSW5zOUpYZW1XeXNwd3MyTzJ4enY?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "Tropical Storm Lala has formed in the Pacific, prompting a hurricane watch for Hawaii’s Big Island as forecasters monitor its track and strength. The storm’s development raises the possibility of dangerous wind, rain, and surf impacts for parts of the island if it moves closer or intensifies. The article matters because it signals an early and potentially serious weather threat for Hawaii, where even a near-miss can still bring hazardous conditions and disruption.",
-      "date": "2026-08-13T15:18:00.000Z",
-      "type": "us"
-    },
-    {
-      "id": "fr-4t3mf5M3IsDc",
-      "title": "Heatwave: European rivers face historic drought",
-      "url": "https://www.france24.com/en/video/20260813-heatwave-european-rivers-face-historic-drought",
-      "source": "france24",
-      "score": 0,
-      "summary": "European rivers are experiencing historic drought after an exceptionally hot summer, with record-low water levels reported from the Loire and Rhine to the Po and Danube. Satellite images and reporting show exposed sandbanks and gravel bars, while the low flows are already disrupting cargo shipping, river tourism, irrigation, and industrial supply chains. The drought is also stressing energy systems, including nuclear plant cooling on the Danube and hydropower and freshwater supplies in the Po basin. The article matters because it shows how extreme heat and drought are turning major rivers into a Europe-wide economic and environmental risk.",
-      "date": "2026-08-13T15:17:34.000Z",
-      "type": "europe"
-    },
-    {
-      "id": "he-orNqhBhKCyA6",
-      "title": "Morocco car insurance premiums rise 5% as consumer groups question increase",
-      "url": "https://en.hespress.com/143742-morocco-car-insurance-premiums-rise-5-as-consumer-groups-question-increase.html",
-      "source": "hespress",
-      "score": 0,
-      "summary": "Morocco’s car owners will see **civil liability insurance premiums rise 5%**, with the increase set to take effect on **August 4, 2026**. The article says the move has sparked criticism from consumer protection groups, which argue that insurers and regulators did not explain the change clearly enough and did not sufficiently consider the country’s current economic conditions. The dispute matters because civil liability coverage is a basic, mandatory cost for drivers, so even a modest increase can affect household budgets and fuel wider frustration over rising living expenses.",
-      "date": "2026-08-13T15:02:54.000Z",
-      "type": "morocco"
-    },
-    {
-      "id": "go-8jGPQlngPKcd",
-      "title": "Who could potentially replace White House Press Secretary Karoline Leavitt? - BBC",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpcHlwNWN0QlVQVG42MHpEeE1JcDVoc0ZadGEtTTlhYXo1d0hlX09tU1RWSzgtMHJKd0c0cVgxeHhrZ01Qbmo3c2U3Snl3X3JIV0liRm9ISEhoZw?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "President Donald Trump said White House press secretary Karoline Leavitt will leave at the end of the month, creating a high-profile vacancy in the administration’s communications team. The White House has not announced a successor, and insiders say no decision has been finalized, but several names are being discussed, including principal deputy press secretary Anna Kelly, communications director Steven Cheung, Alina Habba, Katie Miller, and Breitbart’s Matthew Boyle. The article focuses on why the job matters: the press secretary is one of the administration’s most visible spokespeople, and Leavitt’s exit could signal a reshuffle in how Trump’s team handles daily messaging and media confrontations.",
-      "date": "2026-08-13T14:56:19.000Z",
-      "type": "us"
-    },
-    {
-      "id": "bb-PKtKpSYNyZu8",
-      "title": "Who could replace White House Press Secretary Karoline Leavitt?",
-      "url": "https://www.bbc.co.uk/news/articles/c0l5273xjnlo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "Karoline Leavitt’s expected departure as White House press secretary has opened a high-profile vacancy, and the White House has not yet announced a replacement. The BBC article says the main names being discussed include Anna Kelly, Leavitt’s deputy press secretary, and Steven Cheung, the White House communications director known for his combative style and long relationship with Trump. The piece also highlights that the job is unusually demanding because it requires both handling daily press scrutiny and meeting Trump’s high expectations. That matters because the press secretary is one of the most visible messengers in the administration, so the choice will shape how Trump’s White House manages the media and public narrative.",
-      "date": "2026-08-13T14:56:19.000Z",
-      "type": "us"
     },
     {
       "id": "fr-i7D43LxWFy0O",
@@ -197,147 +497,57 @@
       "url": "https://www.france24.com/en/europe/20260813-poland-detains-russian-for-execution-plot-in-warsaw-tusk-says",
       "source": "france24",
       "score": 0,
-      "summary": "Poland said it detained a Russian national on August 7 after foiling a plot to kill a Ukrainian-American dual citizen in Warsaw, with Prime Minister Donald Tusk saying the suspect had been recruited by Russia’s secret services. Tusk said the target was a man with both U.S. and Ukrainian passports who was “inconvenient to the Putin regime,” and that Polish Internal Security Agency officers and police stopped the attack at the last minute with U.S. cooperation. He also called it the first time Russia, or someone acting on its behalf, had sought to attack an American citizen on the territory of another NATO country. The case matters because it suggests Russian-linked operations may be reaching beyond Ukraine into NATO territory, raising the stakes for Western security services and U.S.-Polish intelligence cooperation.",
+      "summary": "Poland says it detained a Russian citizen on August 7 who was allegedly recruited by Russian intelligence to kill a Ukrainian-American man in Warsaw, with Prime Minister Donald Tusk saying the plot was stopped at the last minute by the Internal Security Agency and police. Tusk described the target as someone “inconvenient to the Putin regime,” but officials did not identify him or explain how the attack was to be carried out. The operation was reportedly done with U.S. cooperation, and Polish officials said this was the first known case of Russia ordering an attack on an American citizen in another NATO country. This matters because it highlights the reach of Russian covert operations into NATO territory and the escalating security risks faced by dissidents and dual nationals linked to Ukraine.",
       "date": "2026-08-13T14:54:22.000Z",
       "type": "europe"
-    },
-    {
-      "id": "he-7nIFKj6CPhYd",
-      "title": "Marrakech police arrest 18-year-old after bag-snatching leaves woman dead",
-      "url": "https://en.hespress.com/143747-marrakech-police-arrest-18-year-old-after-bag-snatching-leaves-woman-dead.html",
-      "source": "hespress",
-      "score": 0,
-      "summary": "Police in Marrakech arrested an 18-year-old man on Wednesday in connection with a bag-snatching that turned deadly, according to the report. The victim was riding a motorcycle with her son when the suspect allegedly grabbed her bag, causing her to fall and sustain fatal injuries. The case highlights the lethal consequences of street theft and has drawn attention because it involved a young suspect and a public attack on a woman traveling with her child.",
-      "date": "2026-08-13T14:32:42.000Z",
-      "type": "morocco"
-    },
-    {
-      "id": "ha-KXHDNn5iIJWE",
-      "title": "Kubernetes on Oxide: How customer needs shaped our integrations",
-      "url": "https://oxide.computer/blog/kubernetes-on-oxide",
-      "source": "hackernews",
-      "score": 80,
-      "summary": "Oxide’s article explains how customer demand drove its Kubernetes strategy, moving from general platform integrations to a concrete set of Kubernetes-specific ones. The company highlights three main pieces of work in RFD 493: a Cluster API implementation so customers can provision Kubernetes clusters on Oxide, a Container Storage Interface (CSI) plugin so those clusters can use Oxide storage for persistent volumes, and related ecosystem support such as a Rancher node driver, an upcoming cloud controller manager, and Omni/Talos Linux integration. The key point is that Oxide is not trying to replace Kubernetes, but to make its API-driven hardware platform fit naturally into existing Kubernetes workflows. That matters because it lets teams run standard Kubernetes distributions on Oxide while keeping the infrastructure plumbing—cluster creation, node management, load balancing, and storage—integrated with the platform rather than manually stitched together.",
-      "date": "2026-08-13T14:26:41.000Z",
-      "type": "tech"
-    },
-    {
-      "id": "ha-eWrgY0QZtcyO",
-      "title": "Graduate student proves a quantum uncertainty principle for fractals",
-      "url": "https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/",
-      "source": "hackernews",
-      "score": 31,
-      "summary": "A graduate student, Alex Cohen of MIT, proved a higher-dimensional version of the fractal uncertainty principle, a result that links fractal geometry, Fourier analysis, and quantum behavior.[1] The theorem says that a set of frequencies with fractal structure cannot produce a wave pattern that is itself fractal-like or porous, and Cohen’s proof extends earlier 2016 work by Dmitri Dyatlov and Jean Bourgain that covered only one-dimensional fractals.[1] The breakthrough, published in the *Annals of Mathematics* in 2025, matters because the principle has already been used to show that waves cannot stay trapped on certain hyperbolic surfaces, and the new higher-dimensional result could broaden those kinds of applications.[1]",
-      "date": "2026-08-13T14:22:54.000Z",
-      "type": "tech"
-    },
-    {
-      "id": "ha-Lxx2NXUAmYC9",
-      "title": "We eliminated 1,400 CVEs in NanoClaw's container images",
-      "url": "https://www.echo.ai/blog/echo-xnanoclaw-under-the-hood",
-      "source": "hackernews",
-      "score": 47,
-      "summary": "Echo’s post explains how its collaboration with NanoClaw cut about 1,400 CVEs from NanoClaw’s container images by rebuilding and hardening the agent runtime underneath the framework. The process starts with multiple vulnerability scanners — including Trivy, Grype, and Wiz — to separate issues that are safe to upgrade from ones that require deeper research, source rebuilds, or backports for “won’t fix” vulnerabilities. Once fixes are verified, Echo builds the image, pushes it to its store, and automatically syncs it back to NanoClaw’s ECR within minutes. The article matters because it shows a practical pipeline for making AI agent environments secure-by-default, reducing inherited risk from browsers, runtimes, libraries, and other system tools that agents depend on.",
-      "date": "2026-08-13T14:18:34.000Z",
-      "type": "tech"
     },
     {
       "id": "ha-gIXTIPWfwien",
       "title": "Spaghettifying DRAM",
       "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
       "source": "hackernews",
-      "score": 259,
-      "summary": "This article, titled “Spaghettifying DRAM,” appears to be a technical write-up from xoreaxeaxeax’s security research work on memory corruption and hardware behavior. Based on the available context, it likely explores how DRAM can be manipulated or degraded in unusual ways, building on the author’s broader work in low-level hardware exploitation and reverse engineering. The topic matters because DRAM behavior is central to both system reliability and security; research in this area has previously led to practical side-channel and Rowhammer-related techniques, showing that memory hardware can be attacked in ways traditional software defenses do not anticipate. Even without the full page content, the title strongly suggests a specialized deep dive into memory internals with implications for computer security and hardware fault analysis.",
+      "score": 575,
+      "summary": "The article describes Christopher Domas’s GitHub release for **skitter-creek-bath-salts**, a toolchain tied to his Black Hat USA 2026 work on **“Spaghettifying DRAM”**—an attack that manipulates an AMD memory controller setting so ordinary physical addresses are remapped onto the same DRAM cells holding protected data. By exploiting **DRAM scrambling** below the permission layer, the technique can expose highly sensitive regions such as the **AMD PSP**, **SMM memory**, **C6 idle-state data**, and even **CPU microcode**, using helper tools like `dram_read`, `dram_dump`, and `dram_poke` plus Python scripts that solve the address math. It matters because it shows that some hardware protections can be defeated not by breaking software access controls, but by changing how the memory controller itself interprets physical addresses, effectively creating dangerous aliasing in RAM.",
       "date": "2026-08-13T14:17:13.000Z",
       "type": "tech"
     },
     {
-      "id": "ha-9-lzuOM9cyf7",
-      "title": "Show HN: MCP Memory – Fast Agent Memory Using Google's OKF and SQLite FTS5",
-      "url": "https://github.com/fellowgeek/mcp-memory",
-      "source": "hackernews",
-      "score": 44,
-      "summary": "The article introduces **MCP Memory**, a fast persistent-memory server for AI agents that uses Google’s **OKF** and **SQLite FTS5** to store and retrieve context efficiently. Its main appeal is giving agentic tools a lightweight way to remember facts across sessions without relying on heavy infrastructure, which can reduce context loss and improve continuity in multi-step workflows. The project matters because memory is a major bottleneck for AI assistants, and a local, fast search-backed approach could make agents more reliable and practical for long-running tasks. The GitHub listing and related MCP memory projects suggest this sits in a broader ecosystem of tools trying to give Claude-style clients durable memory, but with a focus on speed and simple local storage.",
-      "date": "2026-08-13T13:57:47.000Z",
-      "type": "tech"
-    },
-    {
-      "id": "ha-CUuU9CQvEuvR",
-      "title": "Gloomberb",
-      "url": "https://gloom.sh/",
-      "source": "hackernews",
-      "score": 257,
-      "summary": "Gloomberb is an open-source, keyboard-driven finance terminal that works in both a desktop app and a terminal UI, with a command-bar-first workflow for quickly jumping into market views by typing tickers or shortcuts like `AAPL` or `TOP`. The article says it can be used to research companies with quotes, charts, financials, filings, holders, insiders, options, analyst ratings, events, and valuation, while also tracking markets through ranked stories, breaking news, sector feeds, indices, FX, macro events, yield curves, movers, and sentiment. It also supports a workspace layer for portfolios, watchlists, broker connections, alerts, notes, AI screens, prediction markets, and Gloom Cloud chat, making it more than a charting tool and closer to a Bloomberg-style research terminal for individual traders and analysts. Its significance is that it tries to bring a powerful, extensible market-research workflow into a fast, local, open-source product that can be installed on macOS, Linux, or Windows.",
-      "date": "2026-08-13T13:52:32.000Z",
-      "type": "tech"
-    },
-    {
-      "id": "he-7X8rHbs0wgjk",
-      "title": "Judge orders Air Arabia Maroc to pay €400 per passenger over delayed flight",
-      "url": "https://en.hespress.com/143740-judge-orders-air-arabia-maroc-to-pay-e400-per-passenger-over-delayed-flight.html",
-      "source": "hespress",
+      "id": "fr-sXgzHcZgeZOk",
+      "title": "Viral dancing seniors inspire Italy's ageing population to get moving",
+      "url": "https://www.france24.com/en/europe/20260813-if-you-can-move-say-rome-s-viral-dancing-seniors",
+      "source": "france24",
       "score": 0,
-      "summary": "A Dutch court ruled that Air Arabia Maroc must pay €400 in compensation to each passenger affected by a major delay on flight 3O126 from Amsterdam-Schiphol to Fez, applying EU air-passenger rights rules that grant compensation when travelers arrive three hours or more late unless the airline proves extraordinary circumstances. The case matters because it reinforces that airlines cannot avoid payment for routine technical or operational problems unless they can show the disruption was truly beyond their control and all reasonable measures were taken. The ruling, published on Aug. 10, highlights how EU law is being enforced in cross-border passenger claims and signals to airlines that long delays can trigger automatic compensation obligations.",
-      "date": "2026-08-13T13:42:12.000Z",
-      "type": "morocco"
+      "summary": "An elderly dancing duo has gone viral in Italy after a tour operator posted one of their street performances online, turning them into unlikely symbols of active ageing. Their popularity has resonated במיוחד in a country with the EU’s oldest population, where the pair says they hope their sudden fame will encourage other seniors to get moving instead of staying sedentary. The story matters because it links a feel-good social media moment to a broader public-health issue: how Italy can inspire older adults to stay physically active and engaged.",
+      "date": "2026-08-13T13:55:15.000Z",
+      "type": "europe"
     },
     {
-      "id": "ha-6LKpLbJrnzUY",
-      "title": "Ordinary Abundance",
-      "url": "https://ordinaryabundance.com/",
-      "source": "hackernews",
-      "score": 61,
-      "summary": "Ordinary Abundance appears to be a project by Jordan Dworkin built around reexamining modern life through the lens of abundance in everyday, ordinary things. According to the description on Abundance and Growth, the site is “a tour through past perspectives on our modern amenities,” suggesting it compares how people in earlier eras viewed now-common conveniences and what that reveals about progress and gratitude. The site matters because it turns familiar daily comforts into a historical and reflective exercise, encouraging readers to notice how much of modern life would have seemed extraordinary to previous generations.[2][3]",
-      "date": "2026-08-13T13:39:41.000Z",
+      "id": "de-aEmwALoaMZOz",
+      "title": "Crafting Hot Filter Kaapi in Pure CSS: Gradients, Steam Engines & Hardware Acceleration",
+      "url": "https://dev.to/solomon1029/crafting-hot-filter-kaapi-in-pure-css-gradients-steam-engines-hardware-acceleration-315o",
+      "source": "devto",
+      "score": 3,
+      "summary": "This article explains how the author built a **pure CSS recreation of hot filter kaapi**, turning a South Indian coffee ritual into a visual front-end experiment. The piece focuses on using **CSS gradients** to paint the coffee and metal filter, plus animated **steam effects** and other browser tricks to make the drink feel alive without JavaScript. It also connects the design to the real-world process of filter coffee—slow percolation, strong decoction, and frothy serving—so the demo is not just decorative but rooted in the beverage’s traditional preparation. The article matters because it shows how far modern CSS can go for illustration and animation, while also celebrating a culturally specific object in a lightweight, hardware-accelerated way.",
+      "date": "2026-08-13T13:39:30Z",
       "type": "tech"
-    },
-    {
-      "id": "np-NRObWemnm9W-",
-      "title": "Taiwan briefly slows its mobile internet to text-only speed as part of defense drill",
-      "url": "https://www.npr.org/2026/08/13/g-s1-138581/taiwan-briefly-slows-its-mobile-internet-to-text-only-speed-as-part-of-defense-drill",
-      "source": "npr",
-      "score": 0,
-      "summary": "Taiwan briefly slowed mobile internet in Taipei and six other cities to 256 Kbps for 30 minutes as part of the final phase of its annual Han Kuang defense exercises, leaving users able to do little more than send text messages. The drill was designed to simulate how communications might function during a Chinese invasion or other emergency, and President Lai Ching-te apologized for the inconvenience while calling it a necessary test. It came as Taiwan faces rising military pressure from China, with the Defense Ministry reporting 18 Chinese warplanes and 11 navy ships operating near the island around the time of the exercise. The slowdown matters because it tested public resilience and backup communications in a place that normally has fast 5G service and is trying to prepare for possible blockade, cyberattack, or invasion scenarios.",
-      "date": "2026-08-13T13:18:43.000Z",
-      "type": "us"
-    },
-    {
-      "id": "go-tS7HJXN24B2s",
-      "title": "South-East Asia braces for more smoke from Indonesia - The Economist",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMUxJYlVYVTNXNTZBZTJGc1pJaVhIdFhaQzhvRDAtdjdjS0RjejRiOXBWbXpVMlFIS0IzQzZMY1NBNGV4Qmp6OXQtZENJMnVUYTlkakllTi1fTTJXbzhFUnpINlFld1loSEhicFotQncyX09QLTFIejA1VzNTWUI0RkJTeVpqWEZBOGc1ZWdzSkhaMzlkOXBMeWlB?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "South-East Asia is bracing for another wave of smoke from Indonesia as fires continue to generate haze that can spread far beyond the archipelago, affecting air quality, visibility and daily life across the region. The article’s focus is significant because recurring Indonesian smoke episodes are not just a local pollution problem: they can disrupt flights, schools and public health across multiple countries, turning seasonal burning into a cross-border crisis. It also matters politically, since repeated haze outbreaks test regional cooperation and raise pressure on Indonesia and its neighbors to curb the fires before dry conditions worsen the smoke.",
-      "date": "2026-08-13T13:12:35.000Z",
-      "type": "asia"
     },
     {
       "id": "de-EjBJP4he3-YK",
       "title": "My (not so pretty) journey in tech",
       "url": "https://dev.to/ishacodes/why-i-joined-devto--5c63",
       "source": "devto",
-      "score": 10,
-      "summary": "The article is a personal reflection on the author’s uneven path into tech and how that experience shaped why they chose to join Dev.to. Based on the title and description, it likely connects that journey to a desire to finally share a topic they are passionate about, suggesting the platform gave them a space to speak openly about their experiences. What makes it matter is that it frames Dev.to not just as a publishing site, but as a place where developers can tell authentic stories, especially those that are messy, nontraditional, or hard-won.",
+      "score": 16,
+      "summary": "The article is a personal account of the author’s path into tech and how that experience led them to join Dev.to, where they wanted a place to write about something they were passionate about. Based on the title and description, it appears to focus on an uneven or difficult journey rather than a polished success story, which makes the post relatable to readers who are still figuring out their own path. Its importance is that it uses a real, personal tech story to connect with a community of developers who value honest experiences, learning, and sharing through writing.",
       "date": "2026-08-13T13:10:09Z",
       "type": "tech"
-    },
-    {
-      "id": "he-yrkg7FrBTM5e",
-      "title": "Ouahbi: Morocco considers suspending its extradition agreement with Spain",
-      "url": "https://en.hespress.com/143734-ouahbi-morocco-considers-suspending-its-extradition-agreement-with-spain.html",
-      "source": "hespress",
-      "score": 0,
-      "summary": "Morocco is considering suspending its extradition agreement with Spain after Justice Minister Abdellatif Ouahbi said Spanish authorities have not properly executed some handovers of people wanted by Moroccan courts. According to the article’s description, Ouahbi told EFE that the matter is now being discussed within Morocco’s Justice Ministry, signaling a possible escalation in legal tensions between the two countries. The issue matters because extradition agreements are central to cross-border criminal cooperation, and any suspension could complicate the pursuit of suspects and the enforcement of court orders between Morocco and Spain.",
-      "date": "2026-08-13T13:01:54.000Z",
-      "type": "morocco"
     },
     {
       "id": "ha-z5GiFh-trlf1",
       "title": "DeepSeek Harness developer preview",
       "url": "https://deepseek.com/harness/en/",
       "source": "hackernews",
-      "score": 401,
-      "summary": "DeepSeek has released **Harness** as a developer preview of an open-source agent harness, describing it as a framework where “everything is a plugin” and components like models, tools, skills, sessions, sandboxes, storage, loops, scheduling, and the UI can be swapped or recomposed. The project is aimed at developers building agent harnesses, with full source code included and a quick start that begins by installing Node.js and running `npx @deepseek-ai/dsh web` to launch the Web UI. DeepSeek says Harness is still in developer preview and continues to be tested, with core plugins and APIs expected to evolve and potentially introduce breaking changes. It matters because it gives developers a modular, open-source way to build autonomous coding agents and multi-step workflows, positioning DeepSeek directly against other agent frameworks while inviting community feedback before a stable release.",
+      "score": 627,
+      "summary": "DeepSeek Harness v0.1 is now in developer preview as an open-source, MIT-licensed framework for building AI agent harnesses, and DeepSeek says it is opening testing to developers worldwide. The project is built around the idea that “everything is a plugin,” with models, tools, skills, sessions, sandboxes, storage, loops, scheduling, and the UI all designed to be swapped or recomposed. The preview is still early and intended for developers rather than end users, but DeepSeek says the codebase is available and can be launched quickly with Node.js using its Web UI command. It matters because it shows DeepSeek pushing beyond base models into the runtime layer that turns a model into a practical autonomous agent, which could make it a more direct competitor to agentic coding tools like Claude Code.",
       "date": "2026-08-13T12:58:02.000Z",
       "type": "tech"
     },
@@ -347,258 +557,48 @@
       "url": "https://dev.to/ujja/you-know-whats-worse-than-not-being-able-to-log-in-5379",
       "source": "devto",
       "score": 3,
-      "summary": "The article argues that a login bug can be worse than being unable to log in at all, because authentication failures can block users from reaching the product entirely and leave teams with no visible signs of what broke. It illustrates this with a simple but critical mistake: a missing `e.preventDefault()` line, which caused the login flow to fail in a way that looked like nothing was happening. The piece matters because it shows how small front-end errors in authentication can have outsized business impact, preventing bookings, account access, and other core user actions. It also highlights why teams need strong debugging and monitoring for login flows, since these issues can quietly cut users off at the front door.",
+      "summary": "The article is a DEV Community bug-smash story about a subtle authentication bug that was actually worse than a straightforward login failure, because it made the application appear to do nothing when users tried to sign in. It explains that a single missing line, `e.preventDefault();`, likely caused the form to behave incorrectly and prevented users from getting past the front door, which meant they could not book, view information, or use the product at all. The piece matters because it shows how a small front-end mistake in authentication can completely block access and hide the real problem from users, making debugging and user impact more severe than a visible login error.",
       "date": "2026-08-13T12:38:44Z",
       "type": "tech"
     },
     {
-      "id": "he-ol9cmokRyLlW",
-      "title": "Morocco issues orange alert for storms and extreme heat across multiple provinces",
-      "url": "https://en.hespress.com/143737-morocco-issues-orange-alert-for-storms-and-extreme-heat-across-multiple-provinces.html",
-      "source": "hespress",
-      "score": 0,
-      "summary": "Morocco’s General Directorate of Meteorology issued an orange-level alert for Thursday through Saturday, warning that several provinces could face thunderstorms, hail, and strong winds alongside extreme heat. The forecast said some areas could get 20 to 35 mm of rain and temperatures could climb as high as 48 °C, creating a dangerous mix of flash-flood risk and heat stress. The alert matters because it signals potentially severe weather over a wide area, meaning residents and local authorities need to prepare for sudden storm impacts as well as oppressive heat.",
-      "date": "2026-08-13T12:23:48.000Z",
-      "type": "morocco"
+      "id": "de-BklDZllMV7m3",
+      "title": "The Most Dangerous AI-Generated Code Is the Code That Passes All Tests",
+      "url": "https://dev.to/harsh2644/the-most-dangerous-ai-generated-code-is-the-code-that-passes-all-tests-10nd",
+      "source": "devto",
+      "score": 12,
+      "summary": "The article argues that the most dangerous AI-generated code is not the code that obviously fails, but the code that compiles, passes tests, and still makes the wrong assumption about how the system works. Using the example of a green pull request that later turned into a problem, it explains that tests only prove the specific behaviors you remembered to check; they do not guarantee the architecture is sound, that business invariants hold, or that edge cases and unhappy paths were considered. The author recommends reviewing AI output by asking what problem it solves, what assumptions it makes, what invariants must remain true, and how it fails outside the tested path. The piece matters because it reframes AI code review from “did it pass?” to “did it correctly understand the system?”, which is crucial as more production code is generated by tools that can confidently produce flawed but test-passing changes.",
+      "date": "2026-08-13T09:26:45Z",
+      "type": "tech"
     },
     {
-      "id": "go-KpZT_Aoz93B7",
-      "title": "Saudi Aramco handles September Asia crude allocations on ad hoc basis, sources say - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOR1d2NXF4dTdfT3V0Qi0tQ3pxWlJTMkl2bWZUaUpWRm9nMDAtRVJhWExEX21HZ0pXTnF2VGdMWkpvRE5WemRSbHZTcFV5eTMzVWZ2WW9BZUdEeGt0aEd6Sk85SUMyV08yVTZTT0VSaGFVcG5vWWJDQnFlRXd2U09FU3N2dUN1bVVLaFdRWXR1YndHcFk2Um42S0haUjBDRHA1RXZfUjY3dm5pWGhGQmdkRFdoYVM5a182M1lQcjd1S1ctNFJpUE4wT0lR?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "Saudi Aramco is handling its September crude oil allocations to Asian customers on an ad hoc basis rather than through a uniform pricing or supply formula, according to sources cited by Reuters. The move suggests the company is adjusting shipments case by case as it responds to market conditions and customer needs, which matters because Aramco is the world’s biggest oil exporter and its supply decisions can influence benchmark pricing and crude flows across Asia. It also highlights the uncertainty in the oil market heading into the month, with buyers watching closely for signs of tighter or looser Saudi supply.",
-      "date": "2026-08-13T11:45:44.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "he-kRdFYpiKVobE",
-      "title": "Morocco launches MAD 2.81 Bln international call for tenders to upgrade Fez Sports Complex ahead of 2030 W.Cup",
-      "url": "https://en.hespress.com/143729-morocco-launches-mad-2-81-bln-international-call-for-tenders-to-upgrade-fez-sports-complex-ahead-of-2030-w-cup.html",
-      "source": "hespress",
-      "score": 0,
-      "summary": "Morocco has launched an international tender worth **2.816 billion dirhams** to upgrade the **Fez Sports Complex** as part of its preparations for the **2030 World Cup**, which it will co-host with Spain and Portugal. The call was issued by the **National Agency for Public Facilities (ANEP)** and is meant to modernize the stadium while also meeting **FIFA sustainability and infrastructure standards**, according to the tender conditions. The project is not just cosmetic: it aims to improve environmental performance, resource management, and spectator reception conditions for a major international venue. It matters because Fez is one of Morocco’s key World Cup cities, and the upgrade is part of a broader national push to bring stadium infrastructure up to the level required for the tournament.",
-      "date": "2026-08-13T11:42:14.000Z",
-      "type": "morocco"
-    },
-    {
-      "id": "he-eka9HV95qcrV",
-      "title": "Chinese Tire maker Guizhou Tyre secures approvals for €250 million production plant in Morocco",
-      "url": "https://en.hespress.com/143726-chinese-tire-maker-guizhou-tyre-secures-approvals-for-e250-million-production-plant-in-morocco.html",
-      "source": "hespress",
-      "score": 0,
-      "summary": "Chinese tire maker Guizhou Tyre has secured all domestic approvals and registration steps for a €250 million production plant in Morocco, moving the project forward less than a year after it was first announced. The factory is expected to generate about £182 million in annual revenue and create jobs, signaling a major expansion of the company’s overseas manufacturing footprint. The project matters because it deepens Chinese industrial investment in Morocco and could strengthen the country’s role as a manufacturing hub serving export markets.",
-      "date": "2026-08-13T11:39:21.000Z",
-      "type": "morocco"
-    },
-    {
-      "id": "go-KDaYx5w2-Tgq",
-      "title": "Chipmaker CXMT becomes China's most valuable company as Tencent slips - Nikkei Asia",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNTlKbzk5TXZySGhadXVrUV8xTnZIQWZqcDJVWGw1RHhZeDIyUXgzRmN3WjdaaHRYWGxIdXlHdzYxdl9EZGdFRjRPNVd2aEpSaHpEMTdjVG02cGZ1a3FKeG1KQ1FWRlhVSEpJbVlFdTlnUTV3Y0VGTTM4YXJaNFg5WnZieUZodGZ3MnY4cXB4cDFsWGVHaGRaSWNtWXh2Mm5mVXhMdkwzU1VwWkpFX2dpWmpINHliUWVDOENF?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "China Memory Technologies Corp. (CXMT) has overtaken Tencent to become China’s most valuable company, underscoring how central the chipmaker has become to Beijing’s push for semiconductor self-sufficiency. The shift reflects CXMT’s rapid rise in the memory-chip market, where domestic demand and state support have helped it gain value even as China’s broader tech sector has faced pressure. Tencent’s slip in the ranking highlights how investor attention is moving away from internet platforms and toward strategic hardware businesses tied to national industrial policy. The development matters because it signals that China’s most prized corporate assets are increasingly those linked to advanced manufacturing and supply-chain resilience rather than consumer tech.",
-      "date": "2026-08-13T10:40:00.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "fr-wBtI12dq-SbA",
-      "title": "Eclipse: Europe falls into darkness as millions watch",
-      "url": "https://www.france24.com/en/video/20260813-eclipse-europe-falls-into-darkness-as-millions-watch",
-      "source": "france24",
-      "score": 0,
-      "summary": "Millions across Europe watched a rare solar eclipse as the Moon moved in front of the Sun, creating a total eclipse in parts of Iceland and northern Spain and a deep partial eclipse across much of France and the UK. In Cornwall, more than 95% of the Sun was covered, while the event was visible as a once-in-a-generation spectacle for skywatchers across the region. The eclipse mattered because it was both a major astronomical event and a highly visible moment that brought a large part of Europe together in a shared public experience of the night-like shadow of the Moon.",
-      "date": "2026-08-13T10:06:34.000Z",
-      "type": "europe"
-    },
-    {
-      "id": "bb-qbyr4F6W3-Id",
-      "title": "Japan PM says Putin's visit to disputed islands 'absolutely unacceptable'",
-      "url": "https://www.bbc.co.uk/news/articles/cqx7ple0nxxo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "Japan strongly protested Russian President Vladimir Putin’s first visit to the disputed Kuril Islands, with Prime Minister Sanae Takaichi calling it “absolutely unacceptable” and saying it damages prospects for better ties. According to Russian state media, Putin visited Iturup, one of four islands claimed by both countries, where he toured a fish-processing plant, sampled fish roe, and spoke with locals after overseeing military drills in Russia’s Far East. The visit matters because the islands remain a major symbol of the unresolved post-World War II territorial dispute, and Tokyo says they are Japanese territory under both history and international law. Japan’s foreign minister also summoned the Russian ambassador to lodge a strong protest, underscoring how the trip could further strain already tense relations over Russia’s war in Ukraine.",
-      "date": "2026-08-13T09:54:03.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "fr-e8jOWW49zR1V",
-      "title": "Total eclipse plunges Spain’s Segovia into darkness for 59 seconds of wonder (4/4)",
-      "url": "https://www.france24.com/en/europe/20260813-total-eclipse-plunges-spain-segovia-into-darkness-suspending-time-59-seconds",
-      "source": "france24",
-      "score": 0,
-      "summary": "The article describes how a total solar eclipse turned Spain’s Segovia into near-darkness for 59 seconds, drawing locals and visitors to watch from the city’s iconic cathedral bell tower. It says the moon’s shadow completely blotted out the sun on Wednesday, creating a brief but dramatic daytime blackout that felt like time had stopped. The piece matters because it captures a rare astronomical event and the communal sense of awe it created in one of Spain’s most historic cities.",
-      "date": "2026-08-13T08:56:08.000Z",
-      "type": "europe"
+      "id": "de-J4q7_tMBM-lY",
+      "title": "Not All AI Builders Are Doing the Same Work",
+      "url": "https://dev.to/deeheber/not-all-ai-builders-are-doing-the-same-work-31m4",
+      "source": "devto",
+      "score": 13,
+      "summary": "The article argues that “building with AI” is not one job but at least three different kinds of work, and that the distinction matters because each type has different goals, constraints, and risks. It describes one group as people using AI coding assistants like Codex or Claude to plan, write, or review code, and another as engineers building purpose-specific agents, software factories, or products that embed LLM output directly into the workflow. The key point is that this is not a maturity ladder where one category is inherently better; instead, the article categorizes AI builders by how they use AI and how much product risk they accept. That matters because teams and companies often talk about AI builders as if they are interchangeable, when in reality the technical work, reliability expectations, and development process can be very different.",
+      "date": "2026-08-13T09:12:03Z",
+      "type": "tech"
     },
     {
       "id": "de-Y_TubdqzsR8X",
       "title": "24 Cups, 36 Seats — The Bartender's Ledger",
       "url": "https://dev.to/xulingfeng/24-cups-36-seats-the-bartenders-ledger-40aj",
       "source": "devto",
-      "score": 44,
-      "summary": "The article appears to be a reflective fiction piece built around a bartender’s notebook-like account of **24 cups, 36 seats, and 24 visits**, all unfolding at the same counter with the same six recurring faces. The title and description suggest the bartender watches the same people return through a series of stories, with one section explicitly called **“The Third Cup”** and the phrase **“The AI wave hit”** indicating the narrative reaches into how artificial intelligence is changing daily life or work. What matters is not just the barroom setting, but the way repeated encounters are used to show how routines, relationships, and small human rituals accumulate over time, turning an ordinary place into a record of social change.",
+      "score": 56,
+      "summary": "The article appears to be a reflective piece built around 24 short visits to a small bar, where the narrator keeps encountering the same six regulars across 36 seats and uses each stop to observe how ordinary conversations reveal changing lives. Based on the title and description, the “Third Cup” likely marks a turning point as the AI wave begins to affect the people at the counter, turning a familiar hangout into a lens for workplace anxiety, adaptation, and human connection. What makes it matter is that it uses a modest setting and recurring faces to show how a major technological shift is experienced not in abstract headlines, but in the habits, conversations, and uncertainties of everyday people.",
       "date": "2026-08-13T07:58:42Z",
       "type": "tech"
     },
     {
-      "id": "go-kx42fKKIMWvv",
-      "title": "Hapag-Lloyd Earnings Recover on Strong Asia Exports - WSJ",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNX1BGS2NBVF9aR3Z5RkhleHpvbURDcW5WM1FyNFU3cmNRdXgzMXBkSnltOXNHRVg5eXZsSzNuYTcyUnFIcDhOb3h6UC1kRGUyWmtiNUp6elNTOXpQaG5ETGdNY0g3MURtU2VWblV1WlFJSnY4MGdidTQ1Q3p6S1RZaDBpSnEzcFlJZkNYMG1DNVR0c0NnbG42VGxxYUxSa1E?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "Hapag-Lloyd reported that its earnings recovered as strong exports from Asia helped offset earlier weakness in shipping markets. The article says the German container line benefited from higher cargo volumes and improved freight demand on Asia-related routes, which helped lift results after a period of pressure from lower rates and volatile trade conditions. That matters because Hapag-Lloyd is one of the world’s biggest container carriers, so its performance is a useful gauge of global trade flows, especially the strength of Asian export activity.",
-      "date": "2026-08-13T07:16:00.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "fr-1u84_VTTLDUy",
-      "title": "Live: Zelensky says Ukraine needs at least 5% of US Patriot stocks to get through winter",
-      "url": "https://www.france24.com/en/europe/20260813-live-russian-attack-sets-ablaze-ukraine-s-izmail-port-infrastructure",
-      "source": "france24",
-      "score": 0,
-      "summary": "A Russian ballistic missile and drone barrage killed at least 10 civilians across Ukraine overnight, including children, and damaged homes, businesses, and infrastructure in at least 10 regions, according to officials. The attack also sent one missile into Poland, prompting NATO jets to respond, while earlier UN reporting showed July was the deadliest month for Ukrainian civilians since spring 2022 and the first half of 2026 saw nearly 1,400 civilians killed and almost 8,000 injured. The article matters because it shows the war’s civilian toll is intensifying and spreading beyond the front line, with Ukrainian officials arguing that stronger air defenses are urgently needed to survive the winter.",
-      "date": "2026-08-13T06:14:52.000Z",
-      "type": "europe"
-    },
-    {
-      "id": "bb-66JjDSS1InIw",
-      "title": "South Korea's Incheon airport becomes world's busiest for global traffic",
-      "url": "https://www.bbc.co.uk/news/articles/cr49p1279n0o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "South Korea’s Incheon International Airport became the world’s busiest airport for **international passenger traffic** in the first half of this year, handling **38.4 million** travelers and edging out **London Heathrow** at **37.79 million**, with **Singapore’s Changi** third at **34.53 million**. The airport said part of the surge came from passengers shifting away from Middle Eastern hubs because of the conflict involving the US and Iran, with transfer traffic through Incheon up **18%** from a year earlier. The result matters because it shows how geopolitical disruption can quickly reshape global aviation flows and marks a major milestone for Incheon, which had ranked much lower in previous years before climbing to the top of the international rankings.",
-      "date": "2026-08-13T05:49:22.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "go-cKqNncnNrRIo",
-      "title": "Japan protests Putin's first visit to disputed islands - CNA",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVno2ZUZVLU5RaThhY0ZwcHB6TlhhLU12c1FGZXBsV1lBWEl0Q0pTRllvXzhDZDAtRnZQUldOVzJZS3o5OXB5MThvX0VuWE1RckFEVnJiLXVNSmhfcVc4TlZmV1pqNzVHX3picGYxZlJTX0pqcDZMcmkxZFlveFdBSVlSTkxhcHhvWW1NUTNlUFg1RzNMMkVyX2ZTU1ZUYi0yMWc?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "Japan protested Vladimir Putin’s first visit to the disputed Kuril Islands, a chain of islands claimed by both countries and still a major obstacle to a formal peace treaty ending World War II hostilities. The trip was politically sensitive because Tokyo regards the islands as its “Northern Territories,” while Moscow has treated them as Russian territory since the Soviet Union seized them at the end of the war. The visit underscores how the territorial dispute remains unresolved decades later and continues to complicate Japan-Russia relations, especially as the islands carry strategic value in the north Pacific.",
-      "date": "2026-08-13T05:32:00.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "bb-eccAjKR-Nhnz",
-      "title": "Putin can no longer claim victory in Ukraine, Nobel Peace Prize winner tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c74grmy2v7ko?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "In an exclusive BBC interview, Nobel Peace Prize winner and former Novaya Gazeta editor Dmitry Muratov argues that Vladimir Putin can no longer claim victory in Ukraine, saying the war has dragged on for nearly five years and already torn apart “more than a million” lives. Muratov says Russia may be able to “destroy” Ukraine, but it cannot truly conquer it, and he warns that such escalation could even lead to nuclear weapons being used. The piece matters because it comes from one of Russia’s best-known independent journalists and underscores how far the war has become a grinding, destructive stalemate rather than a path to a clear Kremlin win. It also highlights the continuing danger of escalation even as Putin publicly insists Russia will prevail.",
-      "date": "2026-08-13T04:55:58.000Z",
-      "type": "europe"
-    },
-    {
-      "id": "ha-724xt3woZE3C",
-      "title": "Codex in ChatGPT desktop app for Linux is now in preview",
-      "url": "https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027",
+      "id": "ha-Bagoi-6SlNvI",
+      "title": "The Library of Ashurbanipal",
+      "url": "https://www.historytoday.com/archive/feature/library-ashurbanipal",
       "source": "hackernews",
-      "score": 388,
-      "summary": "OpenAI has released the ChatGPT desktop app for Linux in preview, bringing ChatGPT, ChatGPT Work, and Codex into one native app for supported desktop Linux systems. The preview supports Ubuntu 24.04 LTS and 26.04 LTS, Debian 13, and Fedora 43 and 44, on both x64 and ARM64 hardware, with installation available through .deb or .rpm packages. The app is meant to be a workspace for managing projects, working with files, using browser workflows, and running Codex alongside ChatGPT. This matters because it extends OpenAI’s desktop workflow tools to Linux for the first time, which is especially important for developers who do most of their coding and project work on Linux.",
-      "date": "2026-08-13T04:53:41.000Z",
-      "type": "tech"
-    },
-    {
-      "id": "bb-8FpibAKhASui",
-      "title": "BTS star V reveals hearing loss battle during livestream",
-      "url": "https://www.bbc.co.uk/news/articles/cx2v1893n3eo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "bbc",
-      "score": 0,
-      "summary": "BTS member V, whose real name is Kim Tae-hyung, revealed during a livestream that he has been dealing with hearing loss in one ear for about two and a half years and is now receiving treatment. He said his right ear hears at only about 30% of the level of his left ear, and that the problem worsened during his mandatory military service, when he initially dismissed it as a “mental strength” issue. V said he is now taking medication and going to the hospital regularly, making this the first time he had told fans about the condition. The disclosure matters because it comes as BTS is in the middle of its long-awaited world tour, and it highlights the health pressures the group’s members have faced during military service and intense schedules.",
-      "date": "2026-08-13T04:09:12.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "go-WX_jPuIvfKJw",
-      "title": "South Korea unveils package to boost housing supply, support young buyers, Asia News - AsiaOne",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaXRTdzE5bVJQbnE2NEQxd0lhU0ZoNk1jbVEwejJ5LVFBY2c0Z2UzdEpMVHlncG9wY3hVSVZMbkkyc0h0bjJqZ3dGalFQZ1BhSjZOcHEtVFVkMG1FLXZTQVc0aC1DVU9PMlFHNzJWM3M2TldaREtXVFlrZkoxa3VsSTlfeEVtQUtqVlVCcUs3Ui1oQVNWYVdlR1YwOElaYW8?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "South Korea has announced a new housing package aimed at increasing supply and making it easier for young people to buy homes, according to the article title and description. The move signals that the government is trying to respond to affordability pressures by boosting construction and targeting support to first-time or younger buyers. It matters because housing costs have been a major social and economic issue in South Korea, especially for younger households trying to enter the property market.",
-      "date": "2026-08-13T03:30:03.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "de-5dYKhpOkJ6td",
-      "title": "Do I Still Need a Monkey Patch for Gemini Live?",
-      "url": "https://dev.to/gde/do-i-still-need-a-monkey-patch-for-gemini-live-4c3e",
-      "source": "devto",
-      "score": 8,
-      "summary": "The article explains that moving a Gemini Live project to **ADK 2.x** eliminated the need for a long-standing **187-line monkey patch** file that had been loading at import time just to make the original build work. The original app was running on `google-adk` **1.27.2**, and the patch finally became unnecessary with `google-adk` **2.6.3**, because the framework now handles routing itself by detecting the model generation and dispatching accordingly. The upgrade was mostly beneficial because it removed compatibility glue cleanly, but the article notes one remaining problem: `send_realtime()` still rejects non-`types.Blob` inputs, which can show up later as a keepalive failure about ten seconds into an otherwise healthy session. It matters because it gives a concrete migration lesson for Live-agent developers: once the patch was gone, the author could focus on validating transcript output, hidden-tab video flow, and session limits instead of maintaining brittle workaround code.",
-      "date": "2026-08-13T01:41:40Z",
-      "type": "tech"
-    },
-    {
-      "id": "go-34YIGtFYsz5I",
-      "title": "AI threatens nearly a quarter of Southeast Asia’s workforce but not all is lost - South China Morning Post",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMkFobzJXVGl2WHEzcTNoNHl2ZHc0N0pUSkhkLUM5SE9SeHVZaWItdEtaUXNPNHlGNXNrcnFwTkpjUWlqSzJraEFYdmczWWdEbFFJT2RQM3ROdXR6bndZRjh6Njk3Q0NFRmNYS0NwN1hTOFE1cDg5S3AxdENPcnlWV1hlQjl1cm9nYlZvU1FsRW1XNVp0N2lZVmVaRC1OOHhKa2lhbU1FVDlxNW5KYjkyTEI4enhHTWN5VjVwdlNRSGLSAcABQVVfeXFMUFVtWGtjbmJVTnAzZi1wT0NKOGU2d3AxNEpxNU9OTXB4dHRZM1FrYUdFTDZmZ01iakNjNVBvekFZamUweWFxSlBMdEVoaVN2RHJTWFZaeTBFcF80OGJxaU1NWmVmTXhKTS12cmx1Q25Qdm9DYnhSQjVxVU9EV1JZS3d3SElORDliX2NCYUpiTk51VXB6aktFSXY0TzV2TTNnQ0FQenJRNzByY0pkeDdFOUxXRnZhZUFhYWNIN0FzMnl6?oc=5",
-      "source": "googlenews",
-      "score": 0,
-      "summary": "A new report says artificial intelligence could affect nearly a quarter of Southeast Asia’s workers, highlighting the scale of disruption the region may face as AI automates tasks across many industries. The article argues that the impact will not be uniformly negative: some jobs are more exposed than others, and countries and companies that invest in retraining, digital infrastructure, and higher-value work could turn the shift into an advantage. It matters because Southeast Asia has a huge labor force and a fast-growing digital economy, so the way governments respond could determine whether AI widens inequality or boosts productivity and wages.",
-      "date": "2026-08-13T00:00:08.000Z",
-      "type": "asia"
-    },
-    {
-      "id": "de-RjE733s94QVw",
-      "title": "Riverpod to BlocSignal: Incremental Migration and Zero-Codegen Signals for Flutter",
-      "url": "https://dev.to/gde/riverpod-to-blocsignal-incremental-migration-and-zero-codegen-signals-for-flutter-1gdp",
-      "source": "devto",
-      "score": 6,
-      "summary": "The article explains how Flutter teams can move from Riverpod to BlocSignal gradually instead of rewriting state management all at once, emphasizing a trial-friendly path with zero code generation and fine-grained signal reactivity. It highlights bidirectional interop so existing Riverpod providers can be exposed as BlocSignal and BlocSignal state can be converted back into Riverpod, which lets teams migrate one feature or provider at a time while keeping the app running. The key practical value is reduced migration risk: developers can keep legacy Riverpod code in place, adopt BlocSignal for new or selected parts, and avoid the boilerplate and churn that usually make framework transitions expensive. That matters because it gives Flutter teams a lower-friction way to modernize architecture without forcing a big-bang rewrite or losing existing state logic.",
-      "date": "2026-08-12T23:05:09Z",
-      "type": "tech"
-    },
-    {
-      "id": "ha-40H5yVO0IyR9",
-      "title": "How art invented humanity",
-      "url": "https://aeon.co/essays/humans-did-not-invent-art-it-was-the-other-way-around",
-      "source": "hackernews",
-      "score": 29,
-      "summary": "J. F. Martel argues that humans did not invent art; rather, art helped invent humanity by giving early people a way to discover who they were. The essay opens with the apocryphal story of Picasso at Lascaux and uses it to suggest that cave painting was not just decoration or expression, but a transformative practice that revealed a new kind of mind. Martel contrasts this with modern assumptions that art is something humans simply possess, arguing instead that repeated image-making over many generations helped bring human consciousness into being. The point matters because it reframes art as a foundational force in human evolution and self-understanding, not a luxury added after humanity was already complete.",
-      "date": "2026-08-12T22:47:40.000Z",
-      "type": "tech"
-    },
-    {
-      "id": "de-J0HuHMEIoBMV",
-      "title": "I Tried Building a Website With AI From My Phone",
-      "url": "https://dev.to/chizurumchidimma/i-tried-building-a-website-with-ai-from-my-phone-4a80",
-      "source": "devto",
-      "score": 11,
-      "summary": "In this article, the author describes trying to build a website entirely from a phone using AI, challenging the assumption that a laptop is required for real web development. The piece follows that experiment from the initial decision on a Tuesday through the practical steps of prompting AI tools, editing the site on mobile, and working around the limits of a small screen and touch-based workflow. What makes it matter is that it shows how far AI-assisted creation has come: even nontraditional setups like a phone can now be used to prototype or build a functional website, lowering the barrier for people who want to create without expensive hardware. It is also a reality check, since the experience likely highlights both the convenience and the friction of doing development without a conventional computer.",
-      "date": "2026-08-12T21:36:43Z",
-      "type": "tech"
-    },
-    {
-      "id": "de-AYfcEGEpJkKX",
-      "title": "Stop Pretending To Do Domain-Driven Design",
-      "url": "https://dev.to/jamesmh/stop-pretending-to-do-domain-driven-design-2od4",
-      "source": "devto",
-      "score": 6,
-      "summary": "The article argues that Domain-Driven Design is not defined by tactical patterns like entities, aggregates, factories, services, or repositories; those can exist without any real DDD at all. Citing Vaughn Vernon’s idea that DDD is about discussion, listening, understanding, discovery, and business value, it says the real test is whether the team is talking with business experts and focusing on the parts of the system that create differentiated value. The piece emphasizes that DDD is fundamentally a strategic practice: identifying the core domain, deciding where to invest time and design effort, and building software around the business reality rather than around infrastructure or code patterns. Its bigger point is that teams often confuse using DDD vocabulary with actually doing DDD, which matters because shallow adoption can lead to over-engineered systems that miss the business problem entirely.",
-      "date": "2026-08-12T19:20:00Z",
-      "type": "tech"
-    },
-    {
-      "id": "de-rJMlb-91yCn4",
-      "title": "CSS Art Challenge: I do love Chicken Pilaf!",
-      "url": "https://dev.to/effnd/css-art-challenge-i-do-love-chicken-pilaf-1gi3",
-      "source": "devto",
-      "score": 10,
-      "summary": "The article is a CSS art submission for Frontend Challenge: Comfort Food Edition, centered on recreating a plate of chicken pilaf entirely with CSS. Its main point is to show how visual food illustration can be built without images, using layout, shapes, and styling tricks to capture the look of a homemade comfort meal. The piece matters because it demonstrates the creative range of CSS beyond standard webpage design, turning a familiar dish into a technical art exercise. It also fits into the broader DEV Community challenge scene, where developers share playful front-end experiments and push their styling skills in unconventional ways.",
-      "date": "2026-08-12T17:05:32Z",
-      "type": "tech"
-    },
-    {
-      "id": "ha-Bkx_OlVdEOT3",
-      "title": "Come for ENIAC, Stay for UNIVAC and Skeduflo",
-      "url": "https://uniqueatpenn.wordpress.com/2026/08/05/come-for-eniac-stay-for-univac-and-skeduflo/",
-      "source": "hackernews",
-      "score": 41,
-      "summary": "The article traces how J. Presper Eckert and John Mauchly’s work moved beyond **ENIAC** to **UNIVAC**, one of the first major commercial computers, and then to a lesser-known follow-on project called **Skeduflo**. It highlights that Mauchly did not stop after UNIVAC’s success; with a colleague, he helped build Skeduflo, described as a **computer in a suitcase** designed to support the **Critical Path Method (CPM)** for construction scheduling. The piece matters because it shows that the ENIAC story did not end with the famous wartime machine: the same pioneers kept pushing computing into practical business and engineering uses, from general-purpose computing to project scheduling. By connecting UNIVAC and Skeduflo, the article broadens the history of early computing beyond the best-known milestones and shows how quickly computers were being adapted for real-world management problems.",
-      "date": "2026-08-11T13:55:26.000Z",
+      "score": 15,
+      "summary": "The article explains how the Library of Ashurbanipal, assembled in 7th-century BCE Nineveh by the Assyrian king Ashurbanipal, became one of the ancient world’s greatest knowledge collections. It consisted of tens of thousands of clay tablets and fragments, with texts ranging from royal records and administrative documents to literature, medicine, divination, and works such as the *Epic of Gilgamesh*. The library matters because its survival after the destruction of Nineveh in 612 BCE preserved an unmatched record of Mesopotamian civilization and gave modern scholars a crucial window into Assyrian language, religion, science, and politics. It also shows that Ashurbanipal was not just a conqueror but a ruler who deliberately gathered and organized knowledge on a scale that was extraordinary for his time.",
+      "date": "2026-08-10T19:49:35.000Z",
       "type": "tech"
     }
   ]
